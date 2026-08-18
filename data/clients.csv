@@ -1,0 +1,1001 @@
+client_id,rm_id,desk,first_name,age,city_tier,segment,wealth_source,risk_profile,preferred_language,relationship_tenure_years,days_since_last_contact,total_aum_inr,alloc_direct_equity_pct,alloc_equity_mf_pct,alloc_debt_mf_bonds_pct,alloc_pms_pct,alloc_aif_pct,alloc_unlisted_pct,alloc_gold_pct,top_sector_exposure,debt_duration_bucket,unlisted_holding_tag,intl_equity_exposure_pct,existing_thematic_exposure_pct,sip_active,sip_monthly_inr,avg_lumpsum_ticket_inr,days_since_last_lumpsum,ledger_balance_inr
+C-0001,RM-01,UHNI,Siddharth,42,Tier 2,UHNI,Business Owner,Moderate,Gujarati,2,121,212800000,21.7,20.8,21.9,15.3,15.4,0.0,4.9,BFSI,Short,No holding,0.0,12.2,False,0,10800000,253,2600000
+C-0002,RM-01,UHNI,Rohan,47,Tier 1,UHNI,Promoter,Conservative,English,17,375,101600000,12.1,35.3,37.8,5.2,0.0,0.0,9.6,Diversified,Long,No holding,0.0,10.3,False,0,3600000,314,600000
+C-0003,RM-01,UHNI,Gaurav,33,Tier 2,UHNI,Inherited,Conservative,Gujarati,18,176,272000000,24.0,30.2,31.3,5.0,0.0,0.0,9.5,Infra,Medium,No holding,0.0,13.9,False,0,11800000,150,2500000
+C-0004,RM-01,UHNI,Shalini,32,Tier 2,UHNI,Promoter,Aggressive,English,4,97,302000000,17.8,25.3,13.1,15.8,6.1,18.1,3.8,Auto,Medium,Unlisted Co. A,0.0,0.0,False,0,17000000,59,3800000
+C-0005,RM-01,UHNI,Devika,56,Tier 2,HNI,Business Owner,Moderate,English,8,394,61600000,27.0,26.0,19.0,12.3,0.0,11.6,4.1,Diversified,Long,Unlisted Co. A,0.0,7.8,False,0,5300000,165,100000
+C-0006,RM-01,UHNI,Harsh,39,Tier 1,HNI,Professional,Moderate,Hindi,12,180,87900000,26.9,21.4,23.6,14.1,0.0,11.1,2.9,BFSI,Long,Unlisted Co. E,0.0,8.2,True,75000,4600000,87,400000
+C-0007,RM-01,UHNI,Sneha,44,Tier 1,UHNI,Inherited,Aggressive,Marathi,4,394,193100000,21.4,31.4,12.7,21.3,10.6,0.0,2.6,Auto,Short,No holding,0.0,0.0,False,0,14700000,160,100000
+C-0008,RM-01,UHNI,Vinod,36,Tier 1,UHNI,Business Owner,Moderate,English,6,367,151300000,14.0,38.8,26.3,17.1,0.0,0.0,3.8,Pharma,Medium,No holding,0.0,0.0,False,0,9400000,265,200000
+C-0009,RM-01,UHNI,Jaya,35,Tier 1,UHNI,Business Owner,Moderate,Hindi,8,362,178300000,16.2,26.3,21.9,30.8,0.0,0.0,4.8,FMCG,Medium,No holding,7.9,0.0,False,0,7300000,52,200000
+C-0010,RM-01,UHNI,Vidya,46,Tier 1,UHNI,Business Owner,Moderate,English,12,233,112600000,16.2,16.0,18.3,33.4,0.0,0.0,16.1,IT,Medium,No holding,0.0,15.0,False,0,5500000,315,300000
+C-0011,RM-01,UHNI,Varun,41,Tier 1,UHNI,Promoter,Moderate,Hindi,6,319,292000000,10.2,44.2,16.7,20.8,5.0,0.0,3.1,Infra,Short,No holding,0.0,0.0,False,0,20200000,98,1500000
+C-0012,RM-01,UHNI,Shreya,51,Tier 1,UHNI,Inherited,Conservative,Hindi,8,384,276100000,8.0,25.9,50.0,7.6,0.0,0.0,8.5,BFSI,Short,No holding,0.0,0.0,True,595000,19400000,376,900000
+C-0013,RM-01,UHNI,Chirag,52,Tier 2,UHNI,Inherited,Moderate,Hindi,6,108,186700000,27.4,16.6,20.2,19.3,8.2,6.8,1.5,FMCG,Long,Unlisted Co. A,0.0,0.0,False,0,10500000,308,0
+C-0014,RM-01,UHNI,Kavita,51,Tier 2,UHNI,Inherited,Moderate,Hindi,14,16,334600000,21.2,22.3,19.7,24.3,6.4,5.3,0.8,BFSI,Long,Unlisted Co. A,0.0,15.6,False,0,14600000,118,300000
+C-0015,RM-01,UHNI,Rohan,50,Tier 1,UHNI,Professional,Moderate,English,3,129,232800000,25.6,24.3,16.2,9.7,7.7,7.0,9.5,Pharma,Long,Unlisted Co. D,7.8,0.0,False,0,17100000,238,1200000
+C-0016,RM-01,UHNI,Yash,62,Tier 2,UHNI,Salaried CXO,Aggressive,Hindi,5,255,112200000,29.6,29.9,20.9,19.5,0.0,0.0,0.1,BFSI,Long,No holding,0.0,0.0,False,0,4500000,50,500000
+C-0017,RM-01,UHNI,Sunil,38,Tier 1,UHNI,Salaried CXO,Moderate,Hindi,5,219,220500000,21.0,25.3,30.4,10.3,0.0,5.9,7.1,IT,Medium,Unlisted Co. B,0.0,18.7,False,0,19000000,46,300000
+C-0018,RM-01,UHNI,Naveen,48,Tier 1,UHNI,Inherited,Conservative,Hindi,17,33,106200000,11.4,31.3,32.3,10.6,0.0,0.0,14.4,Infra,Medium,No holding,0.0,12.8,False,0,4400000,401,200000
+C-0019,RM-01,UHNI,Ishaan,58,Tier 1,UHNI,Business Owner,Moderate,English,18,224,291800000,20.7,32.5,24.4,16.4,3.8,0.0,2.2,IT,Medium,No holding,0.0,14.0,False,0,10600000,338,1800000
+C-0020,RM-01,UHNI,Vinod,59,Tier 2,UHNI,Promoter,Moderate,English,10,70,175100000,18.8,28.5,21.9,23.6,0.0,0.0,7.2,Auto,Medium,No holding,0.0,0.0,True,400000,10500000,69,500000
+C-0021,RM-01,UHNI,Kabir,35,Tier 2,UHNI,Promoter,Aggressive,English,3,202,162600000,20.6,19.9,15.6,19.4,12.7,6.3,5.5,BFSI,Medium,Unlisted Co. A,0.0,19.0,False,0,9900000,122,600000
+C-0022,RM-01,UHNI,Lakshmi,45,Tier 2,UHNI,Business Owner,Moderate,English,14,230,123800000,17.6,30.3,21.9,15.1,13.1,1.6,0.4,Infra,Short,Unlisted Co. E,0.0,0.0,False,0,7500000,87,300000
+C-0023,RM-01,UHNI,Vinod,60,Tier 2,UHNI,Professional,Aggressive,English,9,255,352600000,31.8,23.5,18.4,12.3,8.4,5.3,0.3,BFSI,Medium,Unlisted Co. C,0.0,0.0,False,0,19800000,168,1900000
+C-0024,RM-01,UHNI,Prakash,53,Tier 2,UHNI,Business Owner,Aggressive,English,16,165,165300000,24.4,40.8,10.8,13.5,10.1,0.0,0.4,BFSI,Short,No holding,0.0,0.0,False,0,14800000,125,1500000
+C-0025,RM-01,UHNI,Jaya,50,Tier 1,UHNI,Promoter,Moderate,Hindi,7,163,142200000,15.4,28.2,27.5,12.5,12.5,0.0,3.9,BFSI,Short,No holding,0.0,0.0,False,0,8400000,141,1900000
+C-0026,RM-01,UHNI,Aarav,46,Tier 1,UHNI,Promoter,Aggressive,English,18,271,148300000,38.2,20.7,15.2,16.3,9.0,0.0,0.6,Diversified,Medium,No holding,0.0,0.0,False,0,8700000,224,700000
+C-0027,RM-01,UHNI,Naveen,45,Tier 1,UHNI,Promoter,Conservative,Gujarati,15,299,241200000,7.5,30.2,46.3,5.8,0.0,1.5,8.7,Diversified,Short,Unlisted Co. D,1.3,14.2,True,310000,13300000,83,500000
+C-0028,RM-01,UHNI,Yash,51,Tier 2,UHNI,Business Owner,Conservative,English,5,323,220100000,11.1,26.5,48.9,4.9,0.0,0.0,8.6,Infra,Short,No holding,0.0,0.0,False,0,7500000,371,100000
+C-0029,RM-01,UHNI,Naveen,46,Tier 1,UHNI,Business Owner,Conservative,Gujarati,14,134,225900000,9.1,13.8,32.0,16.3,0.0,0.0,28.8,Infra,Long,No holding,4.4,0.0,False,0,14800000,306,0
+C-0030,RM-01,UHNI,Rupal,48,Tier 1,UHNI,Business Owner,Aggressive,English,6,170,228100000,24.4,20.2,16.3,24.0,13.4,0.0,1.7,Infra,Long,No holding,2.8,0.0,False,0,10000000,320,2800000
+C-0031,RM-01,UHNI,Jaya,49,Tier 2,UHNI,Business Owner,Moderate,English,7,132,584600000,23.7,30.5,27.5,12.7,4.8,0.0,0.8,Diversified,Short,No holding,0.0,0.0,False,0,39900000,75,3200000
+C-0032,RM-01,UHNI,Siddharth,42,Tier 1,UHNI,Business Owner,Conservative,Hindi,5,211,143900000,10.3,14.3,44.3,12.2,0.0,0.1,18.8,BFSI,Short,Unlisted Co. B,6.3,0.0,True,340000,4800000,298,300000
+C-0033,RM-01,UHNI,Siddharth,53,Tier 2,UHNI,Business Owner,Moderate,Marathi,13,51,135800000,24.4,33.7,25.8,11.6,0.0,0.0,4.5,Diversified,Short,No holding,6.8,10.4,False,0,12100000,352,500000
+C-0034,RM-01,UHNI,Rajesh,68,Tier 1,UHNI,Promoter,Conservative,English,5,172,115100000,9.4,28.0,42.4,9.6,0.0,0.6,10.0,Pharma,Long,Unlisted Co. C,4.9,0.0,False,0,6700000,77,900000
+C-0035,RM-01,UHNI,Siddharth,32,Tier 2,UHNI,Business Owner,Aggressive,English,12,76,252600000,34.5,22.2,10.9,19.5,4.3,0.0,8.6,Auto,Long,No holding,0.0,0.0,False,0,21200000,316,3900000
+C-0036,RM-01,UHNI,Priya,51,Tier 2,UHNI,Business Owner,Moderate,Hindi,11,213,334900000,32.4,20.5,13.1,11.1,8.0,5.8,9.1,Diversified,Short,Unlisted Co. D,0.0,0.0,False,0,19600000,153,300000
+C-0037,RM-01,UHNI,Meera,41,Tier 1,UHNI,Promoter,Moderate,Hindi,14,340,169100000,19.6,40.9,16.3,11.7,0.0,2.8,8.7,Infra,Medium,Unlisted Co. A,4.7,0.0,False,0,5700000,331,600000
+C-0038,RM-01,UHNI,Shalini,53,Tier 2,UHNI,Professional,Moderate,English,18,394,113400000,16.2,26.8,27.3,17.8,0.0,0.0,11.9,Diversified,Short,No holding,0.0,0.0,True,105000,9000000,203,700000
+C-0039,RM-01,UHNI,Swati,48,Tier 1,UHNI,Inherited,Moderate,English,1,179,114400000,17.3,24.4,21.8,18.4,0.0,14.7,3.4,Diversified,Short,Unlisted Co. A,0.0,0.0,False,0,7900000,337,2100000
+C-0040,RM-01,UHNI,Swati,55,Tier 1,UHNI,Inherited,Moderate,English,18,23,257400000,20.7,17.4,21.9,24.0,14.2,0.0,1.8,Diversified,Long,No holding,5.7,0.0,False,0,19800000,66,1500000
+C-0041,RM-01,UHNI,Harsh,59,Tier 1,UHNI,Promoter,Conservative,Marathi,2,91,270900000,20.0,16.8,46.5,8.7,0.0,0.0,8.0,Diversified,Short,No holding,1.5,4.9,False,0,15100000,166,1100000
+C-0042,RM-01,UHNI,Rohan,50,Tier 2,UHNI,Inherited,Conservative,English,10,42,242700000,10.3,31.9,36.3,8.4,4.8,2.7,5.6,Infra,Short,Unlisted Co. A,0.0,0.0,True,235000,16600000,118,1100000
+C-0043,RM-01,UHNI,Aarav,58,Tier 1,UHNI,Professional,Aggressive,English,7,303,124800000,34.3,24.5,15.8,24.2,0.0,0.0,1.2,FMCG,Medium,No holding,0.0,10.9,False,0,10200000,108,200000
+C-0044,RM-01,UHNI,Priya,32,Tier 1,UHNI,Inherited,Aggressive,Marathi,12,393,204500000,37.5,20.2,19.9,12.5,8.5,0.0,1.4,Diversified,Medium,No holding,0.0,11.7,False,0,13900000,132,900000
+C-0045,RM-01,UHNI,Priya,62,Tier 2,UHNI,Salaried CXO,Aggressive,English,13,222,191900000,25.1,36.6,19.8,9.9,8.5,0.0,0.1,IT,Long,No holding,0.0,0.0,False,0,9800000,163,1500000
+C-0046,RM-01,UHNI,Manish,51,Tier 1,UHNI,Business Owner,Moderate,English,16,71,203000000,21.1,28.5,22.9,18.1,0.0,7.7,1.7,Infra,Long,Unlisted Co. B,2.2,0.0,True,180000,14200000,57,300000
+C-0047,RM-01,UHNI,Yash,58,Tier 1,UHNI,Salaried CXO,Aggressive,English,8,9,290700000,24.1,40.4,13.0,14.9,4.6,0.0,3.0,FMCG,Short,No holding,0.0,0.0,False,0,20400000,298,3100000
+C-0048,RM-01,UHNI,Uday,37,Tier 1,UHNI,Business Owner,Aggressive,English,17,390,203600000,28.2,29.1,13.3,16.9,8.4,1.7,2.4,IT,Short,Unlisted Co. D,0.0,0.0,False,0,17800000,233,100000
+C-0049,RM-01,UHNI,Aditi,41,Tier 1,UHNI,Inherited,Aggressive,English,6,127,261500000,29.2,23.3,6.6,17.6,9.0,14.1,0.2,Diversified,Long,Unlisted Co. A,0.0,0.0,True,410000,13700000,349,500000
+C-0050,RM-01,UHNI,Harsh,49,Tier 2,UHNI,Business Owner,Moderate,English,4,45,186800000,22.0,20.7,19.5,19.4,0.0,9.1,9.3,Infra,Short,Unlisted Co. B,0.0,0.0,True,325000,10400000,297,100000
+C-0051,RM-01,UHNI,Gaurav,48,Tier 1,UHNI,Business Owner,Moderate,Gujarati,7,71,211000000,14.1,28.8,32.7,13.4,6.0,0.0,5.0,BFSI,Long,No holding,0.0,0.0,False,0,16600000,66,100000
+C-0052,RM-01,UHNI,Varun,51,Tier 1,UHNI,Business Owner,Conservative,Hindi,10,102,254700000,7.4,22.7,53.4,6.1,0.0,0.0,10.4,FMCG,Medium,No holding,0.0,0.0,False,0,15400000,34,3700000
+C-0053,RM-01,UHNI,Parth,58,Tier 2,HNI,Promoter,Aggressive,English,13,262,80800000,34.9,36.5,14.2,12.0,0.0,0.0,2.4,BFSI,Short,No holding,0.0,0.0,False,0,6000000,180,100000
+C-0054,RM-01,UHNI,Sanjay,32,Tier 1,UHNI,Business Owner,Moderate,Hindi,15,356,151000000,15.8,46.4,14.8,9.7,9.1,0.0,4.2,Infra,Long,No holding,0.0,0.0,False,0,8700000,204,400000
+C-0055,RM-01,UHNI,Sneha,57,Tier 2,UHNI,Inherited,Moderate,English,5,110,139000000,13.2,30.6,33.3,15.4,0.0,0.0,7.5,Diversified,Short,No holding,0.0,0.0,False,0,6000000,104,500000
+C-0056,RM-02,UHNI,Siddharth,60,Tier 2,UHNI,Business Owner,Moderate,English,18,165,217100000,23.3,31.4,19.8,14.5,6.9,2.6,1.5,BFSI,Long,Unlisted Co. B,0.0,2.6,False,0,9500000,134,100000
+C-0057,RM-02,UHNI,Prakash,50,Tier 1,UHNI,Business Owner,Moderate,English,10,97,194800000,19.1,27.7,20.8,11.4,16.8,0.0,4.2,FMCG,Medium,No holding,0.0,0.0,True,265000,12800000,399,100000
+C-0058,RM-02,UHNI,Ishaan,36,Tier 1,UHNI,Salaried CXO,Moderate,Gujarati,13,121,102500000,24.7,19.1,25.6,24.0,0.0,4.3,2.3,Pharma,Medium,Unlisted Co. B,5.5,0.0,False,0,4000000,104,100000
+C-0059,RM-02,UHNI,Shreya,34,Tier 1,UHNI,Business Owner,Conservative,English,4,215,136700000,13.9,22.7,54.3,0.0,0.0,0.0,9.1,BFSI,Medium,No holding,0.0,0.0,False,0,6600000,186,100000
+C-0060,RM-02,UHNI,Yash,63,Tier 1,UHNI,Business Owner,Aggressive,English,11,227,266300000,30.9,30.2,12.8,20.0,5.7,0.0,0.4,Pharma,Short,No holding,4.1,0.0,False,0,22200000,287,1400000
+C-0061,RM-02,UHNI,Naveen,47,Tier 1,UHNI,Salaried CXO,Conservative,English,2,74,186200000,3.8,38.3,35.9,4.3,0.0,9.3,8.4,FMCG,Medium,Unlisted Co. B,0.0,0.0,False,0,11700000,124,100000
+C-0062,RM-02,UHNI,Kabir,42,Tier 1,HNI,Inherited,Aggressive,English,12,27,69600000,26.4,34.6,16.2,16.1,0.0,5.8,0.9,BFSI,Short,Unlisted Co. A,0.0,0.0,True,95000,5800000,114,400000
+C-0063,RM-02,UHNI,Kavita,46,Tier 1,UHNI,Business Owner,Aggressive,English,4,198,215100000,15.9,32.9,9.0,28.4,10.3,0.0,3.5,Infra,Long,No holding,0.0,0.0,False,0,9400000,58,300000
+C-0064,RM-02,UHNI,Rahul,35,Tier 1,HNI,Promoter,Moderate,Hindi,17,319,82600000,18.8,26.0,27.8,14.7,0.0,3.2,9.5,FMCG,Short,Unlisted Co. A,0.0,0.0,False,0,4100000,6,500000
+C-0065,RM-02,UHNI,Akash,61,Tier 1,UHNI,Salaried CXO,Moderate,English,1,61,326200000,13.7,28.5,28.5,16.3,7.1,0.0,5.9,Diversified,Short,No holding,0.0,0.0,False,0,19000000,213,900000
+C-0066,RM-02,UHNI,Pallavi,44,Tier 1,UHNI,Inherited,Moderate,English,12,163,263500000,13.3,23.9,38.3,15.4,7.0,0.0,2.1,Auto,Medium,No holding,0.0,0.0,False,0,15500000,414,1100000
+C-0067,RM-02,UHNI,Aditi,60,Tier 2,UHNI,Business Owner,Aggressive,Gujarati,3,65,175900000,25.5,27.0,12.5,34.9,0.0,0.0,0.1,Diversified,Medium,No holding,3.0,8.2,False,0,15800000,96,0
+C-0068,RM-02,UHNI,Aditi,48,Tier 1,UHNI,Salaried CXO,Aggressive,English,13,97,163500000,27.5,20.5,14.3,20.0,13.1,0.0,4.6,Infra,Medium,No holding,0.0,0.0,False,0,6000000,187,900000
+C-0069,RM-02,UHNI,Naveen,61,Tier 1,UHNI,Business Owner,Moderate,Marathi,9,245,133700000,19.8,49.0,17.8,8.4,0.0,0.0,5.0,Pharma,Medium,No holding,0.0,0.0,False,0,10800000,393,200000
+C-0070,RM-02,UHNI,Shalini,50,Tier 1,UHNI,Inherited,Conservative,English,18,115,217900000,12.5,42.0,30.0,2.3,0.0,0.0,13.2,IT,Short,No holding,7.3,0.0,True,200000,17800000,325,100000
+C-0071,RM-02,UHNI,Uday,56,Tier 1,UHNI,Business Owner,Moderate,Hindi,12,106,122300000,14.8,31.8,24.5,14.5,0.0,5.0,9.4,IT,Medium,Unlisted Co. A,0.0,0.0,False,0,7700000,6,200000
+C-0072,RM-02,UHNI,Arjun,54,Tier 1,UHNI,Promoter,Moderate,English,7,398,170700000,15.4,32.1,28.7,21.4,0.0,0.0,2.4,IT,Short,No holding,0.0,0.0,False,0,8600000,212,400000
+C-0073,RM-02,UHNI,Ishaan,54,Tier 1,UHNI,Business Owner,Aggressive,Gujarati,2,69,242300000,26.0,26.1,8.8,16.9,21.5,0.0,0.7,Diversified,Short,No holding,0.0,13.7,False,0,14800000,64,300000
+C-0074,RM-02,UHNI,Naveen,51,Tier 1,UHNI,Professional,Aggressive,English,11,76,110100000,22.7,32.8,13.0,28.6,0.0,0.0,2.9,Diversified,Short,No holding,0.0,4.4,False,0,5200000,107,300000
+C-0075,RM-02,UHNI,Priya,46,Tier 1,UHNI,Business Owner,Moderate,Marathi,8,371,106900000,18.7,27.5,32.8,20.7,0.0,0.0,0.3,Diversified,Short,No holding,4.9,9.9,False,0,8300000,107,700000
+C-0076,RM-02,UHNI,Yash,65,Tier 1,HNI,Inherited,Aggressive,English,1,220,77800000,29.1,34.4,19.6,8.4,0.0,7.9,0.6,IT,Short,Unlisted Co. E,3.4,0.0,False,0,4700000,259,200000
+C-0077,RM-02,UHNI,Rohan,40,Tier 1,HNI,Salaried CXO,Moderate,Hindi,11,18,83500000,13.1,33.5,28.0,14.0,0.0,6.6,4.8,BFSI,Medium,Unlisted Co. A,6.6,2.7,False,0,7100000,87,100000
+C-0078,RM-02,UHNI,Pooja,48,Tier 2,HNI,Business Owner,Aggressive,English,4,170,54900000,30.7,30.1,26.5,11.6,0.0,0.3,0.8,Diversified,Short,Unlisted Co. C,0.0,0.0,True,105000,3700000,109,100000
+C-0079,RM-02,UHNI,Akash,48,Tier 2,UHNI,Business Owner,Moderate,English,5,226,224100000,23.4,23.5,18.4,15.7,6.3,2.3,10.4,Auto,Short,Unlisted Co. B,0.0,0.0,False,0,13600000,98,300000
+C-0080,RM-02,UHNI,Ananya,52,Tier 1,UHNI,Business Owner,Moderate,English,1,102,405700000,26.1,41.2,11.3,6.0,9.4,0.0,6.0,BFSI,Medium,No holding,7.8,0.0,False,0,29500000,153,200000
+C-0081,RM-02,UHNI,Deepak,44,Tier 1,UHNI,Business Owner,Aggressive,English,7,219,328500000,18.1,39.1,14.2,21.6,0.0,6.6,0.4,BFSI,Short,Unlisted Co. C,0.0,0.0,False,0,19800000,277,300000
+C-0082,RM-02,UHNI,Ramesh,51,Tier 1,HNI,Promoter,Moderate,English,4,259,61300000,26.1,38.0,26.5,0.0,0.0,0.0,9.4,BFSI,Medium,No holding,0.0,0.0,True,80000,5200000,170,100000
+C-0083,RM-02,UHNI,Kiran,46,Tier 1,UHNI,Salaried CXO,Aggressive,Hindi,2,100,223500000,21.1,42.7,17.1,10.6,0.0,4.2,4.3,Diversified,Long,Unlisted Co. C,4.4,18.5,False,0,9200000,140,800000
+C-0084,RM-02,UHNI,Ishaan,34,Tier 1,UHNI,Business Owner,Aggressive,English,8,325,327900000,35.1,26.3,11.1,10.5,14.2,1.6,1.2,Pharma,Medium,Unlisted Co. B,0.0,0.0,False,0,29000000,219,2600000
+C-0085,RM-02,UHNI,Rohan,48,Tier 1,UHNI,Promoter,Conservative,English,4,181,116700000,4.1,19.5,53.3,8.0,0.0,0.0,15.1,BFSI,Long,No holding,0.0,19.2,False,0,9200000,260,0
+C-0086,RM-02,UHNI,Sunil,38,Tier 1,UHNI,Business Owner,Conservative,English,3,385,158600000,8.6,34.4,36.2,6.2,0.0,5.4,9.2,Diversified,Short,Unlisted Co. A,0.0,7.2,True,305000,12900000,11,100000
+C-0087,RM-02,UHNI,Neha,32,Tier 1,HNI,Salaried CXO,Aggressive,English,9,36,49700000,29.0,13.8,20.7,16.1,20.2,0.0,0.2,FMCG,Short,No holding,0.0,0.0,False,0,2900000,374,100000
+C-0088,RM-02,UHNI,Uday,49,Tier 1,UHNI,Inherited,Moderate,English,2,130,173700000,15.1,26.8,18.0,23.3,8.5,0.0,8.3,Pharma,Medium,No holding,0.0,18.6,False,0,13900000,385,1200000
+C-0089,RM-02,UHNI,Shalini,52,Tier 2,HNI,Promoter,Conservative,Hindi,18,288,83600000,8.6,32.0,45.1,10.8,0.0,0.0,3.5,Pharma,Medium,No holding,1.3,0.0,False,0,4000000,255,200000
+C-0090,RM-02,UHNI,Sanjay,53,Tier 2,UHNI,Inherited,Moderate,English,9,358,167400000,14.7,28.1,20.3,14.4,12.4,3.6,6.5,Auto,Long,Unlisted Co. C,1.6,0.0,False,0,12700000,243,200000
+C-0091,RM-02,UHNI,Tanvi,53,Tier 1,HNI,Salaried CXO,Aggressive,Marathi,18,89,63600000,21.8,21.6,22.6,32.6,0.0,0.0,1.4,Auto,Short,No holding,0.0,0.0,False,0,2400000,293,100000
+C-0092,RM-02,UHNI,Devika,32,Tier 1,UHNI,Promoter,Moderate,English,16,392,202200000,24.5,21.4,22.5,15.7,10.4,3.2,2.3,BFSI,Medium,Unlisted Co. A,0.0,0.0,False,0,9800000,187,600000
+C-0093,RM-02,UHNI,Shreya,36,Tier 1,UHNI,Business Owner,Moderate,English,18,78,263500000,17.8,26.1,24.5,18.9,8.9,0.0,3.8,IT,Short,No holding,0.0,0.0,False,0,15000000,156,300000
+C-0094,RM-02,UHNI,Vikram,66,Tier 2,HNI,Promoter,Aggressive,Gujarati,10,167,97500000,26.9,35.5,22.4,15.2,0.0,0.0,0.0,IT,Short,No holding,0.0,0.0,False,0,4800000,151,700000
+C-0095,RM-02,UHNI,Yash,39,Tier 1,HNI,Promoter,Moderate,English,8,126,80300000,25.0,33.2,22.7,12.2,0.0,0.9,6.0,Diversified,Short,Unlisted Co. A,0.0,0.0,False,0,4300000,71,500000
+C-0096,RM-02,UHNI,Priya,53,Tier 1,HNI,Promoter,Aggressive,English,13,170,45800000,25.5,30.3,11.4,27.6,0.0,4.1,1.1,Diversified,Long,Unlisted Co. A,0.0,0.0,True,105000,3600000,354,100000
+C-0097,RM-02,UHNI,Shreya,42,Tier 1,UHNI,Business Owner,Moderate,Marathi,2,361,129600000,14.1,25.9,27.9,12.1,13.6,1.6,4.8,Diversified,Short,Unlisted Co. A,0.0,14.6,True,260000,5900000,138,1300000
+C-0098,RM-02,UHNI,Uday,49,Tier 2,UHNI,Business Owner,Aggressive,Marathi,16,293,108900000,28.1,28.4,13.0,17.8,0.0,10.4,2.3,Infra,Long,Unlisted Co. A,7.7,0.0,False,0,8100000,123,0
+C-0099,RM-02,UHNI,Swati,42,Tier 1,HNI,Inherited,Aggressive,Hindi,6,318,63900000,22.3,26.8,17.2,15.9,17.0,0.0,0.8,Pharma,Medium,No holding,2.0,0.0,False,0,2200000,405,900000
+C-0100,RM-02,UHNI,Varun,53,Tier 1,UHNI,Professional,Conservative,English,1,102,192400000,9.0,27.7,52.6,6.9,0.0,0.0,3.8,Pharma,Medium,No holding,7.7,15.3,False,0,14600000,215,3300000
+C-0101,RM-02,UHNI,Sunil,49,Tier 1,UHNI,Professional,Aggressive,Hindi,5,378,117100000,31.3,20.6,8.7,21.7,17.4,0.0,0.3,BFSI,Medium,No holding,5.2,18.7,False,0,9100000,263,100000
+C-0102,RM-02,UHNI,Meera,44,Tier 1,HNI,Promoter,Moderate,Marathi,5,174,83000000,17.3,39.0,22.7,8.9,0.0,8.7,3.4,Diversified,Long,Unlisted Co. A,0.0,0.0,True,130000,4500000,106,100000
+C-0103,RM-02,UHNI,Shalini,39,Tier 1,UHNI,Inherited,Conservative,Marathi,1,261,110600000,8.3,32.1,47.8,8.1,0.0,0.0,3.7,BFSI,Short,No holding,0.0,0.0,False,0,8100000,120,200000
+C-0104,RM-02,UHNI,Mohit,50,Tier 1,UHNI,Business Owner,Conservative,English,13,279,270400000,7.3,22.1,43.9,11.3,0.0,3.4,12.0,IT,Short,Unlisted Co. A,0.0,0.0,False,0,23000000,307,100000
+C-0105,RM-02,UHNI,Sneha,37,Tier 1,UHNI,Salaried CXO,Aggressive,English,2,265,209000000,23.6,21.7,21.5,19.2,10.3,0.0,3.7,FMCG,Medium,No holding,0.0,0.0,False,0,16300000,192,800000
+C-0106,RM-02,UHNI,Sneha,52,Tier 1,UHNI,Business Owner,Conservative,English,16,241,139600000,8.7,18.1,48.1,6.6,0.0,3.5,15.0,Auto,Short,Unlisted Co. B,4.4,0.0,True,210000,7500000,66,100000
+C-0107,RM-02,UHNI,Vidya,68,Tier 1,UHNI,Business Owner,Moderate,English,9,192,210800000,23.6,21.5,16.9,25.6,7.7,0.1,4.6,FMCG,Short,Unlisted Co. A,0.0,0.0,False,0,12400000,351,800000
+C-0108,RM-02,UHNI,Rahul,60,Tier 2,HNI,Business Owner,Conservative,Hindi,13,259,79200000,14.0,16.6,49.7,8.7,0.0,0.0,11.0,Auto,Short,No holding,0.0,0.0,False,0,6100000,172,200000
+C-0109,RM-02,UHNI,Nikhil,54,Tier 1,UHNI,Promoter,Moderate,English,7,362,152700000,22.9,31.1,18.5,11.0,7.5,4.2,4.8,FMCG,Short,Unlisted Co. A,1.7,0.0,False,0,7300000,282,400000
+C-0110,RM-02,UHNI,Deepak,47,Tier 1,UHNI,Inherited,Moderate,English,3,156,162700000,27.7,34.1,15.1,20.2,0.0,0.0,2.9,BFSI,Short,No holding,0.0,17.8,False,0,12700000,146,100000
+C-0111,RM-02,UHNI,Rakesh,32,Tier 1,UHNI,Professional,Moderate,English,4,204,115800000,21.6,24.4,29.9,21.4,0.0,0.0,2.7,Diversified,Short,No holding,0.0,16.6,False,0,5800000,237,200000
+C-0112,RM-02,UHNI,Priya,36,Tier 1,UHNI,Business Owner,Moderate,English,12,72,190600000,25.3,23.2,19.4,10.2,18.2,2.3,1.4,Diversified,Long,Unlisted Co. E,0.0,0.0,False,0,14900000,326,1200000
+C-0113,RM-02,UHNI,Parth,60,Tier 1,HNI,Inherited,Conservative,English,13,142,97700000,6.6,32.1,47.1,7.1,0.0,0.0,7.1,BFSI,Short,No holding,0.0,0.0,False,0,3400000,372,700000
+C-0114,RM-02,UHNI,Rohan,41,Tier 2,UHNI,Promoter,Moderate,English,5,309,198500000,25.8,29.5,22.1,21.9,0.0,0.0,0.7,Diversified,Long,No holding,0.0,0.0,False,0,6500000,91,100000
+C-0115,RM-02,UHNI,Swati,42,Tier 1,UHNI,Promoter,Moderate,English,7,256,203200000,13.5,30.4,24.1,13.3,12.6,0.0,6.1,Diversified,Long,No holding,0.0,0.0,False,0,18300000,284,100000
+C-0116,RM-02,UHNI,Deepak,47,Tier 2,HNI,Professional,Aggressive,Marathi,18,85,30200000,16.4,26.8,25.2,30.9,0.0,0.0,0.7,FMCG,Short,No holding,5.4,0.0,False,0,2500000,384,100000
+C-0117,RM-02,UHNI,Naveen,38,Tier 2,UHNI,Promoter,Conservative,English,16,218,288700000,9.0,20.0,49.3,9.2,0.0,0.0,12.5,Diversified,Medium,No holding,0.0,0.0,False,0,24000000,271,100000
+C-0118,RM-03,HNI Senior,Varun,44,Tier 1,HNI,Professional,Aggressive,English,10,236,37800000,37.5,39.7,22.4,0.0,0.0,0.0,0.4,Infra,Medium,No holding,0.0,0.0,False,0,2300000,55,400000
+C-0119,RM-03,HNI Senior,Rakesh,61,Tier 1,HNI,Professional,Conservative,Hindi,11,3,88300000,15.1,24.8,35.9,14.7,0.0,0.9,8.6,Diversified,Long,Unlisted Co. A,0.0,0.0,False,0,6300000,215,100000
+C-0120,RM-03,HNI Senior,Jaya,55,Tier 1,UHNI,Professional,Moderate,English,15,158,118500000,17.9,15.3,41.3,6.9,15.7,0.0,2.9,IT,Short,No holding,0.0,0.0,False,0,9000000,365,900000
+C-0121,RM-03,HNI Senior,Rajesh,51,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,11,287,58400000,31.0,39.7,21.1,0.0,0.0,1.9,6.3,Diversified,Long,Unlisted Co. A,1.7,0.0,False,0,5000000,135,200000
+C-0122,RM-03,HNI Senior,Manish,45,Tier 1,UHNI,Inherited,Aggressive,Marathi,14,299,123200000,34.9,27.4,14.7,21.0,0.0,0.0,2.0,BFSI,Medium,No holding,0.0,0.0,False,0,9300000,366,2300000
+C-0123,RM-03,HNI Senior,Naveen,51,Tier 1,HNI,Business Owner,Aggressive,Marathi,14,98,20300000,27.9,36.2,34.9,0.0,0.0,0.0,1.0,Diversified,Medium,No holding,2.9,15.1,False,0,1100000,359,200000
+C-0124,RM-03,HNI Senior,Harsh,48,Tier 1,HNI,Salaried CXO,Moderate,English,17,329,58200000,20.2,20.0,42.7,12.1,0.0,0.0,5.0,Auto,Long,No holding,0.0,0.0,False,0,2700000,106,200000
+C-0125,RM-03,HNI Senior,Rajesh,42,Tier 2,HNI,Business Owner,Moderate,English,7,387,58700000,12.9,34.2,32.8,18.4,0.0,0.0,1.7,BFSI,Short,No holding,0.0,4.1,False,0,3500000,243,400000
+C-0126,RM-03,HNI Senior,Gaurav,49,Tier 1,HNI,Salaried CXO,Moderate,Hindi,13,203,40200000,21.2,35.0,39.9,0.0,0.0,0.0,3.9,IT,Medium,No holding,0.0,13.1,True,25000,2000000,315,0
+C-0127,RM-03,HNI Senior,Neha,50,Tier 1,UHNI,Professional,Moderate,Hindi,5,153,222600000,24.0,22.8,19.6,19.2,10.1,0.0,4.3,BFSI,Medium,No holding,0.0,0.0,False,0,19300000,210,1800000
+C-0128,RM-03,HNI Senior,Vikram,45,Tier 1,HNI,Salaried CXO,Moderate,Hindi,16,210,57900000,24.7,28.2,17.5,26.9,0.0,0.0,2.7,Diversified,Long,No holding,0.0,0.0,False,0,3500000,295,100000
+C-0129,RM-03,HNI Senior,Shreya,56,Tier 2,HNI,Salaried CXO,Conservative,English,18,11,47900000,6.8,42.2,42.4,0.0,0.0,0.0,8.6,Diversified,Long,No holding,0.0,0.0,False,0,2800000,383,300000
+C-0130,RM-03,HNI Senior,Mohit,60,Tier 2,HNI,Inherited,Moderate,English,6,209,60900000,29.5,34.1,20.9,10.4,0.0,3.0,2.1,FMCG,Medium,Unlisted Co. A,0.0,0.0,True,105000,3100000,265,200000
+C-0131,RM-03,HNI Senior,Vinod,57,Tier 2,HNI,Inherited,Aggressive,English,11,11,19900000,28.5,34.8,31.0,0.0,0.0,5.4,0.3,Pharma,Short,Unlisted Co. D,0.0,0.0,False,0,1400000,352,0
+C-0132,RM-03,HNI Senior,Aarav,46,Tier 1,HNI,Salaried CXO,Moderate,English,15,14,39500000,21.9,34.5,26.8,14.3,0.0,0.0,2.5,Diversified,Short,No holding,0.0,0.0,False,0,2400000,337,400000
+C-0133,RM-03,HNI Senior,Vinod,55,Tier 1,UHNI,Promoter,Aggressive,English,1,221,103000000,16.2,23.2,21.0,19.8,19.2,0.0,0.6,Pharma,Long,No holding,3.1,0.0,True,200000,3900000,342,0
+C-0134,RM-03,HNI Senior,Lakshmi,49,Tier 1,HNI,Salaried CXO,Moderate,Marathi,13,204,42500000,24.8,35.4,16.0,16.9,0.0,0.0,6.9,BFSI,Long,No holding,0.0,12.0,False,0,3500000,358,100000
+C-0135,RM-03,HNI Senior,Sunil,37,Tier 1,HNI,Inherited,Moderate,English,15,394,38000000,19.6,34.5,21.1,21.3,0.0,0.0,3.5,Diversified,Long,No holding,0.0,0.0,False,0,2000000,98,100000
+C-0136,RM-03,HNI Senior,Vikram,54,Tier 1,UHNI,Business Owner,Conservative,Hindi,16,203,123300000,2.9,34.1,54.3,0.0,0.0,0.0,8.7,IT,Short,No holding,0.0,17.2,False,0,6900000,12,100000
+C-0137,RM-03,HNI Senior,Rahul,49,Tier 1,UHNI,Business Owner,Moderate,Marathi,4,391,125400000,31.5,29.0,26.5,11.4,0.0,0.0,1.6,Diversified,Short,No holding,0.0,17.0,True,80000,5300000,68,500000
+C-0138,RM-03,HNI Senior,Rajesh,68,Tier 1,HNI,Salaried CXO,Moderate,English,14,323,79700000,16.2,38.5,23.8,17.9,0.0,0.0,3.6,Diversified,Medium,No holding,0.0,9.7,True,165000,5000000,108,300000
+C-0139,RM-03,HNI Senior,Shalini,61,Tier 1,HNI,Business Owner,Conservative,English,15,135,46700000,7.2,33.7,46.7,0.0,0.0,0.0,12.4,Infra,Medium,No holding,0.0,0.0,False,0,3400000,291,200000
+C-0140,RM-03,HNI Senior,Ishaan,54,Tier 1,HNI,Salaried CXO,Conservative,Hindi,1,370,52600000,4.9,25.1,58.3,0.0,0.0,0.0,11.7,Diversified,Short,No holding,0.0,0.0,True,65000,4400000,216,200000
+C-0141,RM-03,HNI Senior,Devika,50,Tier 1,HNI,Business Owner,Moderate,English,13,193,38600000,29.3,43.0,22.7,0.0,0.0,0.0,5.0,Auto,Medium,No holding,0.0,0.0,False,0,1300000,199,100000
+C-0142,RM-03,HNI Senior,Lakshmi,49,Tier 2,HNI,Professional,Moderate,English,12,238,34700000,16.9,25.5,25.0,29.0,0.0,0.0,3.6,Infra,Short,No holding,0.0,0.0,False,0,3100000,8,500000
+C-0143,RM-03,HNI Senior,Nikhil,39,Tier 1,HNI,Business Owner,Moderate,Gujarati,18,41,33800000,16.9,45.8,30.7,0.0,0.0,0.0,6.6,Auto,Medium,No holding,0.0,0.0,True,55000,2400000,288,0
+C-0144,RM-03,HNI Senior,Shalini,32,Tier 2,HNI,Business Owner,Conservative,Hindi,1,85,42700000,7.5,32.9,51.3,0.0,0.0,0.0,8.3,IT,Short,No holding,0.0,3.5,False,0,2000000,156,500000
+C-0145,RM-03,HNI Senior,Jaya,40,Tier 1,HNI,Promoter,Moderate,Gujarati,18,209,34000000,19.5,41.2,29.2,0.0,0.0,0.0,10.1,Auto,Short,No holding,0.0,0.0,False,0,1400000,320,0
+C-0146,RM-03,HNI Senior,Priya,48,Tier 2,HNI,Professional,Moderate,Marathi,11,109,25400000,30.3,31.6,34.5,0.0,0.0,0.0,3.6,BFSI,Short,No holding,2.7,0.0,False,0,1200000,51,0
+C-0147,RM-03,HNI Senior,Aarav,32,Tier 2,HNI,Promoter,Moderate,English,5,240,67700000,10.2,36.5,27.6,15.1,0.0,0.0,10.6,IT,Long,No holding,0.0,0.0,False,0,5600000,127,200000
+C-0148,RM-03,HNI Senior,Aditi,43,Tier 1,HNI,Salaried CXO,Moderate,Hindi,7,32,68300000,22.7,22.6,30.0,17.1,0.0,5.5,2.1,IT,Medium,Unlisted Co. B,0.0,9.4,False,0,3200000,27,100000
+C-0149,RM-03,HNI Senior,Vinod,46,Tier 2,UHNI,Business Owner,Conservative,Hindi,14,101,152900000,9.4,20.7,46.7,12.1,0.0,0.0,11.1,Auto,Long,No holding,0.0,15.7,True,360000,8800000,123,400000
+C-0150,RM-03,HNI Senior,Swati,46,Tier 1,HNI,Professional,Aggressive,Hindi,18,266,41500000,31.6,31.2,15.4,19.1,0.0,0.0,2.7,Diversified,Medium,No holding,5.8,0.0,True,95000,3000000,388,100000
+C-0151,RM-03,HNI Senior,Tanvi,42,Tier 1,HNI,Salaried CXO,Conservative,Hindi,6,245,70600000,11.7,37.1,42.5,0.0,0.0,0.0,8.7,IT,Short,No holding,0.0,4.4,False,0,5800000,208,400000
+C-0152,RM-03,HNI Senior,Kiran,45,Tier 2,HNI,Business Owner,Moderate,Hindi,18,393,71300000,22.6,17.3,22.4,24.8,0.0,5.4,7.5,Pharma,Short,Unlisted Co. A,2.0,0.0,False,0,5000000,187,100000
+C-0153,RM-03,HNI Senior,Parth,64,Tier 1,HNI,Inherited,Conservative,Marathi,12,359,52200000,9.6,39.6,44.2,0.0,0.0,0.0,6.6,BFSI,Medium,No holding,0.0,0.0,True,110000,3900000,118,100000
+C-0154,RM-03,HNI Senior,Rohan,54,Tier 1,HNI,Professional,Moderate,English,4,324,90400000,29.4,23.3,33.4,7.7,0.0,0.0,6.2,Auto,Short,No holding,0.0,3.0,True,190000,3700000,114,100000
+C-0155,RM-03,HNI Senior,Jaya,43,Tier 1,HNI,Professional,Moderate,Hindi,11,1,91900000,27.0,41.2,20.8,8.8,0.0,0.0,2.2,BFSI,Medium,No holding,0.0,8.6,False,0,7600000,281,1700000
+C-0156,RM-03,HNI Senior,Shalini,47,Tier 1,HNI,Salaried CXO,Aggressive,English,15,241,71800000,29.7,33.3,20.1,16.4,0.0,0.0,0.5,Diversified,Long,No holding,0.0,0.0,True,75000,3300000,413,100000
+C-0157,RM-03,HNI Senior,Rupal,48,Tier 1,HNI,Professional,Moderate,Hindi,1,92,52100000,18.8,32.8,28.7,11.0,0.0,0.0,8.7,IT,Long,No holding,0.0,0.0,False,0,2000000,314,100000
+C-0158,RM-03,HNI Senior,Mohit,41,Tier 1,HNI,Business Owner,Moderate,Gujarati,2,107,49300000,25.4,27.9,26.7,18.0,0.0,0.0,2.0,BFSI,Short,No holding,0.0,0.0,False,0,4400000,310,200000
+C-0159,RM-03,HNI Senior,Naveen,41,Tier 1,HNI,Promoter,Conservative,Gujarati,1,84,28300000,20.6,23.1,44.7,0.0,0.0,0.0,11.6,Diversified,Medium,No holding,5.6,0.0,False,0,1200000,200,100000
+C-0160,RM-03,HNI Senior,Kavita,57,Tier 1,HNI,Salaried CXO,Conservative,English,11,182,38500000,7.5,28.7,52.1,0.0,0.0,1.9,9.8,Diversified,Short,Unlisted Co. B,0.0,6.4,True,60000,1500000,45,0
+C-0161,RM-03,HNI Senior,Sneha,44,Tier 1,HNI,Business Owner,Moderate,English,2,50,42600000,14.5,44.3,41.0,0.0,0.0,0.0,0.2,Diversified,Short,No holding,0.0,0.0,True,35000,2900000,305,100000
+C-0162,RM-03,HNI Senior,Yash,38,Tier 1,HNI,Business Owner,Moderate,English,17,213,32300000,17.9,46.5,32.6,0.0,0.0,0.0,3.0,Pharma,Medium,No holding,0.0,0.0,False,0,1600000,340,100000
+C-0163,RM-03,HNI Senior,Yash,48,Tier 1,HNI,Professional,Moderate,English,3,67,76400000,15.6,41.4,26.5,14.6,0.0,0.0,1.9,Auto,Medium,No holding,0.0,4.1,False,0,2900000,216,0
+C-0164,RM-03,HNI Senior,Siddharth,49,Tier 1,UHNI,Promoter,Aggressive,English,2,200,115900000,30.3,26.5,21.8,16.0,0.0,5.2,0.2,IT,Medium,Unlisted Co. D,0.0,0.0,True,220000,7700000,42,400000
+C-0165,RM-03,HNI Senior,Lakshmi,32,Tier 1,HNI,Inherited,Moderate,Marathi,5,250,36400000,27.0,30.7,21.1,14.7,0.0,0.0,6.5,Diversified,Short,No holding,0.0,0.0,False,0,2700000,300,0
+C-0166,RM-03,HNI Senior,Siddharth,48,Tier 2,HNI,Professional,Aggressive,English,14,72,70100000,20.1,31.8,24.4,21.2,0.0,0.0,2.5,IT,Long,No holding,4.8,0.0,False,0,5400000,387,400000
+C-0167,RM-03,HNI Senior,Ishaan,56,Tier 2,HNI,Promoter,Moderate,Marathi,17,41,34000000,6.6,38.0,25.5,24.6,0.0,0.0,5.3,Auto,Long,No holding,0.0,0.0,True,65000,1300000,98,0
+C-0168,RM-03,HNI Senior,Varun,52,Tier 1,HNI,Professional,Aggressive,English,5,322,50700000,22.0,45.8,13.5,16.3,0.0,0.0,2.4,Pharma,Medium,No holding,0.0,0.0,False,0,3200000,71,100000
+C-0169,RM-03,HNI Senior,Jaya,68,Tier 1,HNI,Salaried CXO,Moderate,Hindi,10,295,41000000,20.7,26.6,34.7,16.8,0.0,0.0,1.2,Diversified,Long,No holding,0.0,6.4,True,90000,3200000,311,100000
+C-0170,RM-03,HNI Senior,Mohit,59,Tier 2,HNI,Professional,Moderate,Hindi,14,105,83500000,17.8,27.1,19.0,30.4,0.0,0.0,5.7,Diversified,Short,No holding,1.1,0.0,False,0,3300000,142,0
+C-0171,RM-03,HNI Senior,Arjun,61,Tier 2,HNI,Business Owner,Aggressive,Hindi,15,354,41300000,31.3,21.8,12.3,29.8,0.0,0.0,4.8,Auto,Medium,No holding,2.1,0.0,True,35000,1800000,301,400000
+C-0172,RM-03,HNI Senior,Ananya,68,Tier 1,UHNI,Business Owner,Moderate,Hindi,3,89,104700000,12.0,34.4,18.6,11.1,22.4,0.0,1.5,Auto,Long,No holding,4.5,0.0,False,0,3200000,296,300000
+C-0173,RM-03,HNI Senior,Meera,55,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,16,370,52400000,21.1,41.1,20.7,14.9,0.0,0.0,2.2,Diversified,Long,No holding,0.0,0.0,False,0,3200000,115,100000
+C-0174,RM-03,HNI Senior,Prakash,49,Tier 1,HNI,Business Owner,Moderate,Marathi,16,46,42000000,20.0,48.1,27.1,0.0,0.0,0.0,4.8,Auto,Long,No holding,0.0,0.0,False,0,1800000,22,300000
+C-0175,RM-03,HNI Senior,Aarav,57,Tier 1,HNI,Promoter,Conservative,Hindi,14,264,30100000,22.4,31.8,42.4,0.0,0.0,0.0,3.4,Diversified,Medium,No holding,2.7,4.8,False,0,2200000,235,100000
+C-0176,RM-03,HNI Senior,Swati,43,Tier 2,HNI,Promoter,Moderate,English,10,8,69000000,20.4,34.8,30.9,7.4,0.0,0.0,6.5,Diversified,Long,No holding,0.0,3.7,False,0,6100000,174,300000
+C-0177,RM-03,HNI Senior,Bhavna,49,Tier 1,HNI,Salaried CXO,Moderate,English,8,79,98200000,29.3,25.8,25.0,16.5,0.0,0.0,3.4,Pharma,Medium,No holding,0.0,13.5,False,0,4200000,359,300000
+C-0178,RM-03,HNI Senior,Yash,42,Tier 1,HNI,Professional,Aggressive,Hindi,17,162,69700000,32.8,29.5,21.7,13.9,0.0,0.0,2.1,IT,Short,No holding,0.0,13.0,False,0,4800000,153,200000
+C-0179,RM-03,HNI Senior,Kabir,52,Tier 1,UHNI,Salaried CXO,Aggressive,English,16,35,205600000,26.7,33.2,12.1,17.7,9.3,0.0,1.0,BFSI,Short,No holding,0.0,0.0,True,260000,8800000,108,900000
+C-0180,RM-03,HNI Senior,Meera,42,Tier 2,UHNI,Business Owner,Conservative,English,10,183,131700000,9.9,31.7,51.3,0.0,0.0,0.0,7.1,Auto,Medium,No holding,0.0,0.0,False,0,4100000,361,0
+C-0181,RM-03,HNI Senior,Deepak,42,Tier 1,HNI,Salaried CXO,Conservative,Hindi,14,93,50700000,4.5,26.9,61.1,0.0,0.0,0.0,7.5,Auto,Medium,No holding,0.0,0.0,True,35000,3800000,310,100000
+C-0182,RM-03,HNI Senior,Sunil,52,Tier 2,HNI,Business Owner,Conservative,English,8,40,50400000,13.4,15.6,47.7,14.1,0.0,0.0,9.2,Diversified,Medium,No holding,0.0,0.0,False,0,2800000,261,600000
+C-0183,RM-03,HNI Senior,Shalini,47,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,14,384,77700000,27.8,43.3,21.0,0.0,0.0,0.0,7.9,IT,Long,No holding,8.0,0.0,False,0,6700000,400,0
+C-0184,RM-03,HNI Senior,Ananya,32,Tier 1,HNI,Business Owner,Conservative,Hindi,2,392,37800000,10.9,20.5,48.1,0.0,0.0,0.0,20.5,Pharma,Medium,No holding,0.0,16.5,False,0,2300000,329,300000
+C-0185,RM-03,HNI Senior,Bhavna,35,Tier 1,UHNI,Business Owner,Moderate,Hindi,17,384,114000000,13.6,31.1,29.0,21.7,0.0,0.0,4.6,IT,Short,No holding,2.5,0.0,False,0,4500000,364,100000
+C-0186,RM-03,HNI Senior,Rajesh,38,Tier 1,HNI,Business Owner,Moderate,Hindi,10,62,73200000,17.2,29.3,29.2,7.0,0.0,0.0,17.3,FMCG,Short,No holding,0.0,0.0,False,0,4200000,336,600000
+C-0187,RM-03,HNI Senior,Tanvi,40,Tier 2,HNI,Inherited,Aggressive,Marathi,11,153,69100000,34.6,33.6,21.0,10.7,0.0,0.0,0.1,Infra,Medium,No holding,3.4,0.0,True,70000,2900000,171,0
+C-0188,RM-03,HNI Senior,Bhavna,52,Tier 1,HNI,Business Owner,Conservative,Hindi,4,131,87500000,5.0,33.7,42.7,11.5,0.0,0.0,7.1,Diversified,Medium,No holding,0.0,0.0,True,120000,7200000,30,200000
+C-0189,RM-03,HNI Senior,Harsh,50,Tier 1,UHNI,Salaried CXO,Moderate,Marathi,10,130,154800000,23.5,24.8,26.7,11.2,0.0,3.7,10.1,Diversified,Medium,Unlisted Co. C,0.0,3.7,False,0,11100000,256,600000
+C-0190,RM-03,HNI Senior,Prakash,58,Tier 1,HNI,Salaried CXO,Conservative,English,1,167,65900000,13.7,23.9,51.6,0.0,0.0,0.0,10.8,Auto,Medium,No holding,0.0,0.0,True,100000,3300000,322,1000000
+C-0191,RM-03,HNI Senior,Bhavna,55,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,17,204,56400000,24.4,35.9,15.9,23.7,0.0,0.0,0.1,FMCG,Medium,No holding,0.0,2.8,True,80000,3500000,416,100000
+C-0192,RM-03,HNI Senior,Kavita,58,Tier 1,UHNI,Salaried CXO,Conservative,Hindi,14,194,137600000,3.2,33.9,42.3,14.6,0.0,0.0,6.0,Diversified,Medium,No holding,6.8,0.0,False,0,9700000,287,800000
+C-0193,RM-03,HNI Senior,Aarav,53,Tier 2,UHNI,Business Owner,Conservative,English,9,117,102200000,6.2,22.3,59.5,0.0,0.0,0.0,12.0,Diversified,Long,No holding,0.0,18.8,False,0,7900000,240,200000
+C-0194,RM-03,HNI Senior,Pallavi,50,Tier 1,HNI,Professional,Conservative,English,16,391,50300000,5.7,32.1,54.3,0.0,0.0,0.0,7.9,Pharma,Short,No holding,5.7,14.4,False,0,1800000,243,300000
+C-0195,RM-03,HNI Senior,Sanjay,58,Tier 1,HNI,Professional,Aggressive,Hindi,15,391,60200000,28.0,27.2,21.2,21.7,0.0,0.0,1.9,Diversified,Medium,No holding,0.0,12.1,False,0,1900000,52,300000
+C-0196,RM-03,HNI Senior,Mohit,56,Tier 1,HNI,Professional,Conservative,English,3,133,66800000,6.3,34.2,51.2,0.0,0.0,0.0,8.3,Diversified,Medium,No holding,0.0,0.0,False,0,2500000,8,0
+C-0197,RM-03,HNI Senior,Jaya,51,Tier 1,HNI,Professional,Moderate,Marathi,1,89,73200000,28.2,36.5,15.3,16.6,0.0,0.0,3.4,Auto,Short,No holding,3.6,0.0,True,140000,3900000,23,200000
+C-0198,RM-03,HNI Senior,Naveen,59,Tier 1,HNI,Salaried CXO,Moderate,English,5,213,28500000,10.1,54.8,28.2,0.0,0.0,0.0,6.9,Pharma,Medium,No holding,0.0,0.0,False,0,1700000,380,0
+C-0199,RM-03,HNI Senior,Parth,32,Tier 1,HNI,Salaried CXO,Aggressive,English,1,148,25700000,25.6,43.7,27.8,0.0,0.0,0.0,2.9,Auto,Medium,No holding,4.4,0.0,False,0,1000000,332,0
+C-0200,RM-03,HNI Senior,Deepak,45,Tier 1,HNI,Business Owner,Conservative,Hindi,11,394,36800000,4.1,29.0,52.8,0.0,0.0,0.0,14.1,Infra,Medium,No holding,1.8,12.8,False,0,2000000,112,100000
+C-0201,RM-03,HNI Senior,Bhavna,45,Tier 2,HNI,Salaried CXO,Conservative,English,10,172,35300000,7.8,23.8,55.5,0.0,0.0,0.5,12.4,BFSI,Long,Unlisted Co. B,0.0,0.0,False,0,2000000,180,0
+C-0202,RM-03,HNI Senior,Devika,58,Tier 2,HNI,Business Owner,Moderate,English,10,16,42100000,13.3,36.7,27.9,15.8,0.0,0.0,6.3,Auto,Short,No holding,0.0,8.2,False,0,1500000,205,500000
+C-0203,RM-03,HNI Senior,Yash,62,Tier 2,HNI,Salaried CXO,Conservative,Hindi,2,50,85100000,4.9,27.9,51.7,6.2,0.0,0.0,9.3,Diversified,Short,No holding,0.0,14.6,True,150000,7200000,107,200000
+C-0204,RM-03,HNI Senior,Sanjay,35,Tier 1,HNI,Professional,Moderate,English,17,30,54700000,18.8,35.2,14.0,18.2,0.0,0.0,13.8,Diversified,Short,No holding,0.0,0.0,False,0,3600000,180,200000
+C-0205,RM-03,HNI Senior,Chirag,61,Tier 1,HNI,Business Owner,Moderate,English,18,153,66800000,19.7,31.9,25.8,18.4,0.0,0.0,4.2,Auto,Short,No holding,0.0,9.6,True,130000,3600000,149,200000
+C-0206,RM-04,HNI,Bhavna,47,Tier 2,HNI,Business Owner,Moderate,Gujarati,9,352,15700000,21.8,40.2,36.5,0.0,0.0,0.0,1.5,Infra,Short,No holding,0.0,0.0,False,0,800000,302,0
+C-0207,RM-04,HNI,Parth,35,Tier 1,HNI,Salaried CXO,Aggressive,English,7,46,35200000,32.0,27.4,16.7,18.5,0.0,5.2,0.2,Infra,Short,Unlisted Co. A,0.0,0.0,False,0,2900000,21,200000
+C-0208,RM-04,HNI,Sneha,47,Tier 1,HNI,Salaried CXO,Aggressive,English,18,57,61900000,23.1,25.8,20.2,23.4,0.0,3.6,3.9,IT,Short,Unlisted Co. A,0.0,0.0,False,0,4900000,46,100000
+C-0209,RM-04,HNI,Prakash,59,Tier 1,HNI,Professional,Moderate,English,10,204,32500000,16.8,31.5,45.3,0.0,0.0,0.0,6.4,IT,Short,No holding,0.0,0.0,False,0,2800000,44,0
+C-0210,RM-04,HNI,Rupal,37,Tier 2,HNI,Salaried CXO,Moderate,Hindi,5,234,35300000,15.3,35.0,28.3,16.7,0.0,0.0,4.7,Infra,Long,No holding,0.0,0.0,False,0,2200000,69,100000
+C-0211,RM-04,HNI,Uday,46,Tier 2,HNI,Professional,Conservative,Marathi,15,19,43700000,4.7,32.0,54.3,0.0,0.0,0.0,9.0,Auto,Medium,No holding,0.0,0.0,True,95000,2500000,408,0
+C-0212,RM-04,HNI,Sunil,45,Tier 2,HNI,Salaried CXO,Moderate,Hindi,13,151,37300000,15.1,41.2,24.2,13.6,0.0,0.0,5.9,IT,Medium,No holding,0.0,0.0,True,20000,2000000,307,500000
+C-0213,RM-04,HNI,Sanjay,42,Tier 2,HNI,Professional,Conservative,English,4,90,22700000,14.4,26.9,43.5,0.0,0.0,0.0,15.2,Pharma,Medium,No holding,6.5,0.0,False,0,700000,280,0
+C-0214,RM-04,HNI,Deepak,50,Tier 1,HNI,Professional,Moderate,Hindi,13,121,39200000,25.4,31.2,20.5,19.7,0.0,0.0,3.2,Diversified,Medium,No holding,0.0,0.0,True,95000,3300000,295,100000
+C-0215,RM-04,HNI,Devika,52,Tier 1,HNI,Professional,Moderate,English,12,73,69100000,12.9,33.0,30.9,16.1,0.0,0.0,7.1,FMCG,Short,No holding,0.0,6.5,True,100000,4100000,18,200000
+C-0216,RM-04,HNI,Pallavi,52,Tier 1,HNI,Inherited,Moderate,Gujarati,5,271,22400000,23.4,47.6,27.2,0.0,0.0,0.0,1.8,Diversified,Short,No holding,0.0,0.0,False,0,1300000,93,0
+C-0217,RM-04,HNI,Ramesh,39,Tier 2,HNI,Salaried CXO,Moderate,English,8,189,32600000,9.1,48.0,38.9,0.0,0.0,0.0,4.0,BFSI,Short,No holding,0.0,0.0,False,0,2000000,334,300000
+C-0218,RM-04,HNI,Rohan,33,Tier 1,HNI,Business Owner,Moderate,English,16,383,18700000,15.5,35.3,43.1,0.0,0.0,0.0,6.1,Auto,Medium,No holding,4.3,0.0,True,40000,1500000,197,0
+C-0219,RM-04,HNI,Siddharth,50,Tier 1,HNI,Professional,Conservative,English,4,4,67100000,12.3,34.1,44.4,0.0,0.0,0.0,9.2,Diversified,Medium,No holding,0.0,0.0,False,0,2900000,216,100000
+C-0220,RM-04,HNI,Arjun,43,Tier 2,HNI,Business Owner,Conservative,English,14,311,38000000,10.2,32.8,50.0,0.0,0.0,0.0,7.0,Diversified,Short,No holding,0.0,8.5,False,0,2800000,316,100000
+C-0221,RM-04,HNI,Devika,65,Tier 2,HNI,Business Owner,Aggressive,English,15,363,25100000,31.8,41.9,25.5,0.0,0.0,0.0,0.8,BFSI,Medium,No holding,0.0,0.0,False,0,1800000,36,100000
+C-0222,RM-04,HNI,Deepak,65,Tier 2,HNI,Professional,Aggressive,Hindi,17,194,42100000,30.7,33.6,17.0,16.7,0.0,0.0,2.0,BFSI,Long,No holding,5.5,0.0,False,0,3400000,336,200000
+C-0223,RM-04,HNI,Pooja,66,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,6,280,20600000,11.8,43.2,43.7,0.0,0.0,0.0,1.3,FMCG,Short,No holding,0.0,0.0,False,0,600000,287,0
+C-0224,RM-04,HNI,Rakesh,40,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,5,176,22700000,15.2,34.1,39.3,0.0,0.0,0.0,11.4,Auto,Medium,No holding,0.0,0.0,True,30000,900000,172,100000
+C-0225,RM-04,HNI,Bhavna,53,Tier 1,HNI,Promoter,Moderate,English,17,238,17900000,13.7,40.9,39.4,0.0,0.0,0.0,6.0,BFSI,Medium,No holding,0.0,0.0,False,0,1000000,212,0
+C-0226,RM-04,HNI,Tanvi,56,Tier 1,HNI,Business Owner,Moderate,English,9,363,22200000,27.4,44.4,25.6,0.0,0.0,0.0,2.6,FMCG,Medium,No holding,0.0,0.0,False,0,1800000,35,0
+C-0227,RM-04,HNI,Kavita,55,Tier 1,HNI,Business Owner,Moderate,English,11,212,84400000,17.8,33.0,29.8,14.8,0.0,0.0,4.6,Infra,Medium,No holding,0.0,0.0,False,0,7400000,90,100000
+C-0228,RM-04,HNI,Ramesh,45,Tier 1,HNI,Business Owner,Conservative,English,10,231,26700000,12.0,23.2,55.9,0.0,0.0,0.0,8.9,Auto,Medium,No holding,0.0,12.3,False,0,1800000,107,100000
+C-0229,RM-04,HNI,Shreya,60,Tier 2,HNI,Business Owner,Moderate,English,10,394,51700000,17.1,44.1,20.0,12.8,0.0,0.0,6.0,Diversified,Short,No holding,0.0,11.2,False,0,2200000,369,100000
+C-0230,RM-04,HNI,Aditi,48,Tier 1,HNI,Professional,Conservative,Marathi,12,199,25300000,3.8,29.0,58.3,0.0,0.0,0.0,8.9,IT,Medium,No holding,3.4,0.0,True,20000,1000000,51,400000
+C-0231,RM-04,HNI,Tanvi,49,Tier 1,HNI,Professional,Moderate,Marathi,8,70,60700000,26.8,30.5,20.7,20.4,0.0,0.0,1.6,Diversified,Long,No holding,6.4,16.7,False,0,4100000,125,500000
+C-0232,RM-04,HNI,Vinod,34,Tier 2,HNI,Salaried CXO,Conservative,English,8,273,22700000,4.7,37.5,53.2,0.0,0.0,0.0,4.6,Diversified,Short,No holding,1.7,0.0,False,0,1000000,59,0
+C-0233,RM-04,HNI,Vinod,54,Tier 1,HNI,Business Owner,Moderate,Gujarati,8,277,40900000,16.9,41.6,33.5,0.0,0.0,0.0,8.0,Infra,Long,No holding,0.0,0.0,True,60000,2600000,123,0
+C-0234,RM-04,HNI,Chirag,46,Tier 1,HNI,Salaried CXO,Moderate,Hindi,12,95,41200000,22.9,27.9,30.2,15.0,0.0,0.0,4.0,Diversified,Short,No holding,0.0,13.5,False,0,3300000,9,0
+C-0235,RM-04,HNI,Meera,52,Tier 1,UHNI,Business Owner,Conservative,English,15,291,143900000,8.1,33.9,45.3,5.7,0.0,0.0,7.0,IT,Medium,No holding,0.0,0.0,False,0,7700000,118,200000
+C-0236,RM-04,HNI,Ishaan,50,Tier 1,HNI,Professional,Moderate,Hindi,10,26,56600000,14.4,35.6,27.6,15.5,0.0,0.0,6.9,Infra,Medium,No holding,0.0,0.0,False,0,3000000,305,200000
+C-0237,RM-04,HNI,Neha,50,Tier 2,HNI,Professional,Moderate,English,13,128,28900000,23.4,35.7,36.8,0.0,0.0,0.0,4.1,Diversified,Medium,No holding,4.3,0.0,True,60000,900000,323,100000
+C-0238,RM-04,HNI,Vinod,48,Tier 1,HNI,Business Owner,Aggressive,English,8,342,58300000,25.7,29.6,14.6,29.0,0.0,0.0,1.1,BFSI,Long,No holding,0.0,0.0,False,0,2600000,162,100000
+C-0239,RM-04,HNI,Shreya,55,Tier 1,UHNI,Inherited,Aggressive,Marathi,14,247,129700000,29.0,27.5,22.3,17.6,0.0,0.0,3.6,Infra,Short,No holding,0.0,17.4,True,235000,9300000,298,1300000
+C-0240,RM-04,HNI,Siddharth,46,Tier 2,HNI,Professional,Conservative,Hindi,8,243,16300000,9.8,29.9,51.7,0.0,0.0,0.0,8.6,Auto,Medium,No holding,0.0,0.0,False,0,800000,261,100000
+C-0241,RM-04,HNI,Naveen,35,Tier 1,HNI,Salaried CXO,Aggressive,English,8,248,25200000,34.8,38.4,26.2,0.0,0.0,0.0,0.6,Diversified,Medium,No holding,0.0,0.0,True,55000,1000000,379,200000
+C-0242,RM-04,HNI,Vidya,53,Tier 2,HNI,Professional,Moderate,English,1,66,35100000,14.8,37.4,45.8,0.0,0.0,0.0,2.0,FMCG,Long,No holding,5.2,0.0,False,0,1300000,338,0
+C-0243,RM-04,HNI,Vidya,41,Tier 1,HNI,Professional,Moderate,Marathi,5,384,31800000,20.4,43.3,32.6,0.0,0.0,0.0,3.7,Auto,Medium,No holding,0.0,0.0,False,0,1100000,100,0
+C-0244,RM-04,HNI,Sneha,36,Tier 2,HNI,Business Owner,Moderate,English,14,119,33300000,27.1,32.3,15.8,15.9,0.0,3.7,5.2,Infra,Long,Unlisted Co. A,0.0,0.0,False,0,2300000,249,200000
+C-0245,RM-04,HNI,Sunil,39,Tier 1,HNI,Business Owner,Moderate,Marathi,2,314,19500000,21.4,41.2,36.8,0.0,0.0,0.0,0.6,BFSI,Long,No holding,0.0,0.0,False,0,1300000,331,0
+C-0246,RM-04,HNI,Ramesh,51,Tier 1,HNI,Professional,Conservative,Gujarati,5,395,86600000,4.9,29.7,51.0,7.1,0.0,0.0,7.3,Infra,Short,No holding,0.0,0.0,True,45000,5300000,131,400000
+C-0247,RM-04,HNI,Arjun,47,Tier 2,HNI,Inherited,Aggressive,English,14,97,18300000,31.5,34.1,34.1,0.0,0.0,0.0,0.3,Pharma,Long,No holding,0.0,12.8,False,0,1100000,242,0
+C-0248,RM-04,HNI,Kabir,32,Tier 2,HNI,Salaried CXO,Moderate,Hindi,16,254,35800000,19.4,52.4,24.3,0.0,0.0,0.0,3.9,BFSI,Long,No holding,6.8,0.0,False,0,1400000,171,100000
+C-0249,RM-04,HNI,Shreya,45,Tier 1,HNI,Salaried CXO,Moderate,Hindi,8,17,71100000,20.8,32.0,29.1,15.5,0.0,0.0,2.6,FMCG,Short,No holding,0.0,0.0,False,0,4300000,133,0
+C-0250,RM-04,HNI,Kiran,59,Tier 1,HNI,Professional,Moderate,Gujarati,8,254,39300000,14.4,36.4,43.7,0.0,0.0,0.0,5.5,Auto,Medium,No holding,0.0,0.0,True,60000,1300000,87,100000
+C-0251,RM-04,HNI,Devika,44,Tier 1,HNI,Salaried CXO,Conservative,English,10,176,23300000,2.4,35.1,57.5,0.0,0.0,0.0,5.0,IT,Short,No holding,0.0,0.0,False,0,2000000,19,0
+C-0252,RM-04,HNI,Vikram,47,Tier 2,HNI,Business Owner,Conservative,English,14,29,19100000,7.5,32.5,55.1,0.0,0.0,0.0,4.9,Pharma,Medium,No holding,3.2,0.0,False,0,600000,316,100000
+C-0253,RM-04,HNI,Pallavi,57,Tier 2,HNI,Salaried CXO,Moderate,English,9,269,35200000,22.9,29.7,23.4,17.4,0.0,0.0,6.6,IT,Short,No holding,0.0,0.0,False,0,2000000,344,0
+C-0254,RM-04,HNI,Tanvi,55,Tier 1,HNI,Inherited,Moderate,Hindi,4,387,26400000,23.1,37.0,37.8,0.0,0.0,0.0,2.1,Pharma,Medium,No holding,0.0,0.0,False,0,800000,275,100000
+C-0255,RM-04,HNI,Kabir,57,Tier 1,HNI,Inherited,Aggressive,Gujarati,8,34,44800000,24.8,26.2,13.8,28.4,0.0,0.0,6.8,Auto,Short,No holding,0.0,0.0,True,90000,3500000,105,100000
+C-0256,RM-04,HNI,Manish,32,Tier 1,HNI,Inherited,Moderate,Gujarati,5,357,18500000,21.0,38.3,31.3,0.0,0.0,0.0,9.4,Diversified,Medium,No holding,0.0,3.9,False,0,700000,12,100000
+C-0257,RM-04,HNI,Lakshmi,64,Tier 2,HNI,Business Owner,Moderate,Hindi,13,337,62600000,20.8,33.8,20.0,17.7,0.0,0.0,7.7,Diversified,Short,No holding,0.0,0.0,False,0,5400000,267,600000
+C-0258,RM-04,HNI,Manish,54,Tier 1,HNI,Salaried CXO,Aggressive,English,3,219,42600000,34.2,33.9,18.4,12.1,0.0,0.0,1.4,BFSI,Medium,No holding,0.0,0.0,False,0,1400000,87,200000
+C-0259,RM-04,HNI,Neha,68,Tier 1,HNI,Professional,Conservative,English,11,360,44400000,19.4,31.4,34.6,0.0,0.0,0.0,14.6,FMCG,Medium,No holding,0.0,0.0,False,0,3500000,232,300000
+C-0260,RM-04,HNI,Kavita,41,Tier 2,HNI,Business Owner,Moderate,Gujarati,3,124,88400000,31.5,16.5,19.1,15.8,13.5,0.0,3.6,BFSI,Medium,No holding,6.8,0.0,True,160000,6100000,407,1200000
+C-0261,RM-04,HNI,Sunil,32,Tier 1,HNI,Business Owner,Moderate,English,18,288,31400000,21.0,37.9,34.4,0.0,0.0,0.0,6.7,Auto,Short,No holding,0.0,0.0,False,0,1400000,6,0
+C-0262,RM-04,HNI,Kiran,48,Tier 1,HNI,Professional,Conservative,Gujarati,12,279,26800000,11.5,26.8,55.3,0.0,0.0,0.0,6.4,BFSI,Short,No holding,0.0,0.0,True,20000,1100000,244,300000
+C-0263,RM-04,HNI,Neha,46,Tier 1,HNI,Professional,Conservative,English,3,232,29600000,6.0,27.7,54.9,0.0,0.0,0.0,11.4,Diversified,Medium,No holding,0.0,14.2,False,0,1500000,417,300000
+C-0264,RM-04,HNI,Tanvi,54,Tier 1,HNI,Professional,Conservative,English,18,333,36000000,5.7,14.5,59.0,0.0,0.0,0.0,20.8,Auto,Long,No holding,0.0,4.5,False,0,2900000,143,100000
+C-0265,RM-04,HNI,Naveen,58,Tier 2,HNI,Business Owner,Conservative,Marathi,11,350,38000000,4.5,17.4,48.7,21.3,0.0,0.0,8.1,IT,Short,No holding,0.0,3.0,False,0,3100000,342,300000
+C-0266,RM-04,HNI,Aarav,47,Tier 1,HNI,Salaried CXO,Moderate,English,11,314,25300000,19.8,40.2,31.3,0.0,0.0,0.0,8.7,BFSI,Medium,No holding,0.0,0.0,False,0,1000000,348,0
+C-0267,RM-04,HNI,Aarav,46,Tier 1,HNI,Business Owner,Conservative,English,2,235,13100000,19.7,36.2,38.8,0.0,0.0,0.0,5.3,Diversified,Short,No holding,0.0,0.0,False,0,700000,206,0
+C-0268,RM-04,HNI,Naveen,53,Tier 1,HNI,Business Owner,Moderate,Hindi,4,390,29400000,12.4,41.0,40.7,0.0,0.0,3.5,2.4,Diversified,Medium,Unlisted Co. E,0.0,0.0,True,20000,1300000,132,100000
+C-0269,RM-04,HNI,Ramesh,46,Tier 2,HNI,Salaried CXO,Conservative,Hindi,15,222,48800000,13.3,32.9,46.2,0.0,0.0,0.0,7.6,Diversified,Short,No holding,0.0,6.4,False,0,1800000,287,800000
+C-0270,RM-04,HNI,Vikram,45,Tier 1,HNI,Salaried CXO,Conservative,Marathi,9,255,43100000,9.3,21.4,62.6,0.0,0.0,0.4,6.3,BFSI,Medium,Unlisted Co. A,0.0,0.0,False,0,3000000,262,100000
+C-0271,RM-04,HNI,Chirag,57,Tier 1,HNI,Promoter,Moderate,Marathi,12,76,77400000,13.9,38.7,24.4,9.9,0.0,0.0,13.1,IT,Short,No holding,0.0,3.4,False,0,3900000,202,200000
+C-0272,RM-04,HNI,Prakash,59,Tier 1,UHNI,Salaried CXO,Conservative,Hindi,18,129,117300000,7.3,18.8,49.3,11.9,0.0,0.0,12.7,BFSI,Short,No holding,0.0,0.0,False,0,5100000,84,100000
+C-0273,RM-04,HNI,Kabir,58,Tier 1,HNI,Business Owner,Aggressive,English,8,361,60700000,30.3,20.3,10.1,30.9,0.0,0.9,7.5,Diversified,Short,Unlisted Co. A,0.0,4.2,True,50000,5000000,314,200000
+C-0274,RM-04,HNI,Neha,46,Tier 2,HNI,Business Owner,Moderate,English,7,199,85600000,25.2,33.6,26.8,11.5,0.0,0.0,2.9,Diversified,Short,No holding,0.0,13.8,False,0,6400000,92,600000
+C-0275,RM-04,HNI,Neha,32,Tier 2,HNI,Professional,Conservative,Marathi,15,204,61000000,9.3,32.4,46.1,8.3,0.0,0.0,3.9,BFSI,Medium,No holding,0.0,0.0,False,0,4700000,60,300000
+C-0276,RM-04,HNI,Kavita,47,Tier 2,UHNI,Business Owner,Conservative,English,2,326,102400000,18.8,23.1,45.9,0.0,0.0,0.0,12.2,FMCG,Long,No holding,0.0,0.0,False,0,3300000,32,0
+C-0277,RM-04,HNI,Aarav,41,Tier 1,UHNI,Business Owner,Moderate,Marathi,9,131,110700000,19.4,33.4,27.6,16.0,0.0,0.0,3.6,BFSI,Medium,No holding,0.0,2.9,False,0,9400000,190,0
+C-0278,RM-04,HNI,Ananya,47,Tier 1,HNI,Salaried CXO,Moderate,Hindi,16,106,67500000,28.3,22.0,24.5,18.4,0.0,0.0,6.8,Diversified,Long,No holding,0.0,0.0,False,0,4400000,54,300000
+C-0279,RM-04,HNI,Pooja,42,Tier 2,HNI,Business Owner,Aggressive,English,5,4,59000000,30.4,30.1,22.7,13.6,0.0,0.0,3.2,IT,Medium,No holding,5.9,4.6,True,55000,3600000,144,200000
+C-0280,RM-04,HNI,Harsh,48,Tier 1,HNI,Professional,Moderate,English,6,93,35700000,16.6,35.4,41.2,0.0,0.0,0.0,6.8,FMCG,Short,No holding,0.0,14.3,False,0,1100000,105,100000
+C-0281,RM-04,HNI,Kiran,39,Tier 2,HNI,Salaried CXO,Moderate,Hindi,9,205,39100000,13.2,33.0,31.4,18.3,0.0,0.0,4.1,Pharma,Short,No holding,0.0,4.2,True,35000,3300000,195,0
+C-0282,RM-04,HNI,Arjun,36,Tier 1,HNI,Business Owner,Moderate,English,2,290,33200000,20.4,26.6,18.5,31.9,0.0,0.0,2.6,Auto,Short,No holding,6.4,0.0,True,75000,2100000,327,0
+C-0283,RM-04,HNI,Akash,59,Tier 1,HNI,Professional,Aggressive,English,2,132,56300000,26.4,39.5,16.0,17.1,0.0,0.0,1.0,FMCG,Short,No holding,0.0,0.0,True,55000,4500000,191,300000
+C-0284,RM-04,HNI,Chirag,39,Tier 1,HNI,Salaried CXO,Moderate,Hindi,5,178,26900000,26.5,40.4,31.7,0.0,0.0,0.0,1.4,Infra,Long,No holding,0.0,0.0,False,0,1900000,236,100000
+C-0285,RM-04,HNI,Meera,48,Tier 1,HNI,Professional,Conservative,English,17,89,36000000,9.8,25.3,54.0,0.0,0.0,0.0,10.9,FMCG,Medium,No holding,0.0,0.0,False,0,2800000,64,200000
+C-0286,RM-04,HNI,Deepak,57,Tier 1,HNI,Business Owner,Moderate,English,4,326,11000000,14.4,35.1,42.9,0.0,0.0,0.0,7.6,Diversified,Medium,No holding,0.0,0.0,True,5000,800000,51,100000
+C-0287,RM-04,HNI,Ishaan,56,Tier 1,UHNI,Professional,Aggressive,Hindi,14,210,103200000,24.1,38.0,19.7,17.5,0.0,0.0,0.7,Auto,Medium,No holding,0.0,0.0,True,90000,8800000,410,300000
+C-0288,RM-04,HNI,Kavita,55,Tier 1,HNI,Business Owner,Moderate,Gujarati,8,58,35400000,22.2,41.3,33.6,0.0,0.0,0.0,2.9,Auto,Short,No holding,2.5,0.0,False,0,1500000,262,100000
+C-0289,RM-04,HNI,Kabir,51,Tier 1,HNI,Salaried CXO,Aggressive,English,14,244,51400000,28.5,40.3,20.0,10.3,0.0,0.0,0.9,FMCG,Medium,No holding,0.0,0.0,True,30000,2200000,11,0
+C-0290,RM-04,HNI,Aarav,55,Tier 2,HNI,Business Owner,Aggressive,Marathi,6,134,89200000,20.0,28.4,29.8,20.5,0.0,0.0,1.3,BFSI,Short,No holding,0.0,0.0,False,0,6500000,239,200000
+C-0291,RM-04,HNI,Bhavna,60,Tier 1,HNI,Promoter,Conservative,Marathi,16,346,47200000,8.5,35.2,42.6,0.0,0.0,0.0,13.7,Pharma,Short,No holding,0.0,0.0,True,30000,2800000,9,100000
+C-0292,RM-04,HNI,Vikram,52,Tier 2,HNI,Business Owner,Aggressive,English,7,107,88500000,28.7,25.2,21.8,22.7,0.0,0.0,1.6,Diversified,Short,No holding,0.0,0.0,False,0,5800000,37,100000
+C-0293,RM-04,HNI,Rohan,32,Tier 1,HNI,Inherited,Moderate,English,15,346,20200000,13.0,52.9,31.1,0.0,0.0,0.0,3.0,IT,Short,No holding,4.3,0.0,False,0,1500000,159,200000
+C-0294,RM-04,HNI,Bhavna,43,Tier 1,UHNI,Inherited,Moderate,Gujarati,15,279,149500000,14.0,22.5,23.2,24.6,12.6,0.0,3.1,BFSI,Medium,No holding,0.0,0.0,False,0,9400000,277,700000
+C-0295,RM-04,HNI,Kabir,54,Tier 1,HNI,Salaried CXO,Moderate,English,8,55,72700000,29.3,28.2,20.2,19.2,0.0,0.0,3.1,IT,Short,No holding,4.4,0.0,False,0,5600000,262,0
+C-0296,RM-04,HNI,Meera,42,Tier 2,HNI,Salaried CXO,Aggressive,Gujarati,13,303,44900000,22.4,20.5,33.2,21.5,0.0,0.0,2.4,Infra,Short,No holding,0.0,0.0,True,90000,2200000,333,500000
+C-0297,RM-04,HNI,Varun,63,Tier 1,HNI,Salaried CXO,Moderate,Hindi,3,288,87600000,15.5,25.6,23.2,22.8,0.0,0.0,12.9,BFSI,Long,No holding,0.0,0.0,True,85000,7100000,79,300000
+C-0298,RM-04,HNI,Uday,47,Tier 2,HNI,Promoter,Moderate,English,9,182,21000000,17.9,27.6,29.0,24.0,0.0,0.0,1.5,Diversified,Long,No holding,0.0,0.0,True,45000,800000,84,0
+C-0299,RM-04,HNI,Shreya,49,Tier 1,HNI,Professional,Conservative,Hindi,7,65,34100000,6.9,31.1,53.2,0.0,0.0,0.0,8.8,BFSI,Medium,No holding,0.0,0.0,True,65000,2300000,226,400000
+C-0300,RM-04,HNI,Bhavna,58,Tier 2,HNI,Salaried CXO,Moderate,English,18,191,88500000,22.8,36.3,20.8,15.6,0.0,0.0,4.5,Infra,Medium,No holding,0.0,0.0,False,0,7400000,365,200000
+C-0301,RM-04,HNI,Pallavi,46,Tier 2,HNI,Business Owner,Aggressive,Marathi,17,243,14300000,27.2,45.4,26.8,0.0,0.0,0.0,0.6,Infra,Medium,No holding,2.7,0.0,True,20000,600000,304,100000
+C-0302,RM-04,HNI,Pallavi,50,Tier 2,HNI,Inherited,Moderate,English,15,53,54400000,20.8,32.6,16.4,20.5,0.0,8.6,1.1,Pharma,Short,Unlisted Co. A,0.0,11.7,False,0,2700000,282,200000
+C-0303,RM-04,HNI,Rakesh,56,Tier 1,HNI,Business Owner,Conservative,Marathi,18,137,53600000,17.0,18.1,47.8,12.1,0.0,0.0,5.0,Diversified,Medium,No holding,5.4,11.5,True,60000,2600000,44,100000
+C-0304,RM-04,HNI,Swati,35,Tier 2,UHNI,Business Owner,Aggressive,English,18,281,118100000,32.5,17.6,11.1,19.5,10.4,5.9,3.0,Pharma,Short,Unlisted Co. A,0.0,5.5,False,0,7500000,369,600000
+C-0305,RM-04,HNI,Kiran,45,Tier 1,HNI,Business Owner,Aggressive,Gujarati,14,221,16700000,22.3,48.1,29.3,0.0,0.0,0.0,0.3,Infra,Short,No holding,0.0,14.4,False,0,900000,413,0
+C-0306,RM-04,HNI,Prakash,55,Tier 2,HNI,Salaried CXO,Moderate,Marathi,11,396,96900000,20.7,25.1,30.2,22.5,0.0,0.0,1.5,Diversified,Long,No holding,0.0,0.0,False,0,3500000,246,200000
+C-0307,RM-04,HNI,Jaya,49,Tier 1,HNI,Inherited,Conservative,English,4,87,29400000,9.3,34.0,45.4,0.0,0.0,0.0,11.3,BFSI,Medium,No holding,6.2,5.3,False,0,2500000,144,100000
+C-0308,RM-04,HNI,Harsh,61,Tier 1,HNI,Professional,Moderate,English,15,311,31300000,15.0,38.1,42.0,0.0,0.0,0.0,4.9,BFSI,Long,No holding,0.0,0.0,False,0,1300000,279,100000
+C-0309,RM-04,HNI,Kiran,34,Tier 1,HNI,Business Owner,Conservative,Gujarati,4,170,20400000,8.6,29.0,56.0,0.0,0.0,0.0,6.4,BFSI,Medium,No holding,0.0,0.0,False,0,1300000,271,100000
+C-0310,RM-04,HNI,Shalini,33,Tier 2,HNI,Salaried CXO,Moderate,Gujarati,4,90,22000000,18.7,40.9,29.1,0.0,0.0,3.6,7.7,Diversified,Medium,Unlisted Co. D,0.0,0.0,False,0,1400000,390,100000
+C-0311,RM-05,HNI,Sneha,56,Tier 2,HNI,Inherited,Moderate,Gujarati,5,309,93900000,24.9,28.2,24.1,11.4,10.7,0.0,0.7,Diversified,Medium,No holding,0.0,0.0,False,0,3500000,331,0
+C-0312,RM-05,HNI,Meera,48,Tier 2,HNI,Salaried CXO,Moderate,English,16,244,48600000,20.6,23.2,29.7,23.0,0.0,0.0,3.5,Diversified,Short,No holding,0.0,0.0,False,0,1700000,283,400000
+C-0313,RM-05,HNI,Nikhil,33,Tier 1,HNI,Salaried CXO,Moderate,Marathi,15,396,24700000,16.7,50.0,29.2,0.0,0.0,0.0,4.1,Diversified,Short,No holding,0.0,2.1,True,45000,2200000,326,100000
+C-0314,RM-05,HNI,Prakash,46,Tier 1,HNI,Inherited,Conservative,English,6,263,19000000,16.8,25.6,43.5,0.0,0.0,0.0,14.1,Diversified,Short,No holding,0.0,0.0,True,15000,600000,12,100000
+C-0315,RM-05,HNI,Ramesh,48,Tier 1,HNI,Business Owner,Conservative,English,15,160,61600000,12.1,23.2,57.3,0.0,0.0,0.0,7.4,FMCG,Short,No holding,0.0,6.3,False,0,4500000,39,200000
+C-0316,RM-05,HNI,Lakshmi,51,Tier 1,HNI,Salaried CXO,Aggressive,English,12,101,19000000,22.4,48.5,27.5,0.0,0.0,0.0,1.6,Diversified,Long,No holding,0.0,0.0,True,20000,1300000,380,0
+C-0317,RM-05,HNI,Ananya,41,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,13,19,20000000,24.8,26.5,9.0,37.2,0.0,1.7,0.8,Diversified,Short,Unlisted Co. B,0.0,0.0,False,0,1300000,329,200000
+C-0318,RM-05,HNI,Rupal,58,Tier 1,HNI,Professional,Moderate,Marathi,7,307,23000000,20.2,45.7,32.5,0.0,0.0,0.0,1.6,Auto,Medium,No holding,0.0,18.3,False,0,1800000,260,0
+C-0319,RM-05,HNI,Prakash,48,Tier 1,HNI,Inherited,Conservative,Hindi,5,373,37300000,6.2,35.1,46.0,0.0,0.0,0.0,12.7,Infra,Long,No holding,7.7,19.4,True,45000,3300000,134,200000
+C-0320,RM-05,HNI,Ramesh,40,Tier 1,HNI,Business Owner,Conservative,Hindi,13,265,49200000,10.3,25.8,41.9,11.0,0.0,0.0,11.0,BFSI,Medium,No holding,0.0,0.0,True,100000,1600000,179,200000
+C-0321,RM-05,HNI,Prakash,44,Tier 1,HNI,Professional,Conservative,English,1,195,67400000,4.1,9.2,72.7,8.5,0.0,0.3,5.2,Infra,Short,Unlisted Co. A,0.0,0.0,False,0,4500000,168,300000
+C-0322,RM-05,HNI,Parth,65,Tier 1,HNI,Professional,Aggressive,Marathi,7,53,62200000,23.1,42.0,13.6,15.7,0.0,0.0,5.6,FMCG,Long,No holding,0.0,15.8,False,0,4500000,185,300000
+C-0323,RM-05,HNI,Vikram,54,Tier 1,HNI,Inherited,Aggressive,English,3,257,35000000,21.2,57.9,18.9,0.0,0.0,0.0,2.0,Diversified,Short,No holding,0.0,0.0,False,0,1700000,265,300000
+C-0324,RM-05,HNI,Akash,57,Tier 1,HNI,Inherited,Moderate,English,1,80,61400000,20.5,31.5,27.7,11.7,0.0,0.0,8.6,Diversified,Short,No holding,0.0,0.0,True,70000,5100000,319,0
+C-0325,RM-05,HNI,Arjun,39,Tier 1,HNI,Professional,Aggressive,Marathi,1,249,24200000,32.1,35.7,31.1,0.0,0.0,0.0,1.1,Auto,Medium,No holding,0.0,0.0,False,0,1400000,164,200000
+C-0326,RM-05,HNI,Vidya,42,Tier 2,HNI,Business Owner,Conservative,English,2,121,12900000,8.9,20.4,49.9,0.0,0.0,5.0,15.8,Pharma,Medium,Unlisted Co. C,0.0,2.2,True,15000,500000,350,0
+C-0327,RM-05,HNI,Uday,42,Tier 1,HNI,Salaried CXO,Moderate,English,17,346,24200000,19.5,33.5,30.0,0.0,0.0,0.0,17.0,FMCG,Long,No holding,0.0,6.6,False,0,2000000,42,200000
+C-0328,RM-05,HNI,Mohit,50,Tier 1,HNI,Inherited,Conservative,English,14,374,22500000,5.4,42.1,42.7,0.0,0.0,0.0,9.8,BFSI,Short,No holding,4.9,0.0,True,40000,1900000,340,0
+C-0329,RM-05,HNI,Pooja,46,Tier 1,HNI,Professional,Moderate,English,18,94,24700000,31.8,41.2,25.2,0.0,0.0,0.0,1.8,FMCG,Medium,No holding,0.0,0.0,True,55000,900000,285,100000
+C-0330,RM-05,HNI,Neha,44,Tier 1,HNI,Salaried CXO,Aggressive,Gujarati,2,131,20600000,29.4,35.3,29.4,0.0,0.0,0.0,5.9,BFSI,Medium,No holding,0.0,11.3,False,0,1500000,216,0
+C-0331,RM-05,HNI,Yash,45,Tier 1,HNI,Inherited,Aggressive,English,18,368,27200000,30.7,38.3,29.2,0.0,0.0,0.0,1.8,Infra,Long,No holding,0.0,13.8,True,25000,1200000,160,300000
+C-0332,RM-05,HNI,Neha,41,Tier 1,HNI,Inherited,Conservative,Marathi,11,8,49200000,2.8,16.5,56.2,17.1,0.0,0.0,7.4,Auto,Short,No holding,0.0,13.8,False,0,1500000,159,300000
+C-0333,RM-05,HNI,Shreya,46,Tier 1,HNI,Professional,Conservative,English,15,207,89900000,8.3,19.9,50.9,13.6,0.0,0.0,7.3,Diversified,Short,No holding,0.0,0.0,True,65000,4100000,154,0
+C-0334,RM-05,HNI,Manish,58,Tier 2,HNI,Inherited,Moderate,Hindi,16,57,13600000,25.2,38.5,21.2,0.0,0.0,8.5,6.6,Diversified,Long,Unlisted Co. A,0.0,0.0,True,25000,1100000,397,0
+C-0335,RM-05,HNI,Meera,34,Tier 1,HNI,Business Owner,Conservative,Hindi,5,173,17200000,10.2,32.0,51.9,0.0,0.0,0.0,5.9,IT,Medium,No holding,0.0,0.0,True,10000,700000,16,0
+C-0336,RM-05,HNI,Rohan,51,Tier 1,HNI,Professional,Moderate,Hindi,14,13,22600000,24.6,39.3,31.1,0.0,0.0,0.0,5.0,Auto,Short,No holding,4.1,13.2,False,0,900000,268,100000
+C-0337,RM-05,HNI,Mohit,60,Tier 1,HNI,Promoter,Moderate,English,12,57,53300000,15.3,28.8,29.5,22.3,0.0,0.0,4.1,Diversified,Short,No holding,0.0,0.0,False,0,4000000,415,100000
+C-0338,RM-05,HNI,Aarav,46,Tier 2,HNI,Business Owner,Conservative,Hindi,8,161,31300000,12.4,22.1,55.9,0.0,0.0,0.0,9.6,Auto,Long,No holding,3.0,0.0,True,65000,1700000,230,0
+C-0339,RM-05,HNI,Devika,43,Tier 1,HNI,Business Owner,Conservative,Hindi,9,24,23500000,23.5,35.5,33.5,0.0,0.0,0.0,7.5,BFSI,Medium,No holding,0.0,0.0,False,0,900000,270,100000
+C-0340,RM-05,HNI,Tanvi,56,Tier 2,HNI,Professional,Conservative,Gujarati,4,319,51900000,9.5,27.8,40.4,11.8,0.0,0.0,10.5,BFSI,Medium,No holding,0.0,0.0,False,0,2300000,253,200000
+C-0341,RM-05,HNI,Manish,39,Tier 1,HNI,Salaried CXO,Aggressive,English,4,231,59200000,27.5,38.1,21.6,12.3,0.0,0.0,0.5,BFSI,Long,No holding,0.0,0.0,False,0,4600000,214,400000
+C-0342,RM-05,HNI,Arjun,48,Tier 1,HNI,Business Owner,Moderate,English,17,180,34600000,18.8,44.4,34.0,0.0,0.0,0.0,2.8,FMCG,Short,No holding,3.5,12.3,False,0,2300000,266,100000
+C-0343,RM-05,HNI,Vikram,39,Tier 1,HNI,Business Owner,Moderate,Hindi,14,189,22300000,17.0,36.9,38.0,0.0,0.0,3.8,4.3,Diversified,Short,Unlisted Co. A,1.9,0.0,False,0,1700000,379,100000
+C-0344,RM-05,HNI,Yash,32,Tier 2,HNI,Salaried CXO,Moderate,English,11,335,40600000,24.1,27.8,33.4,13.5,0.0,0.0,1.2,IT,Medium,No holding,0.0,0.0,False,0,1500000,300,400000
+C-0345,RM-05,HNI,Pallavi,47,Tier 2,HNI,Salaried CXO,Moderate,English,13,338,30800000,22.9,35.8,22.0,18.1,0.0,0.0,1.2,Diversified,Long,No holding,0.0,16.0,False,0,1800000,357,300000
+C-0346,RM-05,HNI,Rakesh,37,Tier 2,HNI,Inherited,Conservative,Marathi,8,19,30700000,4.5,42.6,46.7,0.0,0.0,0.0,6.2,FMCG,Short,No holding,3.5,0.0,False,0,2400000,234,0
+C-0347,RM-05,HNI,Shreya,48,Tier 1,HNI,Professional,Conservative,English,5,274,26400000,8.0,22.3,50.6,0.0,0.0,0.0,19.1,Pharma,Medium,No holding,0.0,0.0,False,0,1200000,325,200000
+C-0348,RM-05,HNI,Ananya,58,Tier 2,HNI,Professional,Moderate,English,17,188,58200000,23.5,35.6,24.0,10.1,0.0,0.0,6.8,Diversified,Short,No holding,0.0,0.0,True,40000,2300000,368,0
+C-0349,RM-05,HNI,Kavita,65,Tier 1,HNI,Business Owner,Moderate,Hindi,18,313,40200000,11.2,32.2,37.8,12.6,0.0,0.0,6.2,Diversified,Short,No holding,6.3,0.0,False,0,2100000,92,0
+C-0350,RM-05,HNI,Prakash,49,Tier 1,HNI,Salaried CXO,Conservative,English,4,315,61900000,9.8,13.4,55.9,9.0,0.0,0.0,11.9,BFSI,Long,No holding,0.0,0.0,False,0,3100000,361,0
+C-0351,RM-05,HNI,Prakash,57,Tier 1,HNI,Salaried CXO,Moderate,English,15,283,73000000,26.0,25.8,26.6,7.2,0.0,0.0,14.4,BFSI,Short,No holding,0.0,0.0,False,0,3000000,289,700000
+C-0352,RM-05,HNI,Kiran,52,Tier 2,HNI,Inherited,Aggressive,English,8,270,45100000,19.5,50.1,15.4,15.0,0.0,0.0,0.0,Pharma,Short,No holding,0.0,0.0,False,0,3900000,188,100000
+C-0353,RM-05,HNI,Aarav,45,Tier 1,HNI,Promoter,Conservative,English,13,85,26500000,16.5,30.6,41.5,0.0,0.0,0.0,11.4,IT,Medium,No holding,0.0,0.0,False,0,1600000,326,100000
+C-0354,RM-05,HNI,Vikram,32,Tier 1,HNI,Salaried CXO,Conservative,English,2,341,62000000,11.7,34.7,34.7,0.0,0.0,0.0,18.9,BFSI,Short,No holding,0.0,0.0,False,0,4100000,74,300000
+C-0355,RM-05,HNI,Rajesh,63,Tier 1,HNI,Promoter,Moderate,Gujarati,9,280,45200000,19.9,30.2,34.8,14.3,0.0,0.0,0.8,Infra,Short,No holding,3.7,0.0,False,0,1700000,294,0
+C-0356,RM-05,HNI,Shreya,39,Tier 1,UHNI,Business Owner,Conservative,English,3,110,146500000,2.2,18.8,51.4,4.9,6.9,0.0,15.8,BFSI,Long,No holding,0.0,0.0,False,0,9800000,244,400000
+C-0357,RM-05,HNI,Naveen,60,Tier 1,HNI,Salaried CXO,Moderate,English,15,93,41500000,23.1,27.4,21.8,24.1,0.0,0.0,3.6,Diversified,Short,No holding,0.0,0.0,False,0,2600000,373,0
+C-0358,RM-05,HNI,Parth,53,Tier 2,HNI,Professional,Moderate,Hindi,8,200,51400000,20.2,19.0,29.7,22.7,0.0,5.7,2.7,Diversified,Medium,Unlisted Co. A,0.0,0.0,False,0,4400000,262,100000
+C-0359,RM-05,HNI,Neha,39,Tier 1,HNI,Salaried CXO,Moderate,English,5,137,41100000,23.6,35.7,27.2,12.2,0.0,0.0,1.3,BFSI,Short,No holding,0.0,6.6,True,85000,2200000,223,100000
+C-0360,RM-05,HNI,Naveen,51,Tier 1,HNI,Inherited,Moderate,English,13,271,33100000,33.4,40.6,25.1,0.0,0.0,0.0,0.9,IT,Short,No holding,0.0,0.0,False,0,2500000,222,0
+C-0361,RM-05,HNI,Rohan,67,Tier 1,HNI,Business Owner,Moderate,English,18,163,30400000,26.6,40.0,30.0,0.0,0.0,0.0,3.4,Diversified,Medium,No holding,0.0,0.0,True,75000,1500000,235,200000
+C-0362,RM-05,HNI,Yash,62,Tier 1,HNI,Professional,Moderate,English,7,68,41100000,29.3,38.0,28.8,0.0,0.0,0.0,3.9,IT,Short,No holding,0.0,0.0,False,0,2700000,374,500000
+C-0363,RM-05,HNI,Siddharth,43,Tier 1,HNI,Business Owner,Conservative,English,13,158,46600000,9.3,31.4,43.3,0.0,0.0,0.0,16.0,Diversified,Long,No holding,0.0,0.0,False,0,4000000,330,0
+C-0364,RM-05,HNI,Rohan,42,Tier 1,HNI,Business Owner,Moderate,English,13,326,66000000,30.3,30.3,25.8,9.4,0.0,3.0,1.2,Infra,Long,Unlisted Co. E,0.0,0.0,False,0,4500000,43,400000
+C-0365,RM-05,HNI,Aarav,49,Tier 1,HNI,Salaried CXO,Moderate,Marathi,9,332,41500000,14.7,37.1,26.1,16.0,0.0,0.0,6.1,Diversified,Long,No holding,0.0,0.0,True,105000,3000000,225,100000
+C-0366,RM-05,HNI,Parth,47,Tier 1,HNI,Inherited,Moderate,Marathi,15,125,27100000,13.8,56.2,23.8,0.0,0.0,0.0,6.2,BFSI,Short,No holding,0.0,0.0,False,0,2200000,124,0
+C-0367,RM-05,HNI,Vikram,59,Tier 2,HNI,Professional,Conservative,Gujarati,3,318,29200000,11.0,35.8,46.3,0.0,0.0,0.0,6.9,Diversified,Short,No holding,0.0,8.8,True,55000,2500000,73,200000
+C-0368,RM-05,HNI,Mohit,55,Tier 1,HNI,Professional,Moderate,English,16,38,16900000,18.3,40.2,34.9,0.0,0.0,0.0,6.6,BFSI,Long,No holding,0.0,0.0,False,0,700000,364,100000
+C-0369,RM-05,HNI,Prakash,33,Tier 1,HNI,Business Owner,Moderate,Gujarati,8,393,87300000,8.7,48.2,20.1,21.6,0.0,0.0,1.4,Diversified,Medium,No holding,0.0,0.0,True,55000,3600000,360,1300000
+C-0370,RM-05,HNI,Kiran,52,Tier 2,HNI,Business Owner,Conservative,Hindi,1,306,26000000,11.5,17.4,60.7,0.0,0.0,0.0,10.4,BFSI,Medium,No holding,0.0,0.0,False,0,1600000,394,0
+C-0371,RM-05,HNI,Gaurav,46,Tier 1,HNI,Business Owner,Moderate,English,18,17,59600000,16.0,31.8,47.3,0.0,0.0,0.0,4.9,Pharma,Long,No holding,0.0,0.0,False,0,5300000,168,100000
+C-0372,RM-05,HNI,Rupal,48,Tier 2,HNI,Inherited,Moderate,Marathi,14,282,40700000,21.5,29.6,19.6,19.7,0.0,4.0,5.6,Diversified,Short,Unlisted Co. A,0.0,4.1,False,0,2400000,181,200000
+C-0373,RM-05,HNI,Kiran,50,Tier 2,HNI,Business Owner,Moderate,Gujarati,15,198,41400000,13.4,32.8,32.2,17.5,0.0,0.0,4.1,Pharma,Short,No holding,0.0,0.0,False,0,2100000,327,100000
+C-0374,RM-05,HNI,Rahul,59,Tier 2,HNI,Salaried CXO,Conservative,English,3,353,32800000,11.7,36.2,42.7,0.0,0.0,0.0,9.4,IT,Medium,No holding,0.0,0.0,True,45000,2000000,84,200000
+C-0375,RM-05,HNI,Rahul,57,Tier 1,HNI,Professional,Aggressive,Marathi,14,96,22700000,19.9,44.3,34.0,0.0,0.0,0.0,1.8,IT,Medium,No holding,0.0,0.0,False,0,800000,27,0
+C-0376,RM-05,HNI,Swati,41,Tier 2,HNI,Professional,Conservative,English,13,356,20500000,12.8,32.3,45.7,0.0,0.0,0.0,9.2,IT,Short,No holding,0.0,0.0,True,25000,800000,179,0
+C-0377,RM-05,HNI,Vikram,47,Tier 1,HNI,Salaried CXO,Aggressive,English,17,348,90600000,36.8,29.4,15.1,17.6,0.0,0.0,1.1,BFSI,Medium,No holding,0.0,0.0,False,0,3500000,266,500000
+C-0378,RM-05,HNI,Prakash,44,Tier 1,HNI,Business Owner,Moderate,English,7,112,37300000,19.9,45.9,33.2,0.0,0.0,0.0,1.0,Infra,Long,No holding,0.0,0.0,False,0,1200000,194,100000
+C-0379,RM-05,HNI,Akash,33,Tier 2,HNI,Salaried CXO,Conservative,English,17,173,65000000,11.1,27.4,43.1,10.2,0.0,0.0,8.2,Pharma,Short,No holding,0.0,16.1,False,0,4800000,92,200000
+C-0380,RM-05,HNI,Priya,47,Tier 1,HNI,Professional,Aggressive,Marathi,13,256,75000000,21.4,33.5,18.2,23.2,0.0,0.0,3.7,Pharma,Short,No holding,0.0,13.1,True,180000,3700000,220,100000
+C-0381,RM-05,HNI,Uday,65,Tier 2,HNI,Business Owner,Moderate,Hindi,5,96,27900000,29.3,41.3,25.5,0.0,0.0,0.0,3.9,Diversified,Medium,No holding,0.0,0.0,False,0,1100000,396,0
+C-0382,RM-05,HNI,Nikhil,33,Tier 1,HNI,Professional,Moderate,English,4,399,44200000,10.1,27.6,27.0,20.9,0.0,0.0,14.4,Infra,Long,No holding,0.0,15.3,False,0,2700000,118,0
+C-0383,RM-05,HNI,Priya,48,Tier 1,HNI,Business Owner,Moderate,Gujarati,17,77,35900000,7.6,45.6,24.3,15.9,0.0,0.0,6.6,Diversified,Long,No holding,5.5,18.0,True,75000,1800000,171,200000
+C-0384,RM-05,HNI,Shreya,47,Tier 1,HNI,Inherited,Moderate,Gujarati,12,98,18500000,21.9,46.2,28.3,0.0,0.0,0.0,3.6,IT,Short,No holding,0.0,15.2,False,0,1000000,134,100000
+C-0385,RM-05,HNI,Neha,51,Tier 2,HNI,Promoter,Moderate,Marathi,3,200,31600000,15.3,40.3,37.5,0.0,0.0,0.0,6.9,Diversified,Long,No holding,0.0,0.0,True,80000,1500000,126,0
+C-0386,RM-05,HNI,Mohit,39,Tier 1,HNI,Business Owner,Aggressive,Marathi,3,189,48400000,27.4,36.2,16.8,19.4,0.0,0.0,0.2,Diversified,Medium,No holding,0.0,0.0,True,105000,1500000,277,100000
+C-0387,RM-05,HNI,Pallavi,35,Tier 2,HNI,Salaried CXO,Conservative,Marathi,15,21,26600000,6.3,34.8,52.1,0.0,0.0,0.0,6.8,Infra,Medium,No holding,0.0,12.0,False,0,1900000,160,100000
+C-0388,RM-05,HNI,Swati,36,Tier 1,HNI,Salaried CXO,Moderate,Hindi,4,364,29300000,18.5,39.2,38.9,0.0,0.0,0.0,3.4,Auto,Short,No holding,0.0,0.0,True,35000,1100000,263,200000
+C-0389,RM-05,HNI,Pallavi,60,Tier 2,HNI,Inherited,Moderate,English,4,96,31800000,15.4,18.4,28.3,28.1,0.0,0.0,9.8,Diversified,Short,No holding,0.0,0.0,True,35000,1400000,13,100000
+C-0390,RM-05,HNI,Kiran,39,Tier 1,UHNI,Salaried CXO,Moderate,Marathi,12,42,111800000,20.9,33.0,25.4,16.0,0.0,0.0,4.7,IT,Medium,No holding,0.0,0.0,False,0,4600000,279,200000
+C-0391,RM-05,HNI,Rahul,44,Tier 2,HNI,Professional,Moderate,English,16,208,12800000,17.3,50.0,31.2,0.0,0.0,0.0,1.5,Infra,Short,No holding,7.5,3.7,False,0,600000,48,0
+C-0392,RM-05,HNI,Rupal,67,Tier 1,HNI,Business Owner,Moderate,English,7,371,46100000,22.6,33.2,35.1,0.0,0.0,0.0,9.1,FMCG,Short,No holding,1.8,0.0,True,70000,1800000,161,500000
+C-0393,RM-05,HNI,Varun,41,Tier 1,HNI,Business Owner,Moderate,English,12,1,30400000,11.2,31.6,27.8,26.2,0.0,0.0,3.2,Infra,Long,No holding,2.5,2.4,True,75000,1500000,367,0
+C-0394,RM-05,HNI,Uday,51,Tier 2,HNI,Professional,Moderate,English,13,195,24600000,26.5,38.0,34.3,0.0,0.0,0.0,1.2,Diversified,Short,No holding,0.0,0.0,False,0,1100000,144,0
+C-0395,RM-05,HNI,Siddharth,58,Tier 1,HNI,Professional,Conservative,Hindi,11,364,30000000,7.1,21.3,65.1,0.0,0.0,0.0,6.5,Diversified,Long,No holding,0.0,19.5,False,0,1000000,294,200000
+C-0396,RM-05,HNI,Shreya,57,Tier 1,HNI,Inherited,Moderate,Marathi,13,357,50500000,31.8,21.2,21.7,21.1,0.0,0.0,4.2,Infra,Medium,No holding,0.0,0.0,False,0,4200000,150,100000
+C-0397,RM-05,HNI,Neha,36,Tier 2,HNI,Inherited,Conservative,English,5,69,52100000,9.9,24.6,55.2,0.0,0.0,0.0,10.3,Diversified,Long,No holding,0.0,6.3,False,0,2500000,379,600000
+C-0398,RM-05,HNI,Lakshmi,42,Tier 2,HNI,Professional,Conservative,Hindi,12,248,38800000,16.2,27.4,46.2,0.0,0.0,0.0,10.2,FMCG,Short,No holding,2.3,0.0,False,0,1400000,399,500000
+C-0399,RM-05,HNI,Priya,51,Tier 2,HNI,Salaried CXO,Conservative,English,1,334,63800000,10.8,32.2,45.4,8.2,0.0,0.0,3.4,FMCG,Medium,No holding,0.0,7.4,False,0,3900000,382,100000
+C-0400,RM-05,HNI,Rupal,65,Tier 2,HNI,Inherited,Moderate,Hindi,14,268,70300000,15.8,27.9,32.4,20.9,0.0,0.0,3.0,FMCG,Medium,No holding,3.8,0.0,False,0,2600000,169,400000
+C-0401,RM-05,HNI,Parth,41,Tier 2,HNI,Inherited,Aggressive,English,15,263,54800000,30.3,30.9,18.2,20.6,0.0,0.0,0.0,Diversified,Long,No holding,1.2,0.0,True,40000,4200000,136,0
+C-0402,RM-05,HNI,Gaurav,44,Tier 1,HNI,Inherited,Moderate,English,15,309,25900000,24.2,43.4,24.8,0.0,0.0,4.4,3.2,Infra,Short,Unlisted Co. C,7.7,2.5,True,55000,900000,256,100000
+C-0403,RM-05,HNI,Aarav,52,Tier 1,HNI,Promoter,Conservative,Hindi,1,181,45900000,10.1,32.3,50.3,0.0,0.0,0.0,7.3,Infra,Short,No holding,0.0,0.0,True,65000,2700000,343,400000
+C-0404,RM-05,HNI,Akash,54,Tier 2,HNI,Salaried CXO,Aggressive,English,17,27,46100000,19.7,34.7,22.1,21.7,0.0,0.0,1.8,Diversified,Long,No holding,0.0,0.0,False,0,4000000,221,100000
+C-0405,RM-05,HNI,Naveen,54,Tier 2,HNI,Professional,Conservative,English,8,256,22300000,7.3,26.2,59.0,0.0,0.0,0.0,7.5,Diversified,Short,No holding,0.0,14.2,False,0,900000,311,0
+C-0406,RM-05,HNI,Siddharth,40,Tier 1,HNI,Professional,Aggressive,English,2,251,14800000,36.5,36.5,27.0,0.0,0.0,0.0,0.0,Diversified,Medium,No holding,6.2,18.8,False,0,600000,368,0
+C-0407,RM-05,HNI,Siddharth,43,Tier 1,HNI,Business Owner,Moderate,English,10,340,11500000,22.7,30.8,44.4,0.0,0.0,0.0,2.1,BFSI,Short,No holding,0.0,0.0,True,20000,800000,317,0
+C-0408,RM-05,HNI,Sneha,50,Tier 1,HNI,Professional,Conservative,Hindi,11,369,36400000,9.7,36.1,48.9,0.0,0.0,0.0,5.3,FMCG,Short,No holding,0.0,5.7,False,0,3200000,158,0
+C-0409,RM-05,HNI,Sanjay,59,Tier 2,HNI,Salaried CXO,Moderate,English,8,135,41200000,24.7,26.7,26.5,17.4,0.0,0.0,4.7,Auto,Medium,No holding,0.0,0.0,False,0,2200000,108,100000
+C-0410,RM-05,HNI,Aditi,46,Tier 1,HNI,Salaried CXO,Moderate,English,14,382,18300000,9.5,47.0,40.8,0.0,0.0,0.0,2.7,Diversified,Medium,No holding,7.4,0.0,True,25000,1300000,185,0
+C-0411,RM-05,HNI,Uday,48,Tier 2,HNI,Business Owner,Moderate,Marathi,10,4,62200000,18.8,29.3,30.5,17.2,0.0,0.0,4.2,IT,Medium,No holding,0.0,0.0,False,0,2400000,243,400000
+C-0412,RM-05,HNI,Vikram,39,Tier 2,HNI,Professional,Conservative,Hindi,4,387,38100000,8.3,34.2,49.7,0.0,0.0,0.0,7.8,Diversified,Medium,No holding,0.0,0.0,False,0,2600000,354,200000
+C-0413,RM-05,HNI,Swati,65,Tier 1,HNI,Professional,Aggressive,English,12,55,73500000,24.7,29.4,19.9,24.6,0.0,0.0,1.4,Diversified,Medium,No holding,0.0,0.0,False,0,3300000,129,300000
+C-0414,RM-05,HNI,Neha,49,Tier 1,HNI,Salaried CXO,Moderate,Hindi,5,258,42900000,21.7,51.7,25.6,0.0,0.0,0.0,1.0,Diversified,Long,No holding,0.0,0.0,False,0,2900000,71,100000
+C-0415,RM-05,HNI,Harsh,58,Tier 1,HNI,Business Owner,Aggressive,English,3,273,19500000,28.4,38.2,32.0,0.0,0.0,0.0,1.4,Infra,Short,No holding,0.0,0.0,False,0,700000,135,200000
+C-0416,RM-05,HNI,Varun,48,Tier 1,HNI,Salaried CXO,Aggressive,English,5,253,45000000,30.9,35.0,32.7,0.0,0.0,0.0,1.4,Infra,Short,No holding,0.0,0.0,True,60000,2800000,251,300000
+C-0417,RM-05,HNI,Devika,49,Tier 1,HNI,Business Owner,Conservative,Hindi,17,396,50600000,10.3,29.3,53.2,0.0,0.0,0.0,7.2,Auto,Short,No holding,2.4,9.8,False,0,2200000,101,400000
+C-0418,RM-05,HNI,Siddharth,34,Tier 1,HNI,Salaried CXO,Moderate,English,11,221,25900000,18.0,34.9,37.8,0.0,0.0,0.0,9.3,Auto,Medium,No holding,6.8,0.0,True,60000,1800000,170,0
+C-0419,RM-05,HNI,Vinod,32,Tier 2,HNI,Salaried CXO,Aggressive,English,6,53,15800000,16.7,51.6,27.3,0.0,0.0,0.0,4.4,Diversified,Short,No holding,0.0,0.0,False,0,1200000,111,0
+C-0420,RM-05,HNI,Varun,59,Tier 1,HNI,Inherited,Moderate,Marathi,7,243,37000000,24.2,30.3,24.5,18.7,0.0,0.0,2.3,Pharma,Medium,No holding,3.0,0.0,False,0,3000000,414,200000
+C-0421,RM-05,HNI,Pooja,49,Tier 1,HNI,Salaried CXO,Conservative,Hindi,16,117,20200000,11.6,19.9,62.6,0.0,0.0,0.0,5.9,Diversified,Medium,No holding,0.0,0.0,False,0,1800000,217,0
+C-0422,RM-05,HNI,Swati,50,Tier 1,HNI,Professional,Conservative,Marathi,12,245,64800000,4.9,31.4,60.2,0.0,0.0,0.0,3.5,BFSI,Medium,No holding,0.0,0.0,False,0,3700000,304,100000
+C-0423,RM-06,HNI,Mohit,50,Tier 1,HNI,Salaried CXO,Moderate,Hindi,1,162,23400000,16.6,48.0,32.9,0.0,0.0,0.0,2.5,Diversified,Short,No holding,0.0,0.0,True,15000,2000000,157,100000
+C-0424,RM-06,HNI,Shreya,46,Tier 2,HNI,Salaried CXO,Moderate,English,8,119,59100000,16.3,46.5,32.5,0.0,0.0,0.0,4.7,Infra,Short,No holding,0.0,14.9,True,125000,3300000,245,200000
+C-0425,RM-06,HNI,Rakesh,56,Tier 2,HNI,Inherited,Aggressive,English,6,61,16900000,23.4,47.9,28.1,0.0,0.0,0.0,0.6,BFSI,Short,No holding,0.0,0.0,False,0,900000,245,0
+C-0426,RM-06,HNI,Ramesh,54,Tier 2,HNI,Business Owner,Moderate,English,3,25,66000000,31.5,22.3,16.3,9.9,15.7,0.0,4.3,Diversified,Medium,No holding,0.0,3.9,False,0,5500000,348,200000
+C-0427,RM-06,HNI,Sanjay,52,Tier 2,HNI,Inherited,Moderate,Hindi,6,245,38900000,15.8,35.4,24.9,19.8,0.0,0.0,4.1,Pharma,Long,No holding,0.0,6.9,False,0,2600000,262,200000
+C-0428,RM-06,HNI,Kiran,57,Tier 2,HNI,Salaried CXO,Moderate,Gujarati,6,17,17600000,25.5,31.9,36.5,0.0,0.0,0.0,6.1,BFSI,Short,No holding,0.0,0.0,False,0,1000000,181,100000
+C-0429,RM-06,HNI,Kavita,50,Tier 2,HNI,Salaried CXO,Moderate,Hindi,2,248,39700000,25.6,41.6,14.9,16.7,0.0,0.0,1.2,FMCG,Short,No holding,0.0,0.0,False,0,1800000,232,100000
+C-0430,RM-06,HNI,Aditi,33,Tier 2,HNI,Inherited,Conservative,Marathi,12,38,21000000,3.8,35.1,45.6,0.0,0.0,0.0,15.5,Diversified,Short,No holding,0.0,11.1,True,30000,900000,311,0
+C-0431,RM-06,HNI,Tanvi,45,Tier 2,HNI,Salaried CXO,Aggressive,English,5,62,30600000,24.7,36.9,15.1,21.4,0.0,0.0,1.9,Auto,Short,No holding,4.6,0.0,False,0,2400000,162,100000
+C-0432,RM-06,HNI,Kabir,32,Tier 1,HNI,Promoter,Conservative,English,1,3,23000000,15.2,40.0,35.1,0.0,0.0,0.0,9.7,Pharma,Short,No holding,0.0,0.0,False,0,1100000,75,0
+C-0433,RM-06,HNI,Rohan,54,Tier 1,HNI,Inherited,Aggressive,English,1,159,27900000,27.2,47.7,25.1,0.0,0.0,0.0,0.0,Diversified,Medium,No holding,0.0,0.0,False,0,800000,206,100000
+C-0434,RM-06,HNI,Rohan,56,Tier 1,HNI,Business Owner,Aggressive,English,18,131,50300000,30.8,32.0,11.6,20.8,0.0,3.4,1.4,IT,Medium,Unlisted Co. A,0.0,0.0,True,45000,1600000,419,400000
+C-0435,RM-06,HNI,Rupal,56,Tier 1,HNI,Salaried CXO,Moderate,Hindi,3,133,39900000,20.4,43.8,30.7,0.0,0.0,0.0,5.1,Infra,Short,No holding,0.0,0.0,False,0,3500000,51,200000
+C-0436,RM-06,HNI,Tanvi,52,Tier 2,HNI,Inherited,Moderate,Gujarati,17,124,16200000,13.8,37.3,44.2,0.0,0.0,0.0,4.7,IT,Medium,No holding,1.7,0.0,True,35000,1000000,77,0
+C-0437,RM-06,HNI,Tanvi,57,Tier 2,HNI,Business Owner,Conservative,English,3,375,16700000,8.3,32.4,51.2,0.0,0.0,3.0,5.1,BFSI,Long,Unlisted Co. A,0.0,2.5,True,30000,1000000,417,0
+C-0438,RM-06,HNI,Aarav,34,Tier 1,HNI,Professional,Moderate,Marathi,2,172,34800000,14.0,46.0,27.5,0.0,0.0,0.0,12.5,FMCG,Short,No holding,6.2,0.0,False,0,3000000,349,0
+C-0439,RM-06,HNI,Swati,47,Tier 1,HNI,Business Owner,Moderate,English,10,323,36200000,10.0,35.9,29.4,15.0,0.0,0.0,9.7,Infra,Short,No holding,3.2,0.0,False,0,1800000,53,100000
+C-0440,RM-06,HNI,Gaurav,35,Tier 1,HNI,Business Owner,Conservative,Hindi,16,93,20700000,9.6,38.3,46.6,0.0,0.0,0.0,5.5,FMCG,Medium,No holding,0.0,0.0,False,0,1600000,93,300000
+C-0441,RM-06,HNI,Rakesh,45,Tier 2,HNI,Salaried CXO,Conservative,English,2,193,72000000,8.2,22.8,58.8,0.0,0.0,0.0,10.2,Auto,Short,No holding,0.0,13.3,False,0,5300000,291,0
+C-0442,RM-06,HNI,Rohan,63,Tier 1,HNI,Professional,Aggressive,Hindi,6,26,46900000,32.6,33.8,33.4,0.0,0.0,0.0,0.2,Pharma,Long,No holding,0.0,0.0,True,60000,2700000,329,100000
+C-0443,RM-06,HNI,Akash,58,Tier 1,HNI,Professional,Moderate,English,14,104,21300000,19.7,45.9,32.4,0.0,0.0,0.0,2.0,Pharma,Long,No holding,0.0,0.0,False,0,1600000,309,0
+C-0444,RM-06,HNI,Kabir,54,Tier 1,HNI,Professional,Moderate,Marathi,2,29,20200000,19.6,43.3,33.8,0.0,0.0,0.0,3.3,Infra,Long,No holding,0.0,0.0,True,50000,1800000,362,100000
+C-0445,RM-06,HNI,Varun,46,Tier 1,HNI,Business Owner,Conservative,Marathi,4,9,26500000,8.1,40.6,39.4,0.0,0.0,0.0,11.9,Auto,Short,No holding,7.0,6.1,False,0,1100000,215,100000
+C-0446,RM-06,HNI,Chirag,39,Tier 1,HNI,Salaried CXO,Moderate,English,6,73,25000000,13.4,45.7,37.7,0.0,0.0,0.0,3.2,IT,Short,No holding,7.9,0.0,True,30000,800000,368,0
+C-0447,RM-06,HNI,Ishaan,50,Tier 2,HNI,Business Owner,Moderate,English,15,64,59900000,12.9,30.9,24.9,27.3,0.0,0.0,4.0,Diversified,Long,No holding,0.0,0.0,False,0,4700000,252,600000
+C-0448,RM-06,HNI,Ananya,58,Tier 2,HNI,Business Owner,Aggressive,Hindi,15,127,51600000,28.5,27.5,20.3,23.3,0.0,0.0,0.4,IT,Medium,No holding,0.0,0.0,False,0,2800000,202,100000
+C-0449,RM-06,HNI,Devika,52,Tier 1,HNI,Salaried CXO,Moderate,Hindi,13,297,30600000,16.8,45.4,29.4,0.0,0.0,0.0,8.4,Diversified,Short,No holding,7.1,0.0,True,70000,1900000,269,200000
+C-0450,RM-06,HNI,Rakesh,34,Tier 1,HNI,Professional,Conservative,English,12,60,43600000,7.9,20.0,44.7,13.9,0.0,0.0,13.5,FMCG,Medium,No holding,0.0,0.0,False,0,1900000,182,0
+C-0451,RM-06,HNI,Swati,49,Tier 1,HNI,Business Owner,Moderate,Hindi,1,244,47200000,22.9,30.7,30.6,10.9,0.0,0.0,4.9,Infra,Short,No holding,0.0,0.0,False,0,3800000,256,500000
+C-0452,RM-06,HNI,Rahul,32,Tier 1,HNI,Business Owner,Conservative,Gujarati,5,146,31000000,12.7,30.0,42.1,0.0,0.0,8.5,6.7,IT,Medium,Unlisted Co. A,0.0,0.0,True,25000,2300000,351,100000
+C-0453,RM-06,HNI,Kabir,55,Tier 1,HNI,Professional,Aggressive,Hindi,17,161,37400000,21.2,47.8,14.3,16.5,0.0,0.0,0.2,Diversified,Long,No holding,0.0,6.9,False,0,3300000,402,0
+C-0454,RM-06,HNI,Tanvi,42,Tier 1,HNI,Business Owner,Conservative,English,13,368,41600000,17.1,30.8,44.0,0.0,0.0,0.0,8.1,IT,Medium,No holding,0.0,0.0,True,60000,2400000,245,100000
+C-0455,RM-06,HNI,Manish,37,Tier 1,HNI,Promoter,Conservative,Marathi,5,186,39200000,8.4,32.2,51.8,0.0,0.0,0.0,7.6,BFSI,Medium,No holding,0.0,0.0,False,0,3500000,7,600000
+C-0456,RM-06,HNI,Kiran,55,Tier 2,HNI,Salaried CXO,Moderate,English,13,105,19500000,22.4,33.3,38.1,0.0,0.0,0.0,6.2,Infra,Long,No holding,0.0,0.0,False,0,1200000,262,0
+C-0457,RM-06,HNI,Parth,53,Tier 1,HNI,Business Owner,Conservative,English,14,95,20700000,6.6,35.8,51.6,0.0,0.0,0.0,6.0,IT,Medium,No holding,0.0,0.0,False,0,1400000,109,0
+C-0458,RM-06,HNI,Chirag,50,Tier 2,HNI,Inherited,Moderate,Marathi,14,68,25600000,37.0,33.8,21.4,0.0,0.0,0.0,7.8,IT,Short,No holding,6.8,20.0,False,0,1800000,102,400000
+C-0459,RM-06,HNI,Manish,68,Tier 1,HNI,Professional,Moderate,English,18,321,20300000,13.1,56.0,28.1,0.0,0.0,0.0,2.8,Diversified,Medium,No holding,0.0,0.0,False,0,1200000,370,200000
+C-0460,RM-06,HNI,Sneha,54,Tier 1,HNI,Inherited,Aggressive,English,10,266,13300000,14.1,56.1,28.1,0.0,0.0,0.0,1.7,IT,Short,No holding,0.0,0.0,False,0,800000,190,0
+C-0461,RM-06,HNI,Rajesh,42,Tier 1,HNI,Salaried CXO,Conservative,Hindi,2,107,43500000,8.9,31.2,53.1,0.0,0.0,0.0,6.8,BFSI,Short,No holding,0.0,0.0,False,0,1900000,333,100000
+C-0462,RM-06,HNI,Yash,53,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,15,196,36300000,18.2,35.5,26.2,16.2,0.0,0.0,3.9,Auto,Medium,No holding,0.0,17.8,False,0,1900000,158,100000
+C-0463,RM-06,HNI,Siddharth,45,Tier 1,HNI,Professional,Moderate,English,1,202,14400000,25.5,39.0,27.4,0.0,0.0,0.0,8.1,Auto,Short,No holding,0.0,19.0,False,0,1000000,256,0
+C-0464,RM-06,HNI,Manish,59,Tier 2,HNI,Salaried CXO,Conservative,English,12,19,26300000,8.5,28.2,40.8,0.0,0.0,0.0,22.5,Pharma,Short,No holding,2.9,0.0,True,25000,900000,281,100000
+C-0465,RM-06,HNI,Shreya,51,Tier 2,HNI,Salaried CXO,Moderate,English,15,363,27100000,18.5,37.3,36.2,0.0,0.0,0.0,8.0,BFSI,Medium,No holding,0.0,5.7,True,25000,2000000,375,300000
+C-0466,RM-06,HNI,Tanvi,51,Tier 1,HNI,Business Owner,Aggressive,English,3,315,33200000,25.8,35.9,12.7,17.0,0.0,8.4,0.2,Diversified,Short,Unlisted Co. B,0.0,0.0,False,0,1600000,86,100000
+C-0467,RM-06,HNI,Rakesh,35,Tier 1,HNI,Salaried CXO,Aggressive,English,15,214,16500000,28.0,45.2,24.4,0.0,0.0,0.0,2.4,FMCG,Medium,No holding,0.0,0.0,False,0,800000,237,0
+C-0468,RM-06,HNI,Shreya,49,Tier 1,HNI,Business Owner,Aggressive,English,15,286,14200000,27.5,43.4,25.5,0.0,0.0,0.0,3.6,FMCG,Short,No holding,0.0,0.0,True,20000,1000000,173,0
+C-0469,RM-06,HNI,Parth,47,Tier 2,HNI,Professional,Moderate,Marathi,12,44,39900000,18.6,37.0,25.1,12.9,0.0,0.0,6.4,Diversified,Medium,No holding,0.0,18.2,False,0,1700000,197,100000
+C-0470,RM-06,HNI,Varun,39,Tier 1,HNI,Salaried CXO,Moderate,Hindi,6,390,12900000,19.7,37.9,29.6,0.0,0.0,2.8,10.0,Infra,Long,Unlisted Co. A,0.0,2.4,True,10000,1100000,357,100000
+C-0471,RM-06,HNI,Ishaan,46,Tier 1,HNI,Promoter,Aggressive,Gujarati,4,256,26400000,24.0,45.4,25.3,0.0,0.0,3.7,1.6,BFSI,Short,Unlisted Co. C,0.0,0.0,False,0,2400000,61,300000
+C-0472,RM-06,HNI,Naveen,52,Tier 2,HNI,Business Owner,Conservative,Marathi,13,375,25100000,14.1,33.5,42.4,0.0,0.0,1.0,9.0,Diversified,Long,Unlisted Co. E,0.0,0.0,False,0,1400000,231,0
+C-0473,RM-06,HNI,Jaya,48,Tier 2,HNI,Salaried CXO,Moderate,Marathi,3,345,28000000,17.1,44.7,37.9,0.0,0.0,0.0,0.3,FMCG,Short,No holding,7.6,0.0,False,0,1500000,165,100000
+C-0474,RM-06,HNI,Arjun,35,Tier 1,HNI,Salaried CXO,Moderate,Hindi,13,234,34500000,20.1,35.4,27.4,15.7,0.0,0.0,1.4,FMCG,Short,No holding,2.1,0.0,False,0,1200000,376,100000
+C-0475,RM-06,HNI,Rajesh,46,Tier 1,HNI,Professional,Aggressive,English,4,116,72300000,19.2,25.9,14.8,23.0,16.7,0.0,0.4,FMCG,Short,No holding,0.0,0.0,False,0,5500000,94,200000
+C-0476,RM-06,HNI,Bhavna,44,Tier 1,HNI,Inherited,Aggressive,Gujarati,7,274,12400000,32.7,41.7,25.4,0.0,0.0,0.0,0.2,Diversified,Short,No holding,0.0,10.9,True,20000,500000,101,100000
+C-0477,RM-06,HNI,Harsh,50,Tier 1,HNI,Salaried CXO,Conservative,English,10,205,48600000,8.7,21.3,47.9,11.6,0.0,0.0,10.5,IT,Short,No holding,0.0,0.0,False,0,4200000,42,200000
+C-0478,RM-06,HNI,Shreya,49,Tier 1,HNI,Salaried CXO,Moderate,English,3,164,10000000,10.6,43.0,36.1,0.0,0.0,0.0,10.3,Auto,Medium,No holding,7.4,0.0,True,20000,900000,187,0
+C-0479,RM-06,HNI,Ishaan,44,Tier 2,HNI,Professional,Conservative,English,15,284,64600000,2.1,32.5,56.6,0.0,0.0,0.0,8.8,Infra,Long,No holding,0.0,0.0,False,0,2400000,9,200000
+C-0480,RM-06,HNI,Tanvi,44,Tier 1,HNI,Business Owner,Moderate,English,13,355,10000000,30.9,37.7,25.6,0.0,0.0,0.0,5.8,BFSI,Long,No holding,0.0,0.0,False,0,700000,212,0
+C-0481,RM-06,HNI,Akash,49,Tier 2,UHNI,Professional,Moderate,English,1,69,114600000,20.6,31.9,29.4,15.2,0.0,0.0,2.9,IT,Long,No holding,0.0,0.0,True,275000,6600000,97,100000
+C-0482,RM-06,HNI,Neha,57,Tier 1,HNI,Professional,Conservative,Gujarati,16,221,24200000,6.6,46.2,39.5,0.0,0.0,2.1,5.6,Diversified,Medium,Unlisted Co. A,0.0,0.0,True,20000,1500000,171,0
+C-0483,RM-06,HNI,Ananya,51,Tier 2,HNI,Business Owner,Aggressive,English,13,311,61000000,33.6,29.9,16.3,18.4,0.0,0.0,1.8,IT,Short,No holding,0.0,0.0,False,0,2500000,256,300000
+C-0484,RM-06,HNI,Akash,61,Tier 1,HNI,Professional,Moderate,English,16,130,54500000,21.1,30.3,31.2,11.1,0.0,0.0,6.3,Auto,Short,No holding,1.3,0.0,False,0,4000000,289,400000
+C-0485,RM-06,HNI,Siddharth,58,Tier 1,HNI,Professional,Moderate,English,11,137,23600000,16.5,39.6,17.9,23.8,0.0,0.0,2.2,Diversified,Medium,No holding,4.7,18.7,True,50000,900000,30,100000
+C-0486,RM-06,HNI,Ananya,61,Tier 1,HNI,Business Owner,Aggressive,Gujarati,12,4,24600000,29.1,38.7,31.8,0.0,0.0,0.0,0.4,Diversified,Long,No holding,0.0,0.0,False,0,2000000,66,400000
+C-0487,RM-06,HNI,Uday,60,Tier 2,HNI,Salaried CXO,Moderate,English,7,129,18900000,18.1,36.0,40.6,0.0,0.0,0.0,5.3,IT,Short,No holding,5.9,0.0,False,0,1100000,136,100000
+C-0488,RM-06,HNI,Rahul,62,Tier 1,HNI,Salaried CXO,Moderate,English,5,234,46300000,31.2,23.8,25.4,16.3,0.0,0.0,3.3,IT,Short,No holding,7.6,0.0,False,0,3200000,220,0
+C-0489,RM-06,HNI,Pallavi,38,Tier 1,HNI,Professional,Conservative,Gujarati,5,388,23800000,9.6,44.0,43.4,0.0,0.0,0.0,3.0,BFSI,Medium,No holding,0.0,15.3,False,0,2000000,371,300000
+C-0490,RM-06,HNI,Vidya,54,Tier 2,HNI,Salaried CXO,Conservative,Gujarati,6,210,19100000,2.1,52.1,36.9,0.0,0.0,0.0,8.9,Diversified,Long,No holding,0.0,0.0,True,45000,1400000,62,100000
+C-0491,RM-06,HNI,Meera,59,Tier 2,HNI,Salaried CXO,Conservative,English,6,117,40300000,8.5,25.1,51.2,0.0,0.0,0.0,15.2,Pharma,Medium,No holding,0.0,0.0,False,0,2500000,33,0
+C-0492,RM-06,HNI,Mohit,61,Tier 1,HNI,Salaried CXO,Moderate,Hindi,14,324,18300000,22.9,36.5,36.0,0.0,0.0,0.0,4.6,Diversified,Medium,No holding,0.0,0.0,True,40000,1000000,266,0
+C-0493,RM-06,HNI,Mohit,41,Tier 1,HNI,Business Owner,Moderate,English,10,75,25000000,16.2,39.7,38.8,0.0,0.0,0.0,5.3,Infra,Medium,No holding,0.0,11.8,False,0,1400000,411,0
+C-0494,RM-06,HNI,Ramesh,54,Tier 1,HNI,Business Owner,Moderate,Marathi,8,75,31800000,23.3,46.0,23.5,0.0,0.0,0.0,7.2,IT,Short,No holding,1.6,0.0,True,70000,1600000,349,0
+C-0495,RM-06,HNI,Swati,49,Tier 1,HNI,Business Owner,Moderate,Hindi,14,208,21100000,16.8,52.1,29.1,0.0,0.0,0.0,2.0,BFSI,Medium,No holding,0.0,0.0,False,0,1800000,239,300000
+C-0496,RM-06,HNI,Prakash,65,Tier 1,HNI,Business Owner,Conservative,Hindi,14,326,22900000,9.2,23.1,57.0,0.0,0.0,0.0,10.7,IT,Medium,No holding,0.0,0.0,False,0,1000000,13,0
+C-0497,RM-06,HNI,Kabir,36,Tier 1,HNI,Business Owner,Moderate,English,17,85,69800000,22.9,40.5,21.2,14.0,0.0,0.0,1.4,Infra,Medium,No holding,0.0,12.4,False,0,3800000,244,200000
+C-0498,RM-06,HNI,Uday,41,Tier 1,HNI,Professional,Aggressive,Hindi,6,7,26800000,38.0,30.2,21.0,0.0,0.0,10.5,0.3,IT,Medium,Unlisted Co. D,0.0,0.0,True,50000,2100000,194,0
+C-0499,RM-06,HNI,Rahul,32,Tier 1,HNI,Professional,Conservative,English,5,289,24600000,5.5,18.3,58.4,0.0,0.0,0.0,17.8,IT,Short,No holding,0.0,0.0,False,0,1300000,190,100000
+C-0500,RM-06,HNI,Sunil,49,Tier 1,HNI,Business Owner,Moderate,English,1,235,27200000,15.7,43.1,36.9,0.0,0.0,0.0,4.3,BFSI,Short,No holding,7.4,0.0,True,20000,2300000,209,100000
+C-0501,RM-06,HNI,Naveen,68,Tier 1,HNI,Professional,Conservative,Hindi,3,274,38500000,7.0,36.0,50.0,0.0,0.0,0.0,7.0,BFSI,Short,No holding,7.8,0.0,False,0,1700000,238,200000
+C-0502,RM-06,HNI,Gaurav,48,Tier 1,HNI,Business Owner,Moderate,Gujarati,11,159,17000000,21.3,32.8,36.2,0.0,0.0,3.7,6.0,IT,Short,Unlisted Co. A,0.0,3.9,False,0,500000,303,100000
+C-0503,RM-06,HNI,Vikram,49,Tier 2,HNI,Salaried CXO,Moderate,English,15,48,37900000,26.3,27.7,24.9,19.9,0.0,0.0,1.2,BFSI,Short,No holding,0.0,17.2,False,0,2600000,84,0
+C-0504,RM-06,HNI,Rohan,53,Tier 2,HNI,Promoter,Conservative,Gujarati,11,133,34500000,5.9,33.8,45.9,0.0,0.0,0.0,14.4,BFSI,Medium,No holding,0.0,0.0,False,0,2100000,36,0
+C-0505,RM-06,HNI,Kavita,47,Tier 1,HNI,Salaried CXO,Moderate,English,18,188,11200000,27.8,40.9,25.7,0.0,0.0,2.5,3.1,Diversified,Long,Unlisted Co. A,4.0,0.0,False,0,1000000,26,0
+C-0506,RM-06,HNI,Swati,51,Tier 2,HNI,Business Owner,Aggressive,Hindi,12,173,80500000,30.2,37.2,15.1,16.0,0.0,0.0,1.5,Pharma,Medium,No holding,1.4,6.4,False,0,4500000,173,100000
+C-0507,RM-06,HNI,Aarav,52,Tier 1,HNI,Salaried CXO,Conservative,English,16,355,67000000,10.4,28.6,49.4,0.0,0.0,0.0,11.6,Diversified,Medium,No holding,0.0,0.0,False,0,2600000,215,800000
+C-0508,RM-06,HNI,Vidya,40,Tier 1,HNI,Professional,Moderate,English,5,90,19300000,21.8,38.4,36.9,0.0,0.0,0.0,2.9,Auto,Long,No holding,0.0,13.0,False,0,1000000,330,100000
+C-0509,RM-06,HNI,Priya,47,Tier 1,HNI,Business Owner,Moderate,Marathi,6,125,16200000,14.2,29.8,22.9,31.6,0.0,0.0,1.5,Infra,Long,No holding,1.8,0.0,False,0,900000,184,0
+C-0510,RM-06,HNI,Rahul,55,Tier 1,HNI,Promoter,Conservative,English,15,74,34000000,5.6,34.4,52.6,0.0,0.0,0.0,7.4,Diversified,Short,No holding,0.0,0.0,False,0,2200000,225,0
+C-0511,RM-06,HNI,Aarav,56,Tier 1,HNI,Salaried CXO,Moderate,Marathi,12,228,13700000,23.3,44.9,29.3,0.0,0.0,0.0,2.5,Infra,Short,No holding,0.0,0.0,False,0,600000,410,100000
+C-0512,RM-06,HNI,Devika,60,Tier 2,HNI,Business Owner,Moderate,English,9,322,63500000,22.2,33.5,20.6,13.8,0.0,5.5,4.4,BFSI,Short,Unlisted Co. B,2.0,0.0,False,0,4000000,316,0
+C-0513,RM-06,HNI,Sanjay,51,Tier 1,HNI,Salaried CXO,Conservative,Hindi,18,353,23200000,13.2,29.0,50.0,0.0,0.0,0.0,7.8,FMCG,Long,No holding,0.0,0.0,False,0,2000000,291,100000
+C-0514,RM-06,HNI,Prakash,51,Tier 1,HNI,Professional,Aggressive,English,14,91,73200000,39.4,24.2,12.8,20.5,0.0,0.0,3.1,FMCG,Short,No holding,0.0,19.2,False,0,4100000,156,800000
+C-0515,RM-06,HNI,Chirag,55,Tier 1,HNI,Salaried CXO,Moderate,Hindi,6,172,19100000,21.9,39.0,34.4,0.0,0.0,0.0,4.7,Auto,Short,No holding,0.0,0.0,True,15000,1300000,68,0
+C-0516,RM-06,HNI,Ramesh,43,Tier 1,HNI,Inherited,Moderate,Marathi,11,295,28200000,23.3,31.5,40.4,0.0,0.0,0.0,4.8,IT,Medium,No holding,0.0,6.4,True,60000,1200000,386,200000
+C-0517,RM-06,HNI,Shalini,42,Tier 2,HNI,Inherited,Conservative,Hindi,8,19,60200000,7.3,31.0,43.9,0.0,0.0,0.0,17.8,FMCG,Medium,No holding,0.0,13.8,True,55000,4700000,234,600000
+C-0518,RM-06,HNI,Kabir,47,Tier 1,HNI,Business Owner,Conservative,English,8,284,25100000,8.0,29.7,49.5,0.0,0.0,0.0,12.8,Infra,Medium,No holding,0.0,0.0,False,0,1200000,37,200000
+C-0519,RM-06,HNI,Rupal,37,Tier 2,HNI,Business Owner,Moderate,Gujarati,15,54,34800000,24.6,28.4,22.6,0.0,0.0,9.2,15.2,Auto,Long,Unlisted Co. A,0.0,0.0,False,0,2300000,205,100000
+C-0520,RM-06,HNI,Vinod,52,Tier 1,HNI,Salaried CXO,Moderate,Hindi,13,14,54700000,20.8,39.9,21.2,11.7,0.0,3.2,3.2,Diversified,Medium,Unlisted Co. A,0.0,0.0,True,70000,2600000,42,200000
+C-0521,RM-06,HNI,Pallavi,57,Tier 1,HNI,Professional,Conservative,English,1,46,22100000,5.9,36.5,54.0,0.0,0.0,0.0,3.6,Auto,Long,No holding,0.0,0.0,False,0,800000,412,100000
+C-0522,RM-06,HNI,Ishaan,42,Tier 1,HNI,Professional,Moderate,Hindi,11,352,15000000,17.7,45.6,28.5,0.0,0.0,6.1,2.1,Infra,Short,Unlisted Co. D,0.0,11.8,False,0,700000,224,100000
+C-0523,RM-06,HNI,Vinod,52,Tier 2,HNI,Business Owner,Moderate,Hindi,12,272,13400000,19.9,40.9,34.7,0.0,0.0,0.0,4.5,BFSI,Long,No holding,0.0,0.0,False,0,600000,330,0
+C-0524,RM-06,HNI,Varun,42,Tier 1,HNI,Promoter,Moderate,Gujarati,10,315,41400000,20.4,34.4,31.7,12.1,0.0,0.0,1.4,FMCG,Medium,No holding,3.2,0.0,True,35000,3500000,200,0
+C-0525,RM-06,HNI,Neha,39,Tier 1,HNI,Salaried CXO,Aggressive,English,6,276,37200000,29.3,33.8,20.9,0.0,0.0,14.8,1.2,Infra,Short,Unlisted Co. A,0.0,0.0,False,0,1700000,13,600000
+C-0526,RM-06,HNI,Naveen,67,Tier 1,HNI,Inherited,Moderate,English,12,318,53800000,23.2,32.8,25.4,17.2,0.0,0.0,1.4,Auto,Long,No holding,0.0,0.0,False,0,4800000,269,100000
+C-0527,RM-06,HNI,Swati,39,Tier 1,HNI,Inherited,Moderate,Marathi,18,199,25800000,30.7,42.9,22.5,0.0,0.0,0.0,3.9,Diversified,Long,No holding,0.0,0.0,False,0,1500000,276,0
+C-0528,RM-06,HNI,Aarav,36,Tier 1,HNI,Business Owner,Moderate,Hindi,2,323,13700000,11.2,39.6,41.3,0.0,0.0,1.3,6.6,IT,Long,Unlisted Co. A,0.0,0.0,True,15000,600000,100,0
+C-0529,RM-06,HNI,Kavita,50,Tier 2,HNI,Business Owner,Moderate,English,11,23,10000000,25.9,39.4,30.2,0.0,0.0,0.0,4.5,Infra,Long,No holding,0.0,0.0,True,10000,500000,302,0
+C-0530,RM-06,HNI,Prakash,50,Tier 1,UHNI,Business Owner,Aggressive,Marathi,17,233,145300000,30.1,21.2,11.7,24.1,11.8,0.0,1.1,Diversified,Short,No holding,0.0,0.0,False,0,6000000,98,400000
+C-0531,RM-06,HNI,Ramesh,54,Tier 1,HNI,Inherited,Aggressive,English,8,302,40100000,33.7,44.7,19.1,0.0,0.0,0.0,2.5,Pharma,Short,No holding,1.7,0.0,False,0,3200000,292,200000
+C-0532,RM-06,HNI,Rakesh,66,Tier 1,HNI,Salaried CXO,Moderate,English,7,397,32300000,30.8,23.3,22.0,17.1,0.0,0.0,6.8,Infra,Short,No holding,2.0,0.0,True,60000,1200000,315,100000
+C-0533,RM-06,HNI,Manish,41,Tier 1,HNI,Inherited,Moderate,Gujarati,5,144,35000000,20.3,17.9,38.4,15.9,0.0,0.0,7.5,Diversified,Long,No holding,0.0,0.0,False,0,2900000,62,500000
+C-0534,RM-06,HNI,Tanvi,43,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,5,72,13700000,35.3,39.3,24.1,0.0,0.0,0.0,1.3,Infra,Long,No holding,0.0,5.0,True,20000,400000,126,100000
+C-0535,RM-06,HNI,Ramesh,62,Tier 2,HNI,Salaried CXO,Aggressive,Marathi,8,288,19400000,30.5,45.3,23.5,0.0,0.0,0.0,0.7,Diversified,Long,No holding,2.9,5.2,False,0,900000,72,100000
+C-0536,RM-06,HNI,Pooja,56,Tier 1,HNI,Inherited,Conservative,Hindi,14,29,78300000,5.2,26.1,62.1,0.0,0.0,0.0,6.6,Auto,Long,No holding,0.0,0.0,False,0,3000000,306,500000
+C-0537,RM-06,HNI,Vikram,55,Tier 1,HNI,Salaried CXO,Conservative,English,4,310,43100000,11.1,22.0,50.9,0.0,0.0,0.0,16.0,Auto,Medium,No holding,0.0,0.0,True,85000,3100000,102,200000
+C-0538,RM-06,HNI,Arjun,43,Tier 1,HNI,Professional,Moderate,English,5,281,19700000,22.5,36.4,34.8,0.0,0.0,0.0,6.3,IT,Short,No holding,0.0,0.0,True,20000,1200000,270,0
+C-0539,RM-06,HNI,Sanjay,58,Tier 1,HNI,Salaried CXO,Aggressive,English,18,276,15300000,20.5,42.3,36.2,0.0,0.0,0.0,1.0,IT,Short,No holding,5.0,0.0,False,0,1300000,178,0
+C-0540,RM-06,HNI,Vidya,55,Tier 2,HNI,Business Owner,Aggressive,Marathi,18,118,22600000,36.6,39.7,20.4,0.0,0.0,0.0,3.3,BFSI,Medium,No holding,0.0,9.7,False,0,1200000,39,400000
+C-0541,RM-06,HNI,Ramesh,50,Tier 1,HNI,Business Owner,Aggressive,English,5,48,25200000,21.9,31.2,25.1,21.0,0.0,0.0,0.8,BFSI,Medium,No holding,0.0,0.0,True,45000,800000,371,100000
+C-0542,RM-06,HNI,Priya,43,Tier 2,HNI,Business Owner,Conservative,English,8,243,92600000,14.6,34.3,45.0,0.0,0.0,0.0,6.1,Auto,Short,No holding,0.0,0.0,False,0,7000000,300,500000
+C-0543,RM-07,HNI,Deepak,46,Tier 2,HNI,Salaried CXO,Aggressive,English,3,233,51800000,15.4,32.8,17.0,25.6,0.0,8.1,1.1,Pharma,Short,Unlisted Co. A,5.6,0.0,False,0,1800000,133,400000
+C-0544,RM-07,HNI,Ramesh,61,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,3,7,17200000,11.6,50.5,32.4,0.0,0.0,0.0,5.5,BFSI,Short,No holding,5.8,16.6,False,0,1000000,82,0
+C-0545,RM-07,HNI,Manish,40,Tier 1,HNI,Inherited,Moderate,English,13,196,37300000,17.5,45.6,34.8,0.0,0.0,0.0,2.1,IT,Short,No holding,0.0,0.0,False,0,1700000,30,200000
+C-0546,RM-07,HNI,Vidya,32,Tier 2,HNI,Salaried CXO,Conservative,Marathi,1,227,42400000,11.0,27.2,51.7,0.0,0.0,1.6,8.5,Diversified,Long,Unlisted Co. B,0.0,0.0,True,90000,1400000,180,200000
+C-0547,RM-07,HNI,Priya,53,Tier 2,HNI,Business Owner,Moderate,English,8,23,37100000,30.2,28.7,37.5,0.0,0.0,0.0,3.6,BFSI,Long,No holding,0.0,0.0,False,0,1800000,343,100000
+C-0548,RM-07,HNI,Ishaan,42,Tier 1,HNI,Promoter,Moderate,Hindi,9,81,59300000,26.5,33.9,17.9,19.8,0.0,0.0,1.9,Diversified,Short,No holding,0.0,0.0,False,0,2200000,333,0
+C-0549,RM-07,HNI,Vidya,38,Tier 1,HNI,Business Owner,Aggressive,English,8,395,66900000,39.2,34.7,24.3,0.0,0.0,0.0,1.8,Diversified,Medium,No holding,0.0,0.0,True,115000,2900000,357,100000
+C-0550,RM-07,HNI,Rahul,56,Tier 2,HNI,Business Owner,Aggressive,English,10,251,29400000,32.9,47.4,19.7,0.0,0.0,0.0,0.0,Auto,Medium,No holding,0.0,0.0,False,0,1500000,256,100000
+C-0551,RM-07,HNI,Kavita,47,Tier 1,HNI,Inherited,Conservative,English,3,183,28800000,16.0,26.2,48.6,0.0,0.0,0.0,9.2,BFSI,Medium,No holding,2.0,6.7,False,0,1600000,365,200000
+C-0552,RM-07,HNI,Chirag,37,Tier 1,HNI,Promoter,Conservative,English,5,92,44100000,3.4,20.0,47.8,0.0,0.0,0.0,28.8,Pharma,Medium,Unlisted Co. A,0.0,16.5,True,35000,2600000,330,400000
+C-0553,RM-07,HNI,Prakash,65,Tier 1,HNI,Professional,Moderate,English,1,50,19300000,13.8,42.6,36.2,0.0,0.0,0.0,7.4,BFSI,Long,No holding,0.0,0.0,False,0,1200000,339,0
+C-0554,RM-07,HNI,Shalini,34,Tier 1,HNI,Salaried CXO,Moderate,English,18,171,34600000,13.9,45.6,35.7,0.0,0.0,0.0,4.8,Diversified,Short,No holding,0.0,0.0,False,0,1800000,216,0
+C-0555,RM-07,HNI,Swati,47,Tier 2,HNI,Salaried CXO,Conservative,Hindi,15,218,94500000,3.9,28.8,63.2,0.0,0.0,0.0,4.1,BFSI,Medium,No holding,2.3,0.0,False,0,5700000,40,200000
+C-0556,RM-07,HNI,Chirag,32,Tier 1,HNI,Inherited,Conservative,English,5,72,19700000,13.7,27.3,52.7,0.0,0.0,0.0,6.3,Diversified,Medium,No holding,0.0,0.0,False,0,1100000,162,0
+C-0557,RM-07,HNI,Naveen,50,Tier 1,HNI,Inherited,Conservative,English,1,320,37300000,12.0,21.8,55.7,0.0,0.0,0.0,10.5,Infra,Medium,No holding,0.0,0.0,True,90000,3300000,356,200000
+C-0558,RM-07,HNI,Yash,42,Tier 1,HNI,Business Owner,Moderate,Marathi,5,172,32500000,24.7,24.7,28.1,18.6,0.0,0.0,3.9,FMCG,Short,No holding,0.0,11.3,False,0,1100000,313,300000
+C-0559,RM-07,HNI,Ramesh,55,Tier 1,UHNI,Inherited,Conservative,Hindi,18,23,135600000,6.4,16.3,46.5,13.5,0.0,0.4,16.9,Pharma,Medium,Unlisted Co. C,0.0,0.0,False,0,8800000,10,1000000
+C-0560,RM-07,HNI,Arjun,48,Tier 2,HNI,Professional,Moderate,English,15,55,33500000,21.0,28.5,31.1,18.6,0.0,0.0,0.8,Pharma,Short,No holding,0.0,0.0,False,0,1400000,43,0
+C-0561,RM-07,HNI,Vidya,60,Tier 2,HNI,Business Owner,Moderate,English,12,344,34600000,19.8,25.0,22.0,19.8,0.0,0.0,13.4,Auto,Medium,No holding,0.0,0.0,False,0,1800000,278,100000
+C-0562,RM-07,HNI,Rohan,44,Tier 1,HNI,Business Owner,Moderate,English,17,135,25500000,8.8,47.6,41.2,0.0,0.0,0.0,2.4,Pharma,Medium,No holding,0.0,0.0,True,15000,1600000,411,100000
+C-0563,RM-07,HNI,Nikhil,34,Tier 2,HNI,Business Owner,Moderate,Hindi,4,149,45200000,21.6,39.5,22.8,13.6,0.0,0.0,2.5,IT,Short,No holding,0.0,0.0,True,55000,3400000,308,100000
+C-0564,RM-07,HNI,Siddharth,50,Tier 1,HNI,Inherited,Conservative,Gujarati,10,80,52200000,12.7,23.5,50.9,0.0,0.0,3.8,9.1,Infra,Long,Unlisted Co. A,7.3,0.0,False,0,4600000,398,100000
+C-0565,RM-07,HNI,Ramesh,46,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,15,323,27600000,26.7,33.8,14.5,23.5,0.0,0.0,1.5,BFSI,Long,No holding,0.0,0.0,True,15000,1600000,32,100000
+C-0566,RM-07,HNI,Jaya,32,Tier 1,HNI,Professional,Moderate,Marathi,1,326,77500000,21.3,20.7,31.9,14.5,0.0,7.9,3.7,Diversified,Medium,Unlisted Co. A,0.0,6.8,False,0,3500000,370,100000
+C-0567,RM-07,HNI,Sneha,39,Tier 1,HNI,Business Owner,Aggressive,Hindi,8,97,52200000,20.7,38.4,16.9,23.3,0.0,0.0,0.7,Infra,Long,No holding,0.0,18.2,False,0,4000000,58,0
+C-0568,RM-07,HNI,Jaya,41,Tier 1,HNI,Professional,Moderate,Marathi,7,292,71900000,21.0,23.5,16.8,16.5,17.4,0.0,4.8,Pharma,Long,No holding,0.0,3.6,True,160000,3100000,371,200000
+C-0569,RM-07,HNI,Harsh,62,Tier 2,HNI,Salaried CXO,Moderate,Hindi,4,181,37600000,11.9,19.9,34.9,21.7,0.0,0.0,11.6,Diversified,Short,No holding,0.0,10.1,False,0,2300000,409,300000
+C-0570,RM-07,HNI,Rahul,54,Tier 1,HNI,Inherited,Conservative,Hindi,5,67,51400000,5.8,27.8,46.9,0.0,0.0,2.7,16.8,FMCG,Medium,Unlisted Co. B,0.0,0.0,False,0,4200000,217,0
+C-0571,RM-07,HNI,Aarav,45,Tier 1,HNI,Salaried CXO,Moderate,Hindi,18,318,40000000,21.6,23.1,25.3,22.6,0.0,0.0,7.4,Diversified,Medium,No holding,0.0,0.0,True,35000,2200000,226,300000
+C-0572,RM-07,HNI,Rakesh,52,Tier 2,UHNI,Professional,Moderate,Gujarati,10,34,100300000,15.8,30.9,31.8,9.3,0.0,0.0,12.2,Pharma,Medium,No holding,0.0,11.3,False,0,6400000,211,300000
+C-0573,RM-07,HNI,Prakash,32,Tier 2,HNI,Professional,Moderate,English,2,349,48000000,25.0,30.8,30.5,11.0,0.0,0.0,2.7,FMCG,Long,No holding,0.0,7.2,True,115000,1800000,234,100000
+C-0574,RM-07,HNI,Sanjay,43,Tier 1,HNI,Salaried CXO,Conservative,English,13,11,45200000,15.2,38.4,40.3,0.0,0.0,0.0,6.1,BFSI,Medium,No holding,0.0,11.4,False,0,1500000,345,300000
+C-0575,RM-07,HNI,Deepak,52,Tier 1,HNI,Inherited,Conservative,English,11,129,35000000,9.7,35.9,45.3,0.0,0.0,0.0,9.1,FMCG,Short,No holding,0.0,0.0,False,0,3100000,121,0
+C-0576,RM-07,HNI,Priya,49,Tier 2,HNI,Salaried CXO,Conservative,English,8,91,33900000,9.3,42.4,41.7,0.0,0.0,0.4,6.2,Auto,Medium,Unlisted Co. D,0.0,15.2,False,0,1400000,122,0
+C-0577,RM-07,HNI,Neha,43,Tier 1,HNI,Inherited,Moderate,Marathi,8,94,51300000,17.4,37.4,19.2,18.1,0.0,0.0,7.9,Pharma,Long,No holding,6.6,13.1,False,0,2600000,406,100000
+C-0578,RM-07,HNI,Devika,48,Tier 1,HNI,Business Owner,Moderate,Hindi,10,192,70600000,21.5,40.1,29.4,0.0,0.0,2.0,7.0,FMCG,Short,Unlisted Co. B,0.0,0.0,False,0,4300000,357,400000
+C-0579,RM-07,HNI,Neha,51,Tier 1,HNI,Professional,Aggressive,English,17,300,30900000,41.4,20.2,20.0,17.3,0.0,0.0,1.1,Infra,Short,No holding,2.8,0.0,False,0,1600000,229,100000
+C-0580,RM-07,HNI,Vidya,48,Tier 1,HNI,Inherited,Conservative,English,14,160,48200000,8.4,32.1,46.6,0.0,0.0,0.0,12.9,IT,Short,No holding,0.0,0.0,True,40000,1700000,88,400000
+C-0581,RM-07,HNI,Sunil,56,Tier 1,HNI,Inherited,Conservative,English,8,206,49800000,11.5,19.4,58.4,0.0,0.0,2.3,8.4,Infra,Medium,Unlisted Co. C,0.0,3.2,True,65000,2100000,401,200000
+C-0582,RM-07,HNI,Deepak,51,Tier 2,HNI,Salaried CXO,Conservative,Gujarati,5,388,54800000,8.4,23.8,61.2,0.0,0.0,0.0,6.6,BFSI,Short,No holding,0.0,0.0,True,55000,3300000,369,300000
+C-0583,RM-07,HNI,Swati,53,Tier 1,HNI,Salaried CXO,Conservative,Marathi,2,199,17600000,3.0,22.8,53.1,0.0,0.0,0.0,21.1,BFSI,Short,No holding,0.0,9.5,False,0,1000000,141,400000
+C-0584,RM-07,HNI,Priya,63,Tier 2,HNI,Inherited,Moderate,English,4,317,27100000,23.3,29.4,20.7,22.8,0.0,0.0,3.8,Diversified,Short,No holding,0.0,0.0,False,0,2100000,229,100000
+C-0585,RM-07,HNI,Akash,55,Tier 1,HNI,Salaried CXO,Conservative,English,3,154,21200000,11.4,37.2,45.3,0.0,0.0,0.0,6.1,BFSI,Medium,No holding,0.0,0.0,True,35000,1000000,179,100000
+C-0586,RM-07,HNI,Vidya,64,Tier 1,HNI,Inherited,Aggressive,Marathi,15,32,45800000,35.9,18.6,23.4,21.1,0.0,0.0,1.0,Pharma,Short,No holding,0.0,0.0,False,0,4000000,354,200000
+C-0587,RM-07,HNI,Pooja,42,Tier 1,HNI,Business Owner,Aggressive,Hindi,11,103,27400000,25.5,38.5,34.3,0.0,0.0,0.0,1.7,FMCG,Short,No holding,0.0,0.0,False,0,1300000,290,200000
+C-0588,RM-07,HNI,Varun,34,Tier 1,HNI,Business Owner,Moderate,Gujarati,1,64,34300000,18.0,44.0,32.5,0.0,0.0,0.0,5.5,FMCG,Medium,No holding,0.0,0.0,True,30000,1700000,209,400000
+C-0589,RM-07,HNI,Arjun,47,Tier 1,HNI,Professional,Aggressive,English,17,362,23300000,35.2,23.9,13.4,27.0,0.0,0.0,0.5,Diversified,Short,No holding,0.0,12.9,True,55000,2000000,406,100000
+C-0590,RM-07,HNI,Devika,46,Tier 2,HNI,Salaried CXO,Moderate,English,3,11,36000000,22.7,34.3,24.9,17.4,0.0,0.0,0.7,IT,Short,No holding,7.9,0.0,False,0,2900000,257,100000
+C-0591,RM-07,HNI,Varun,61,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,12,329,24200000,29.9,34.3,28.0,0.0,0.0,4.7,3.1,IT,Medium,Unlisted Co. C,0.0,0.0,True,55000,1200000,205,300000
+C-0592,RM-07,HNI,Ishaan,38,Tier 1,HNI,Salaried CXO,Conservative,English,1,56,68300000,13.5,18.5,39.2,18.2,0.0,0.5,10.1,Diversified,Short,Unlisted Co. A,0.0,0.0,False,0,3700000,389,300000
+C-0593,RM-07,HNI,Prakash,47,Tier 1,HNI,Promoter,Aggressive,Gujarati,11,61,58600000,25.8,37.5,23.0,8.8,0.0,0.0,4.9,IT,Short,No holding,0.0,15.4,False,0,4700000,191,100000
+C-0594,RM-07,HNI,Rahul,52,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,10,212,48900000,6.6,31.5,52.2,0.0,0.0,0.0,9.7,BFSI,Medium,No holding,0.0,0.0,False,0,1700000,178,300000
+C-0595,RM-07,HNI,Vikram,49,Tier 1,HNI,Promoter,Moderate,English,17,33,38100000,23.9,31.4,25.0,16.5,0.0,0.0,3.2,FMCG,Short,No holding,0.0,0.0,False,0,1800000,166,100000
+C-0596,RM-07,HNI,Lakshmi,46,Tier 1,HNI,Salaried CXO,Aggressive,English,11,31,14700000,26.6,42.4,30.5,0.0,0.0,0.0,0.5,Diversified,Medium,No holding,0.0,0.0,True,25000,900000,96,0
+C-0597,RM-07,HNI,Shreya,51,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,9,310,35000000,15.7,34.6,21.3,16.0,0.0,0.0,12.4,Auto,Long,No holding,3.7,0.0,False,0,2800000,120,100000
+C-0598,RM-07,HNI,Shalini,58,Tier 2,HNI,Business Owner,Conservative,Marathi,10,24,29600000,11.8,34.0,47.7,0.0,0.0,0.0,6.5,Auto,Medium,No holding,0.0,0.0,False,0,1900000,42,400000
+C-0599,RM-07,HNI,Rupal,62,Tier 2,HNI,Salaried CXO,Conservative,English,12,239,51600000,8.7,16.8,46.7,13.4,0.0,0.0,14.4,Pharma,Medium,No holding,0.0,0.0,False,0,3100000,307,500000
+C-0600,RM-07,HNI,Pooja,48,Tier 1,HNI,Business Owner,Conservative,Gujarati,8,48,63300000,11.1,35.1,34.5,9.8,0.0,0.0,9.5,Diversified,Long,No holding,0.0,0.0,False,0,5600000,249,0
+C-0601,RM-07,HNI,Ananya,41,Tier 1,HNI,Business Owner,Moderate,English,13,35,53800000,10.2,36.3,28.9,16.7,0.0,0.0,7.9,Diversified,Medium,No holding,0.0,4.0,True,65000,2000000,392,400000
+C-0602,RM-07,HNI,Jaya,62,Tier 1,HNI,Salaried CXO,Moderate,Marathi,10,268,90100000,18.7,29.2,35.8,14.8,0.0,0.0,1.5,FMCG,Long,No holding,0.0,5.9,False,0,6900000,258,500000
+C-0603,RM-07,HNI,Prakash,38,Tier 1,HNI,Professional,Moderate,Hindi,18,157,32900000,20.7,34.7,33.0,0.0,0.0,0.0,11.6,Diversified,Medium,No holding,0.0,0.0,False,0,1200000,38,0
+C-0604,RM-07,HNI,Mohit,64,Tier 2,HNI,Salaried CXO,Aggressive,English,4,8,32200000,17.8,54.3,27.9,0.0,0.0,0.0,0.0,Diversified,Medium,No holding,0.0,0.0,False,0,2400000,262,0
+C-0605,RM-07,HNI,Devika,60,Tier 1,HNI,Salaried CXO,Conservative,Hindi,14,272,79600000,14.4,25.7,41.3,0.0,0.0,0.0,18.6,FMCG,Long,No holding,0.0,0.0,False,0,5000000,77,100000
+C-0606,RM-07,HNI,Rupal,61,Tier 2,HNI,Salaried CXO,Aggressive,Hindi,15,387,49300000,17.0,23.5,16.2,20.6,22.5,0.0,0.2,Pharma,Short,No holding,0.0,0.0,False,0,2300000,20,200000
+C-0607,RM-07,HNI,Nikhil,54,Tier 1,HNI,Salaried CXO,Moderate,Hindi,13,224,39300000,24.7,28.0,29.8,15.3,0.0,0.0,2.2,Pharma,Long,No holding,0.0,0.0,False,0,2500000,279,200000
+C-0608,RM-07,HNI,Siddharth,32,Tier 2,UHNI,Professional,Moderate,English,18,152,124200000,20.4,27.6,16.6,12.3,13.2,8.8,1.1,Diversified,Medium,Unlisted Co. B,0.0,0.0,False,0,10300000,16,0
+C-0609,RM-07,HNI,Prakash,39,Tier 2,HNI,Inherited,Moderate,Hindi,8,337,61800000,19.9,37.4,25.8,15.3,0.0,0.0,1.6,IT,Medium,No holding,0.0,16.1,True,90000,3600000,174,200000
+C-0610,RM-07,HNI,Manish,51,Tier 2,HNI,Inherited,Aggressive,Gujarati,10,135,40500000,19.4,39.2,27.5,12.4,0.0,0.0,1.5,Auto,Medium,No holding,0.0,0.0,False,0,1200000,376,100000
+C-0611,RM-07,HNI,Bhavna,42,Tier 2,HNI,Business Owner,Conservative,English,3,245,30900000,5.3,26.7,50.8,0.0,0.0,0.0,17.2,BFSI,Short,No holding,0.0,0.0,False,0,1000000,111,0
+C-0612,RM-07,HNI,Bhavna,45,Tier 1,HNI,Salaried CXO,Moderate,English,7,190,93300000,22.1,34.3,21.3,20.8,0.0,0.0,1.5,Diversified,Short,No holding,0.0,8.5,False,0,6300000,293,600000
+C-0613,RM-07,HNI,Parth,54,Tier 1,HNI,Inherited,Aggressive,Marathi,3,290,50400000,17.9,35.6,28.1,15.9,0.0,0.0,2.5,Diversified,Long,No holding,7.9,0.0,False,0,3600000,161,0
+C-0614,RM-07,HNI,Lakshmi,46,Tier 1,HNI,Inherited,Moderate,Hindi,15,207,45600000,19.8,25.2,28.4,21.8,0.0,0.0,4.8,Infra,Medium,No holding,0.0,16.0,True,80000,2500000,52,300000
+C-0615,RM-07,HNI,Sanjay,37,Tier 2,HNI,Salaried CXO,Conservative,English,15,193,65300000,9.7,16.1,49.1,8.2,0.0,0.0,16.9,Diversified,Long,No holding,0.0,16.2,False,0,2900000,86,300000
+C-0616,RM-07,HNI,Rakesh,56,Tier 2,HNI,Salaried CXO,Moderate,Gujarati,4,168,73000000,22.0,19.7,23.3,14.2,15.4,0.0,5.4,Auto,Short,No holding,0.0,0.0,True,55000,5300000,35,300000
+C-0617,RM-07,HNI,Kabir,53,Tier 1,HNI,Professional,Aggressive,English,15,119,60900000,30.9,15.1,11.2,25.6,16.8,0.0,0.4,Diversified,Short,No holding,0.0,0.0,True,30000,2900000,67,200000
+C-0618,RM-07,HNI,Shreya,46,Tier 2,HNI,Promoter,Conservative,Gujarati,6,195,73200000,19.4,25.4,51.0,0.0,0.0,0.0,4.2,Diversified,Short,No holding,0.0,7.2,False,0,2500000,72,800000
+C-0619,RM-07,HNI,Priya,54,Tier 1,HNI,Salaried CXO,Moderate,English,14,25,57700000,20.6,15.5,32.0,24.7,0.0,0.0,7.2,FMCG,Short,No holding,0.0,0.0,True,90000,3100000,371,100000
+C-0620,RM-07,HNI,Uday,49,Tier 1,HNI,Business Owner,Aggressive,English,17,136,61100000,35.2,25.2,11.3,25.6,0.0,0.0,2.7,FMCG,Medium,No holding,0.0,12.0,False,0,3800000,339,0
+C-0621,RM-07,HNI,Vikram,60,Tier 1,HNI,Inherited,Moderate,Marathi,15,31,30100000,12.8,35.1,20.5,26.4,0.0,0.0,5.2,Infra,Long,No holding,3.2,0.0,False,0,2600000,151,0
+C-0622,RM-07,HNI,Vinod,49,Tier 1,UHNI,Professional,Conservative,Gujarati,4,129,121800000,7.5,31.5,48.8,4.7,0.0,0.0,7.5,FMCG,Long,No holding,0.0,0.0,False,0,8000000,305,0
+C-0623,RM-07,HNI,Chirag,60,Tier 1,HNI,Business Owner,Moderate,English,4,141,22800000,22.8,46.1,27.2,0.0,0.0,0.0,3.9,Diversified,Medium,No holding,0.0,0.0,True,45000,1000000,89,200000
+C-0624,RM-07,HNI,Pooja,32,Tier 2,HNI,Salaried CXO,Moderate,Marathi,3,11,53300000,14.6,28.4,35.6,12.6,0.0,0.9,7.9,BFSI,Short,Unlisted Co. C,0.0,0.0,True,100000,4300000,270,200000
+C-0625,RM-07,HNI,Aditi,52,Tier 1,HNI,Salaried CXO,Moderate,Marathi,16,119,21600000,17.2,38.0,43.7,0.0,0.0,0.0,1.1,Diversified,Medium,No holding,7.5,0.0,False,0,1000000,89,300000
+C-0626,RM-07,HNI,Uday,44,Tier 1,HNI,Professional,Moderate,Gujarati,10,269,42600000,17.4,46.1,31.7,0.0,0.0,0.0,4.8,BFSI,Medium,No holding,0.0,0.0,False,0,3700000,270,200000
+C-0627,RM-07,HNI,Rupal,40,Tier 1,HNI,Professional,Moderate,English,3,387,32900000,14.8,42.6,15.6,16.8,0.0,0.0,10.2,Pharma,Medium,No holding,0.0,7.4,False,0,1600000,153,200000
+C-0628,RM-07,HNI,Jaya,58,Tier 1,HNI,Business Owner,Aggressive,English,11,247,48500000,23.9,34.6,21.9,16.7,0.0,1.8,1.1,Auto,Medium,Unlisted Co. B,0.0,9.9,False,0,4100000,361,200000
+C-0629,RM-07,HNI,Rajesh,56,Tier 1,HNI,Business Owner,Aggressive,Gujarati,10,285,54300000,35.9,30.4,10.4,15.8,0.0,0.0,7.5,Diversified,Short,No holding,1.9,0.0,True,30000,4500000,351,400000
+C-0630,RM-07,HNI,Prakash,32,Tier 2,HNI,Professional,Aggressive,Marathi,11,267,26600000,35.1,43.0,21.7,0.0,0.0,0.0,0.2,BFSI,Short,No holding,0.0,0.0,False,0,2200000,143,0
+C-0631,RM-07,HNI,Prakash,54,Tier 1,HNI,Business Owner,Moderate,English,12,377,44300000,24.8,31.6,26.3,16.0,0.0,0.0,1.3,FMCG,Long,No holding,0.0,7.2,False,0,1400000,22,0
+C-0632,RM-07,HNI,Pooja,53,Tier 2,HNI,Salaried CXO,Conservative,English,3,376,96900000,10.5,37.5,38.5,9.4,0.0,1.2,2.9,IT,Medium,Unlisted Co. B,0.0,0.0,True,95000,7800000,138,0
+C-0633,RM-07,HNI,Yash,41,Tier 2,HNI,Salaried CXO,Moderate,English,7,46,21900000,16.9,34.7,47.0,0.0,0.0,0.0,1.4,Diversified,Long,No holding,0.0,0.0,False,0,1600000,122,100000
+C-0634,RM-07,HNI,Shreya,40,Tier 2,HNI,Salaried CXO,Conservative,English,13,189,28100000,16.2,24.0,52.7,0.0,0.0,0.0,7.1,BFSI,Short,No holding,0.0,0.0,True,55000,1400000,181,0
+C-0635,RM-07,HNI,Mohit,34,Tier 1,HNI,Professional,Moderate,Hindi,17,363,72200000,28.1,32.3,24.0,13.1,0.0,0.0,2.5,BFSI,Medium,No holding,0.0,0.0,True,95000,4300000,243,400000
+C-0636,RM-07,HNI,Siddharth,45,Tier 1,HNI,Business Owner,Conservative,English,5,352,47000000,6.1,26.5,38.8,12.3,0.0,0.0,16.3,BFSI,Short,No holding,0.0,0.0,False,0,3200000,415,500000
+C-0637,RM-07,HNI,Chirag,46,Tier 2,HNI,Professional,Moderate,Hindi,11,214,48900000,34.8,40.2,19.0,0.0,0.0,2.2,3.8,BFSI,Long,Unlisted Co. C,0.0,0.0,False,0,4200000,31,1300000
+C-0638,RM-07,HNI,Kabir,55,Tier 1,HNI,Professional,Moderate,Hindi,18,178,79000000,29.5,30.2,20.0,13.3,0.0,0.0,7.0,IT,Short,No holding,0.0,0.0,False,0,6100000,235,400000
+C-0639,RM-07,HNI,Bhavna,50,Tier 1,HNI,Salaried CXO,Moderate,English,11,24,29100000,14.2,28.2,26.9,27.4,0.0,0.0,3.3,BFSI,Medium,No holding,0.0,12.0,False,0,1600000,76,0
+C-0640,RM-07,HNI,Uday,38,Tier 1,HNI,Inherited,Moderate,Marathi,5,191,33800000,17.9,29.1,27.2,22.8,0.0,0.0,3.0,IT,Short,No holding,0.0,0.0,False,0,2300000,231,0
+C-0641,RM-08,Emerging,Aditi,54,Tier 1,HNI,Business Owner,Conservative,Gujarati,15,62,16700000,7.1,25.1,52.7,0.0,0.0,0.0,15.1,BFSI,Short,No holding,0.0,0.0,True,40000,600000,179,100000
+C-0642,RM-08,Emerging,Rohan,63,Tier 1,HNI,Salaried CXO,Moderate,English,8,93,41300000,8.4,38.8,24.8,26.0,0.0,0.0,2.0,Diversified,Short,No holding,6.2,0.0,True,40000,2600000,84,100000
+C-0643,RM-08,Emerging,Uday,61,Tier 1,HNI,Salaried CXO,Conservative,English,13,80,26200000,13.8,33.2,49.8,0.0,0.0,0.0,3.2,BFSI,Long,No holding,0.0,0.0,True,40000,1900000,64,0
+C-0644,RM-08,Emerging,Shalini,65,Tier 2,HNI,Professional,Moderate,Gujarati,8,281,19900000,25.1,34.1,34.6,0.0,0.0,0.0,6.2,Infra,Medium,No holding,0.0,0.0,True,50000,1100000,301,0
+C-0645,RM-08,Emerging,Pallavi,48,Tier 2,HNI,Professional,Conservative,English,16,273,43100000,8.8,23.8,55.0,0.0,0.0,0.0,12.4,IT,Short,No holding,0.0,17.3,True,80000,2800000,379,100000
+C-0646,RM-08,Emerging,Kavita,45,Tier 1,HNI,Professional,Moderate,Hindi,4,152,38800000,23.6,32.0,21.9,17.4,0.0,0.0,5.1,Diversified,Short,No holding,0.0,0.0,False,0,3200000,367,400000
+C-0647,RM-08,Emerging,Devika,52,Tier 2,HNI,Inherited,Conservative,Marathi,3,395,21600000,13.4,26.7,50.6,0.0,0.0,0.0,9.3,Pharma,Short,No holding,0.0,17.5,True,25000,900000,75,100000
+C-0648,RM-08,Emerging,Bhavna,46,Tier 1,HNI,Salaried CXO,Conservative,English,18,158,82900000,13.5,26.6,44.8,0.0,0.0,0.0,15.1,Diversified,Long,No holding,0.0,0.0,True,90000,3200000,369,200000
+C-0649,RM-08,Emerging,Shreya,32,Tier 1,HNI,Salaried CXO,Moderate,English,7,178,15700000,22.2,34.6,31.6,0.0,0.0,0.0,11.6,BFSI,Short,No holding,4.5,0.0,True,10000,500000,98,100000
+C-0650,RM-08,Emerging,Shalini,55,Tier 2,HNI,Salaried CXO,Aggressive,Marathi,6,210,32900000,30.6,32.5,15.8,20.7,0.0,0.0,0.4,BFSI,Long,No holding,0.0,0.0,True,55000,2400000,195,0
+C-0651,RM-08,Emerging,Lakshmi,46,Tier 1,HNI,Professional,Aggressive,Hindi,13,229,14500000,29.0,39.8,21.7,0.0,0.0,0.0,9.5,IT,Short,No holding,0.0,10.7,True,20000,1200000,7,100000
+C-0652,RM-08,Emerging,Vikram,35,Tier 1,HNI,Salaried CXO,Moderate,English,7,77,29600000,15.9,50.0,29.1,0.0,0.0,0.0,5.0,Diversified,Long,No holding,3.5,0.0,False,0,2100000,112,100000
+C-0653,RM-08,Emerging,Vinod,43,Tier 2,HNI,Business Owner,Aggressive,Gujarati,14,120,15700000,27.7,43.2,26.5,0.0,0.0,0.0,2.6,Pharma,Short,No holding,0.0,0.0,True,20000,1400000,137,100000
+C-0654,RM-08,Emerging,Rajesh,46,Tier 1,HNI,Inherited,Moderate,English,8,275,23200000,25.7,40.2,27.1,0.0,0.0,0.0,7.0,Auto,Medium,No holding,0.0,0.0,False,0,1700000,401,0
+C-0655,RM-08,Emerging,Jaya,48,Tier 1,HNI,Salaried CXO,Aggressive,Gujarati,15,338,67000000,27.9,37.7,10.5,21.8,0.0,0.0,2.1,Infra,Short,No holding,0.0,0.0,True,145000,3200000,120,200000
+C-0656,RM-08,Emerging,Parth,48,Tier 1,HNI,Salaried CXO,Conservative,Hindi,2,169,30400000,8.9,35.0,47.8,0.0,0.0,0.0,8.3,FMCG,Short,No holding,0.0,0.0,True,40000,1400000,119,100000
+C-0657,RM-08,Emerging,Sunil,60,Tier 1,HNI,Salaried CXO,Conservative,English,14,46,23400000,10.7,27.7,52.7,0.0,0.0,0.0,8.9,Diversified,Long,No holding,0.0,0.0,True,60000,1600000,118,0
+C-0658,RM-08,Emerging,Parth,36,Tier 1,HNI,Business Owner,Conservative,Gujarati,6,340,11800000,6.9,38.3,47.2,0.0,0.0,0.0,7.6,Diversified,Medium,No holding,0.0,9.1,False,0,800000,109,0
+C-0659,RM-08,Emerging,Pallavi,47,Tier 1,HNI,Business Owner,Moderate,English,8,233,20000000,19.6,48.4,27.5,0.0,0.0,0.0,4.5,Diversified,Short,No holding,3.2,18.2,True,25000,1200000,229,0
+C-0660,RM-08,Emerging,Pooja,40,Tier 1,HNI,Salaried CXO,Conservative,Marathi,17,175,10300000,11.2,30.2,51.9,0.0,0.0,0.0,6.7,Pharma,Medium,No holding,0.0,8.7,False,0,600000,90,100000
+C-0661,RM-08,Emerging,Swati,59,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,9,234,29300000,5.0,36.4,47.3,0.0,0.0,0.0,11.3,Diversified,Short,No holding,0.0,0.0,True,65000,1600000,125,100000
+C-0662,RM-08,Emerging,Mohit,43,Tier 1,HNI,Professional,Moderate,Marathi,2,329,28900000,18.3,37.7,39.0,0.0,0.0,0.0,5.0,FMCG,Long,No holding,0.0,0.0,False,0,1500000,226,200000
+C-0663,RM-08,Emerging,Devika,45,Tier 2,HNI,Salaried CXO,Aggressive,English,9,1,16300000,31.8,39.5,27.7,0.0,0.0,0.0,1.0,IT,Medium,No holding,0.0,8.9,True,15000,1100000,318,100000
+C-0664,RM-08,Emerging,Parth,57,Tier 1,HNI,Professional,Moderate,English,5,144,44900000,17.5,28.0,24.5,27.2,0.0,0.0,2.8,Pharma,Short,No holding,0.0,16.5,True,110000,3400000,49,100000
+C-0665,RM-08,Emerging,Rakesh,60,Tier 2,HNI,Professional,Moderate,English,9,376,41600000,21.5,36.3,14.6,19.3,0.0,0.0,8.3,BFSI,Short,No holding,0.0,0.0,False,0,3300000,149,300000
+C-0666,RM-08,Emerging,Vidya,61,Tier 2,HNI,Professional,Conservative,English,4,121,19500000,11.1,30.2,51.9,0.0,0.0,0.0,6.8,Pharma,Short,No holding,0.0,0.0,True,40000,900000,241,100000
+C-0667,RM-08,Emerging,Bhavna,33,Tier 1,HNI,Inherited,Aggressive,English,12,389,24600000,19.1,47.8,32.0,0.0,0.0,0.0,1.1,BFSI,Long,No holding,0.0,0.0,True,50000,2000000,385,100000
+C-0668,RM-08,Emerging,Vikram,52,Tier 1,HNI,Salaried CXO,Conservative,Hindi,5,113,13000000,5.4,23.3,64.0,0.0,0.0,0.0,7.3,IT,Short,No holding,0.0,0.0,False,0,600000,396,0
+C-0669,RM-08,Emerging,Sneha,50,Tier 1,HNI,Business Owner,Conservative,English,9,187,15500000,11.5,39.0,41.6,0.0,0.0,0.0,7.9,Pharma,Short,No holding,0.0,0.0,False,0,700000,366,0
+C-0670,RM-08,Emerging,Sanjay,48,Tier 2,HNI,Business Owner,Moderate,Marathi,18,28,10000000,19.7,34.3,31.8,0.0,0.0,13.6,0.6,Diversified,Long,Unlisted Co. A,7.2,0.0,False,0,800000,214,0
+C-0671,RM-08,Emerging,Ishaan,49,Tier 1,HNI,Business Owner,Conservative,English,12,290,13800000,11.4,35.6,43.8,0.0,0.0,0.0,9.2,Auto,Short,No holding,0.0,0.0,True,15000,1200000,45,200000
+C-0672,RM-08,Emerging,Gaurav,60,Tier 1,HNI,Professional,Moderate,English,13,96,17000000,33.9,30.6,28.3,0.0,0.0,0.0,7.2,Infra,Short,No holding,0.0,0.0,True,15000,1500000,405,0
+C-0673,RM-08,Emerging,Naveen,57,Tier 1,HNI,Salaried CXO,Moderate,Hindi,14,339,10000000,24.5,32.2,39.6,0.0,0.0,0.0,3.7,Pharma,Medium,No holding,0.0,0.0,True,25000,400000,262,0
+C-0674,RM-08,Emerging,Devika,56,Tier 2,HNI,Business Owner,Conservative,English,17,52,24700000,14.0,31.3,49.9,0.0,0.0,1.1,3.7,Diversified,Short,Unlisted Co. A,0.0,0.0,True,15000,1200000,380,200000
+C-0675,RM-08,Emerging,Ramesh,50,Tier 1,HNI,Business Owner,Conservative,Hindi,16,47,31600000,7.8,33.8,45.7,0.0,0.0,0.0,12.7,Diversified,Long,No holding,0.0,0.0,True,20000,2400000,387,0
+C-0676,RM-08,Emerging,Shreya,68,Tier 1,HNI,Professional,Conservative,Hindi,16,188,17900000,19.4,24.3,49.3,0.0,0.0,0.0,7.0,Diversified,Medium,No holding,0.0,0.0,True,20000,1400000,333,0
+C-0677,RM-08,Emerging,Nikhil,44,Tier 1,HNI,Salaried CXO,Conservative,Hindi,7,34,10000000,12.3,36.0,41.4,0.0,0.0,0.0,10.3,Infra,Short,No holding,0.0,14.0,True,20000,600000,179,0
+C-0678,RM-08,Emerging,Rupal,33,Tier 2,HNI,Business Owner,Aggressive,Hindi,12,132,15700000,25.9,45.6,26.4,0.0,0.0,0.0,2.1,Diversified,Medium,No holding,0.0,0.0,True,40000,500000,257,0
+C-0679,RM-08,Emerging,Siddharth,46,Tier 1,HNI,Professional,Moderate,Gujarati,15,276,10000000,22.7,46.2,28.1,0.0,0.0,0.0,3.0,FMCG,Short,No holding,0.0,0.0,True,5000,600000,291,0
+C-0680,RM-08,Emerging,Varun,49,Tier 1,HNI,Professional,Conservative,Marathi,11,202,12900000,13.3,30.8,43.0,0.0,0.0,0.0,12.9,FMCG,Medium,No holding,0.0,0.0,True,15000,400000,370,0
+C-0681,RM-08,Emerging,Rupal,60,Tier 2,HNI,Salaried CXO,Conservative,English,3,224,40000000,16.3,23.2,39.8,13.9,0.0,0.0,6.8,Diversified,Medium,No holding,5.0,0.0,True,80000,1900000,98,200000
+C-0682,RM-08,Emerging,Ishaan,43,Tier 1,HNI,Salaried CXO,Moderate,English,10,37,10000000,15.8,36.2,33.8,0.0,0.0,0.0,14.2,Pharma,Medium,No holding,7.0,0.0,True,20000,700000,235,100000
+C-0683,RM-08,Emerging,Chirag,52,Tier 2,HNI,Professional,Moderate,Gujarati,4,272,11500000,21.5,35.6,35.2,0.0,0.0,0.0,7.7,Diversified,Medium,No holding,0.0,0.0,False,0,400000,252,0
+C-0684,RM-08,Emerging,Vikram,35,Tier 1,HNI,Salaried CXO,Aggressive,English,13,37,28400000,19.9,47.5,31.3,0.0,0.0,0.0,1.3,BFSI,Long,No holding,0.0,0.0,True,35000,2100000,90,100000
+C-0685,RM-08,Emerging,Siddharth,58,Tier 1,HNI,Promoter,Conservative,English,16,229,12200000,7.7,26.3,58.9,0.0,0.0,0.0,7.1,Diversified,Short,No holding,0.0,8.7,True,20000,800000,171,0
+C-0686,RM-08,Emerging,Swati,49,Tier 1,HNI,Professional,Moderate,Hindi,13,316,11700000,24.1,50.7,19.5,0.0,0.0,0.0,5.7,Auto,Long,No holding,6.5,2.6,False,0,700000,388,0
+C-0687,RM-08,Emerging,Naveen,45,Tier 1,HNI,Professional,Conservative,English,10,290,55000000,12.3,23.6,56.2,0.0,0.0,0.0,7.9,Auto,Short,No holding,6.7,0.0,True,110000,2900000,11,100000
+C-0688,RM-08,Emerging,Deepak,67,Tier 2,HNI,Professional,Moderate,English,11,141,22200000,18.0,42.8,35.0,0.0,0.0,0.0,4.2,Diversified,Long,No holding,3.7,0.0,True,25000,1900000,213,300000
+C-0689,RM-08,Emerging,Rahul,58,Tier 1,HNI,Promoter,Moderate,Gujarati,10,62,30100000,23.6,30.6,32.5,0.0,0.0,0.0,13.3,Diversified,Medium,No holding,0.0,0.0,False,0,1900000,257,0
+C-0690,RM-08,Emerging,Rakesh,39,Tier 1,HNI,Business Owner,Moderate,English,9,332,23600000,30.1,34.4,34.2,0.0,0.0,0.0,1.3,BFSI,Short,No holding,0.0,0.0,False,0,2000000,381,0
+C-0691,RM-08,Emerging,Harsh,47,Tier 2,HNI,Business Owner,Conservative,English,5,87,19700000,16.7,24.0,53.3,0.0,0.0,0.0,6.0,IT,Short,No holding,5.1,14.7,False,0,1100000,122,0
+C-0692,RM-08,Emerging,Nikhil,68,Tier 1,HNI,Professional,Moderate,Gujarati,13,198,36100000,21.5,43.7,32.7,0.0,0.0,0.0,2.1,Diversified,Long,No holding,0.0,0.0,False,0,2400000,168,100000
+C-0693,RM-08,Emerging,Naveen,66,Tier 1,HNI,Business Owner,Conservative,Gujarati,7,95,51300000,6.3,29.0,54.4,0.0,0.0,0.0,10.3,Auto,Long,No holding,0.0,0.0,False,0,4500000,38,700000
+C-0694,RM-08,Emerging,Jaya,56,Tier 1,HNI,Professional,Aggressive,Hindi,3,12,10000000,29.2,52.3,17.7,0.0,0.0,0.0,0.8,FMCG,Medium,No holding,0.0,0.0,True,10000,400000,144,0
+C-0695,RM-08,Emerging,Sunil,32,Tier 2,HNI,Salaried CXO,Conservative,English,15,167,17700000,10.8,18.3,63.7,0.0,0.0,0.0,7.2,BFSI,Short,No holding,0.0,0.0,True,25000,800000,418,0
+C-0696,RM-08,Emerging,Pallavi,60,Tier 1,HNI,Salaried CXO,Moderate,English,10,220,17600000,20.4,43.9,29.9,0.0,0.0,0.0,5.8,Auto,Medium,No holding,0.0,0.0,True,35000,1500000,322,100000
+C-0697,RM-08,Emerging,Vidya,42,Tier 2,HNI,Salaried CXO,Conservative,Gujarati,10,304,14200000,9.4,32.0,48.7,0.0,0.0,0.0,9.9,Infra,Short,No holding,0.0,0.0,True,30000,800000,182,0
+C-0698,RM-08,Emerging,Aarav,60,Tier 2,HNI,Professional,Moderate,English,10,290,30900000,18.4,41.0,36.3,0.0,0.0,0.0,4.3,IT,Medium,No holding,0.0,0.0,False,0,1400000,268,100000
+C-0699,RM-08,Emerging,Vikram,41,Tier 1,HNI,Business Owner,Moderate,Marathi,2,332,20700000,28.1,31.5,33.5,0.0,0.0,0.0,6.9,Pharma,Short,No holding,1.9,5.7,True,45000,1900000,405,200000
+C-0700,RM-08,Emerging,Ramesh,52,Tier 1,HNI,Business Owner,Moderate,Gujarati,10,325,51900000,18.0,30.4,32.4,14.7,0.0,0.0,4.5,BFSI,Long,No holding,0.0,12.6,False,0,1900000,187,300000
+C-0701,RM-08,Emerging,Rupal,42,Tier 1,HNI,Salaried CXO,Conservative,English,10,161,33000000,9.9,33.2,45.1,0.0,0.0,0.0,11.8,IT,Medium,No holding,0.0,8.5,True,20000,2200000,127,100000
+C-0702,RM-08,Emerging,Kabir,45,Tier 1,HNI,Business Owner,Conservative,Hindi,10,137,38100000,9.6,28.6,51.0,0.0,0.0,0.0,10.8,Diversified,Short,No holding,0.0,0.0,True,40000,2900000,369,300000
+C-0703,RM-08,Emerging,Ananya,54,Tier 2,HNI,Professional,Conservative,Marathi,1,241,10000000,8.0,22.2,61.2,0.0,0.0,0.0,8.6,Infra,Medium,No holding,0.0,0.0,False,0,800000,357,0
+C-0704,RM-08,Emerging,Ishaan,36,Tier 1,HNI,Promoter,Moderate,Gujarati,14,192,11600000,26.2,34.4,33.5,0.0,0.0,0.0,5.9,Diversified,Short,No holding,2.7,0.0,True,20000,700000,219,0
+C-0705,RM-08,Emerging,Neha,68,Tier 1,HNI,Professional,Conservative,Hindi,12,118,12100000,16.8,24.7,51.8,0.0,0.0,0.0,6.7,Diversified,Short,No holding,0.0,0.0,True,20000,400000,9,0
+C-0706,RM-08,Emerging,Lakshmi,39,Tier 1,HNI,Salaried CXO,Conservative,English,14,13,37300000,10.1,35.7,47.0,0.0,0.0,0.0,7.2,BFSI,Short,No holding,1.3,7.0,True,75000,3000000,10,0
+C-0707,RM-08,Emerging,Gaurav,38,Tier 1,HNI,Salaried CXO,Conservative,Hindi,10,190,10600000,2.4,32.2,53.7,0.0,0.0,0.0,11.7,BFSI,Short,No holding,6.7,11.7,True,5000,800000,53,0
+C-0708,RM-08,Emerging,Aarav,54,Tier 1,HNI,Promoter,Conservative,Hindi,6,188,10700000,11.0,28.7,49.2,0.0,0.0,0.0,11.1,Diversified,Short,No holding,0.0,0.0,True,10000,500000,292,0
+C-0709,RM-08,Emerging,Rupal,60,Tier 2,HNI,Professional,Conservative,Hindi,15,376,10000000,19.1,21.4,53.7,0.0,0.0,0.0,5.8,Diversified,Medium,No holding,0.0,0.0,False,0,500000,77,100000
+C-0710,RM-08,Emerging,Rohan,45,Tier 2,HNI,Professional,Moderate,English,7,325,81800000,10.7,31.3,29.9,11.4,12.9,0.0,3.8,Auto,Medium,No holding,7.1,0.0,False,0,5000000,31,100000
+C-0711,RM-08,Emerging,Deepak,38,Tier 2,HNI,Salaried CXO,Conservative,Marathi,9,108,16600000,9.3,31.8,51.5,0.0,0.0,0.0,7.4,IT,Medium,No holding,0.0,0.0,False,0,600000,287,0
+C-0712,RM-08,Emerging,Siddharth,40,Tier 1,HNI,Business Owner,Aggressive,English,1,45,24100000,29.9,42.6,27.2,0.0,0.0,0.0,0.3,BFSI,Long,No holding,0.0,0.0,False,0,1900000,204,100000
+C-0713,RM-08,Emerging,Vinod,39,Tier 1,HNI,Business Owner,Moderate,English,3,315,10000000,17.2,52.1,25.6,0.0,0.0,0.0,5.1,Auto,Long,No holding,0.0,0.0,False,0,900000,225,0
+C-0714,RM-08,Emerging,Yash,51,Tier 2,HNI,Salaried CXO,Moderate,English,3,195,30500000,18.7,36.7,21.5,18.7,0.0,0.0,4.4,Auto,Short,No holding,0.0,0.0,True,65000,1500000,84,300000
+C-0715,RM-08,Emerging,Gaurav,47,Tier 1,HNI,Business Owner,Aggressive,English,8,17,10000000,25.5,40.7,32.9,0.0,0.0,0.0,0.9,Diversified,Medium,No holding,0.0,0.0,False,0,900000,94,100000
+C-0716,RM-08,Emerging,Naveen,52,Tier 1,HNI,Professional,Moderate,English,5,301,10500000,26.8,31.8,33.7,0.0,0.0,0.0,7.7,IT,Long,No holding,0.0,12.2,False,0,800000,105,0
+C-0717,RM-08,Emerging,Akash,51,Tier 1,HNI,Business Owner,Moderate,English,6,138,12000000,14.2,42.1,30.0,0.0,0.0,0.0,13.7,BFSI,Short,No holding,0.0,0.0,True,20000,900000,272,0
+C-0718,RM-08,Emerging,Aarav,55,Tier 2,HNI,Salaried CXO,Conservative,English,14,69,20300000,7.8,35.0,50.6,0.0,0.0,0.0,6.6,IT,Short,No holding,0.0,0.0,True,10000,1800000,411,200000
+C-0719,RM-08,Emerging,Swati,44,Tier 1,HNI,Professional,Moderate,English,13,263,11600000,22.5,44.5,32.3,0.0,0.0,0.0,0.7,Infra,Long,No holding,0.0,15.2,False,0,600000,385,0
+C-0720,RM-08,Emerging,Vinod,41,Tier 1,HNI,Inherited,Conservative,English,15,314,41600000,6.8,27.1,54.8,0.0,0.0,0.0,11.3,Diversified,Medium,No holding,0.0,4.9,False,0,3500000,52,200000
+C-0721,RM-08,Emerging,Gaurav,49,Tier 1,HNI,Salaried CXO,Moderate,English,15,310,23700000,21.7,56.7,18.9,0.0,0.0,0.0,2.7,IT,Long,No holding,0.0,0.0,False,0,900000,287,0
+C-0722,RM-08,Emerging,Nikhil,48,Tier 1,HNI,Salaried CXO,Conservative,English,5,110,12300000,5.0,35.7,52.6,0.0,0.0,0.0,6.7,Diversified,Long,No holding,1.3,2.0,True,25000,700000,319,100000
+C-0723,RM-08,Emerging,Aditi,50,Tier 1,HNI,Professional,Moderate,English,12,237,31200000,18.6,44.5,30.9,0.0,0.0,0.0,6.0,IT,Short,No holding,0.0,0.0,False,0,2000000,21,100000
+C-0724,RM-08,Emerging,Sunil,42,Tier 1,HNI,Inherited,Moderate,English,16,186,14500000,27.5,35.1,31.3,0.0,0.0,0.0,6.1,Diversified,Medium,No holding,4.7,0.0,True,10000,500000,269,400000
+C-0725,RM-08,Emerging,Prakash,54,Tier 2,HNI,Professional,Conservative,Hindi,6,347,13000000,9.0,41.1,44.5,0.0,0.0,0.0,5.4,Pharma,Long,No holding,0.0,0.0,False,0,1000000,189,0
+C-0726,RM-08,Emerging,Kavita,37,Tier 2,HNI,Salaried CXO,Conservative,English,7,76,29500000,12.0,19.4,50.2,0.0,0.0,0.0,18.4,IT,Short,No holding,0.0,5.8,False,0,1700000,85,100000
+C-0727,RM-08,Emerging,Vinod,44,Tier 2,HNI,Professional,Moderate,Hindi,10,328,10000000,18.8,45.1,31.7,0.0,0.0,0.0,4.4,Diversified,Short,No holding,4.0,0.0,False,0,600000,332,100000
+C-0728,RM-08,Emerging,Chirag,58,Tier 2,HNI,Professional,Conservative,English,15,139,27000000,6.3,35.1,45.1,0.0,0.0,0.0,13.5,Pharma,Short,No holding,0.0,0.0,False,0,1800000,393,0
+C-0729,RM-08,Emerging,Jaya,38,Tier 2,HNI,Business Owner,Conservative,English,3,247,12200000,4.6,26.6,43.9,0.0,0.0,0.0,24.9,Diversified,Medium,No holding,0.0,0.0,True,5000,500000,253,0
+C-0730,RM-08,Emerging,Shalini,57,Tier 2,HNI,Salaried CXO,Conservative,English,9,201,12200000,9.4,26.0,55.9,0.0,0.0,0.0,8.7,IT,Medium,No holding,0.0,0.0,False,0,500000,88,0
+C-0731,RM-08,Emerging,Mohit,35,Tier 1,HNI,Professional,Aggressive,English,5,139,52800000,32.3,22.3,23.4,18.3,0.0,0.0,3.7,IT,Long,No holding,0.0,6.7,False,0,2200000,182,0
+C-0732,RM-08,Emerging,Rupal,34,Tier 2,HNI,Professional,Moderate,Hindi,13,93,13400000,13.6,50.4,33.4,0.0,0.0,0.0,2.6,Diversified,Short,No holding,6.9,0.0,True,30000,1200000,218,100000
+C-0733,RM-08,Emerging,Ishaan,35,Tier 1,HNI,Business Owner,Moderate,Gujarati,5,146,30500000,10.4,39.1,42.5,0.0,0.0,0.0,8.0,Diversified,Medium,No holding,6.7,0.0,True,30000,2300000,379,300000
+C-0734,RM-08,Emerging,Ramesh,49,Tier 1,HNI,Professional,Aggressive,Hindi,7,243,21000000,26.3,37.7,28.0,0.0,0.0,0.0,8.0,Diversified,Short,No holding,0.0,0.0,False,0,1300000,333,100000
+C-0735,RM-08,Emerging,Prakash,55,Tier 1,HNI,Professional,Moderate,English,7,246,22200000,17.2,39.5,41.2,0.0,0.0,0.0,2.1,Pharma,Long,No holding,0.0,0.0,True,25000,1500000,283,0
+C-0736,RM-08,Emerging,Akash,60,Tier 1,HNI,Salaried CXO,Moderate,English,2,249,15700000,27.3,43.4,28.1,0.0,0.0,0.0,1.2,Infra,Medium,No holding,0.0,0.0,True,40000,1100000,321,0
+C-0737,RM-08,Emerging,Kiran,59,Tier 2,HNI,Salaried CXO,Moderate,Marathi,13,262,15200000,20.8,43.9,34.5,0.0,0.0,0.0,0.8,Diversified,Medium,No holding,2.2,0.0,False,0,700000,293,100000
+C-0738,RM-08,Emerging,Kavita,56,Tier 1,HNI,Salaried CXO,Aggressive,English,5,21,41700000,31.3,38.2,14.5,15.3,0.0,0.0,0.7,Diversified,Short,No holding,0.0,0.0,True,80000,1500000,137,500000
+C-0739,RM-08,Emerging,Rahul,41,Tier 1,HNI,Promoter,Moderate,English,9,158,30000000,20.9,41.8,15.6,16.7,0.0,0.0,5.0,Auto,Short,No holding,1.2,2.8,True,65000,1900000,60,0
+C-0740,RM-08,Emerging,Neha,40,Tier 1,HNI,Business Owner,Conservative,English,13,126,13700000,7.1,28.3,55.9,0.0,0.0,0.0,8.7,Diversified,Short,No holding,0.0,0.0,False,0,600000,353,0
+C-0741,RM-08,Emerging,Nikhil,55,Tier 2,HNI,Professional,Conservative,Marathi,15,159,10100000,5.7,35.3,55.8,0.0,0.0,0.0,3.2,BFSI,Long,No holding,0.0,0.0,True,5000,800000,234,0
+C-0742,RM-08,Emerging,Devika,61,Tier 2,HNI,Salaried CXO,Conservative,Marathi,17,153,13100000,11.2,25.1,55.9,0.0,0.0,0.0,7.8,Infra,Short,No holding,0.0,0.0,False,0,600000,404,0
+C-0743,RM-08,Emerging,Vidya,39,Tier 1,HNI,Professional,Moderate,English,3,71,30900000,15.3,29.2,27.3,26.5,0.0,0.0,1.7,Diversified,Long,No holding,0.0,0.0,True,55000,2000000,287,0
+C-0744,RM-08,Emerging,Shalini,60,Tier 1,HNI,Promoter,Aggressive,English,12,385,34400000,14.7,56.7,26.7,0.0,0.0,0.0,1.9,FMCG,Short,No holding,0.0,15.4,False,0,1900000,201,0
+C-0745,RM-08,Emerging,Rohan,32,Tier 1,HNI,Inherited,Moderate,Gujarati,6,1,24400000,17.3,47.0,29.5,0.0,0.0,0.0,6.2,Diversified,Medium,No holding,0.0,2.3,True,25000,1800000,273,0
+C-0746,RM-08,Emerging,Kabir,52,Tier 2,HNI,Professional,Moderate,English,14,238,10000000,10.9,47.2,37.3,0.0,0.0,0.0,4.6,Auto,Short,No holding,2.4,7.5,False,0,900000,275,0
+C-0747,RM-08,Emerging,Rohan,47,Tier 1,HNI,Salaried CXO,Moderate,English,7,185,27200000,23.9,29.8,40.3,0.0,0.0,0.0,6.0,BFSI,Short,No holding,2.0,0.0,False,0,1500000,412,100000
+C-0748,RM-08,Emerging,Ishaan,46,Tier 2,HNI,Salaried CXO,Aggressive,English,1,281,36900000,34.4,21.7,23.1,18.5,0.0,0.0,2.3,Diversified,Medium,No holding,0.0,15.4,False,0,1200000,156,0
+C-0749,RM-08,Emerging,Pallavi,48,Tier 1,HNI,Salaried CXO,Moderate,English,16,332,19800000,19.5,47.5,29.2,0.0,0.0,0.0,3.8,BFSI,Short,No holding,0.0,14.2,True,10000,1400000,162,0
+C-0750,RM-08,Emerging,Jaya,40,Tier 2,HNI,Professional,Conservative,English,14,259,53500000,17.0,21.9,52.6,0.0,0.0,0.0,8.5,FMCG,Medium,No holding,0.0,0.0,True,35000,2000000,151,100000
+C-0751,RM-08,Emerging,Kavita,52,Tier 1,HNI,Salaried CXO,Moderate,Hindi,6,306,10000000,14.9,52.4,24.0,0.0,0.0,0.0,8.7,IT,Medium,No holding,5.4,0.0,True,25000,400000,49,0
+C-0752,RM-08,Emerging,Ramesh,49,Tier 2,HNI,Salaried CXO,Moderate,Hindi,16,110,26200000,11.7,51.8,34.0,0.0,0.0,0.0,2.5,Diversified,Short,No holding,6.1,0.0,True,50000,1800000,199,100000
+C-0753,RM-08,Emerging,Kiran,56,Tier 2,HNI,Business Owner,Conservative,Hindi,8,397,10300000,11.9,22.7,43.8,0.0,0.0,0.0,21.6,FMCG,Medium,No holding,0.0,2.7,True,20000,400000,189,0
+C-0754,RM-08,Emerging,Shalini,62,Tier 2,HNI,Professional,Conservative,English,8,35,32200000,5.3,32.2,52.7,0.0,0.0,0.0,9.8,Diversified,Medium,No holding,0.0,3.8,False,0,1200000,86,400000
+C-0755,RM-08,Emerging,Parth,49,Tier 2,HNI,Business Owner,Conservative,English,6,268,25200000,3.1,36.3,48.5,0.0,0.0,0.0,12.1,Diversified,Short,No holding,6.7,0.0,True,15000,1400000,343,0
+C-0756,RM-08,Emerging,Yash,41,Tier 1,HNI,Salaried CXO,Conservative,Marathi,9,59,48500000,8.1,22.6,61.8,0.0,0.0,0.0,7.5,Diversified,Short,No holding,7.4,0.0,True,100000,2800000,291,100000
+C-0757,RM-08,Emerging,Gaurav,38,Tier 1,HNI,Salaried CXO,Conservative,English,18,94,23700000,12.0,20.0,59.4,0.0,0.0,0.0,8.6,Auto,Short,No holding,0.0,0.0,True,45000,2000000,105,0
+C-0758,RM-08,Emerging,Vikram,63,Tier 1,HNI,Salaried CXO,Aggressive,English,1,330,14400000,28.9,44.8,24.8,0.0,0.0,0.0,1.5,Diversified,Short,No holding,0.0,0.0,False,0,700000,73,100000
+C-0759,RM-08,Emerging,Chirag,62,Tier 1,HNI,Professional,Conservative,English,11,271,13700000,8.1,17.1,60.3,0.0,0.0,0.0,14.5,Diversified,Short,No holding,0.0,0.0,False,0,700000,261,100000
+C-0760,RM-08,Emerging,Prakash,56,Tier 1,HNI,Professional,Moderate,English,4,253,15700000,24.8,38.3,26.9,0.0,0.0,0.0,10.0,FMCG,Medium,No holding,0.0,0.0,True,25000,1100000,7,100000
+C-0761,RM-08,Emerging,Manish,49,Tier 1,HNI,Professional,Conservative,English,3,331,13600000,3.5,29.6,41.6,0.0,0.0,0.0,25.3,IT,Short,No holding,0.0,0.0,True,10000,1100000,67,0
+C-0762,RM-08,Emerging,Shreya,55,Tier 2,HNI,Salaried CXO,Aggressive,English,2,112,37800000,30.4,34.2,16.4,15.3,0.0,0.0,3.7,Diversified,Long,No holding,1.8,9.8,True,90000,1900000,187,100000
+C-0763,RM-08,Emerging,Chirag,60,Tier 1,HNI,Business Owner,Moderate,Hindi,5,256,36300000,24.8,22.5,27.1,20.2,0.0,0.0,5.4,IT,Medium,No holding,0.0,0.0,False,0,2500000,416,100000
+C-0764,RM-08,Emerging,Jaya,42,Tier 1,HNI,Professional,Aggressive,English,14,81,10000000,17.1,53.9,27.4,0.0,0.0,0.0,1.6,Diversified,Short,No holding,0.0,0.0,False,0,700000,36,0
+C-0765,RM-08,Emerging,Ishaan,48,Tier 1,HNI,Business Owner,Moderate,Gujarati,14,193,18400000,19.6,53.3,19.9,0.0,0.0,0.0,7.2,IT,Medium,No holding,5.3,18.5,True,45000,900000,224,100000
+C-0766,RM-08,Emerging,Vidya,38,Tier 2,HNI,Professional,Moderate,Hindi,15,162,18600000,15.1,45.7,33.4,0.0,0.0,0.0,5.8,BFSI,Short,No holding,0.0,0.0,True,20000,700000,238,100000
+C-0767,RM-08,Emerging,Pooja,47,Tier 1,HNI,Inherited,Moderate,English,3,247,11700000,19.5,40.8,31.4,0.0,0.0,0.0,8.3,Infra,Short,No holding,0.0,0.0,False,0,800000,109,0
+C-0768,RM-08,Emerging,Deepak,62,Tier 2,HNI,Salaried CXO,Moderate,Gujarati,2,26,22900000,11.8,39.5,37.9,0.0,0.0,0.0,10.8,Pharma,Long,No holding,0.0,0.0,False,0,1100000,220,200000
+C-0769,RM-08,Emerging,Siddharth,58,Tier 1,HNI,Professional,Moderate,Marathi,18,11,40200000,23.3,39.6,21.1,12.5,0.0,0.0,3.5,BFSI,Medium,No holding,0.0,0.0,True,75000,2000000,268,300000
+C-0770,RM-08,Emerging,Kabir,49,Tier 1,HNI,Salaried CXO,Conservative,English,17,13,29400000,9.7,38.3,49.1,0.0,0.0,0.0,2.9,Diversified,Short,No holding,3.1,0.0,True,65000,1900000,61,0
+C-0771,RM-08,Emerging,Harsh,32,Tier 1,HNI,Salaried CXO,Conservative,Hindi,13,106,37800000,8.9,25.1,49.0,0.0,0.0,0.0,17.0,BFSI,Long,No holding,0.0,0.0,True,85000,1500000,400,100000
+C-0772,RM-08,Emerging,Pallavi,42,Tier 2,HNI,Salaried CXO,Aggressive,Hindi,16,230,12100000,32.2,37.0,21.7,0.0,0.0,0.0,9.1,Pharma,Long,No holding,0.0,0.0,False,0,500000,107,100000
+C-0773,RM-08,Emerging,Siddharth,49,Tier 2,HNI,Professional,Conservative,Hindi,15,63,18400000,12.3,33.6,41.7,0.0,0.0,0.0,12.4,Pharma,Medium,No holding,0.0,0.0,True,20000,1000000,158,100000
+C-0774,RM-08,Emerging,Swati,46,Tier 1,HNI,Promoter,Moderate,English,11,396,11800000,18.3,41.5,37.8,0.0,0.0,0.0,2.4,Pharma,Medium,No holding,3.5,17.8,False,0,1000000,15,200000
+C-0775,RM-08,Emerging,Aarav,48,Tier 1,HNI,Salaried CXO,Conservative,English,9,165,20500000,11.5,17.8,64.3,0.0,0.0,0.0,6.4,FMCG,Long,No holding,0.0,19.8,False,0,1600000,251,200000
+C-0776,RM-08,Emerging,Varun,50,Tier 1,HNI,Professional,Moderate,English,18,121,21600000,31.9,35.1,26.2,0.0,0.0,0.0,6.8,Auto,Medium,No holding,0.0,6.8,False,0,1100000,251,0
+C-0777,RM-08,Emerging,Yash,43,Tier 1,HNI,Salaried CXO,Conservative,English,13,357,30500000,7.2,27.0,50.3,0.0,0.0,0.0,15.5,FMCG,Medium,No holding,0.0,5.0,False,0,1500000,53,0
+C-0778,RM-08,Emerging,Kiran,48,Tier 1,HNI,Salaried CXO,Moderate,English,16,70,37100000,16.4,37.8,13.3,16.3,0.0,0.0,16.2,Infra,Long,No holding,0.0,0.0,True,20000,3300000,126,0
+C-0779,RM-08,Emerging,Parth,47,Tier 2,HNI,Professional,Moderate,Gujarati,4,75,26300000,24.5,27.6,22.5,20.6,0.0,0.0,4.8,Diversified,Medium,No holding,4.5,0.0,False,0,1800000,323,0
+C-0780,RM-08,Emerging,Meera,42,Tier 1,HNI,Professional,Aggressive,English,5,152,11200000,36.8,39.7,21.8,0.0,0.0,0.0,1.7,IT,Short,No holding,0.0,0.0,False,0,800000,300,0
+C-0781,RM-08,Emerging,Nikhil,65,Tier 2,HNI,Professional,Conservative,English,12,29,10000000,13.9,28.8,50.7,0.0,0.0,0.0,6.6,Diversified,Short,No holding,0.0,0.0,False,0,300000,132,100000
+C-0782,RM-08,Emerging,Ramesh,44,Tier 1,HNI,Inherited,Conservative,English,18,272,24000000,23.3,21.6,48.4,0.0,0.0,0.0,6.7,Diversified,Short,No holding,0.0,2.8,True,35000,900000,266,0
+C-0783,RM-08,Emerging,Ramesh,32,Tier 1,HNI,Business Owner,Aggressive,English,12,310,41100000,25.7,40.1,14.4,16.3,0.0,0.0,3.5,BFSI,Short,No holding,0.0,0.0,True,35000,2000000,315,0
+C-0784,RM-08,Emerging,Nikhil,64,Tier 2,HNI,Salaried CXO,Conservative,Gujarati,8,142,17800000,10.4,30.1,42.9,0.0,0.0,0.0,16.6,BFSI,Short,No holding,6.1,0.0,False,0,1400000,160,100000
+C-0785,RM-08,Emerging,Nikhil,40,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,1,347,10000000,15.7,25.6,50.9,0.0,0.0,0.0,7.8,Infra,Medium,No holding,0.0,12.4,True,20000,800000,77,0
+C-0786,RM-09,Emerging,Devika,50,Tier 1,HNI,Salaried CXO,Conservative,English,16,198,17600000,25.8,19.7,48.8,0.0,0.0,0.0,5.7,BFSI,Long,No holding,0.0,0.0,False,0,1100000,159,0
+C-0787,RM-09,Emerging,Manish,49,Tier 1,HNI,Salaried CXO,Aggressive,English,6,377,20200000,29.7,44.3,24.8,0.0,0.0,0.0,1.2,Diversified,Short,No holding,0.0,11.6,False,0,1800000,20,100000
+C-0788,RM-09,Emerging,Bhavna,62,Tier 1,HNI,Salaried CXO,Conservative,English,5,332,11700000,8.6,27.0,52.0,0.0,0.0,0.0,12.4,Auto,Medium,No holding,0.0,0.0,True,10000,800000,316,0
+C-0789,RM-09,Emerging,Siddharth,49,Tier 2,HNI,Salaried CXO,Moderate,Hindi,10,160,17200000,17.9,45.4,35.1,0.0,0.0,0.0,1.6,FMCG,Long,No holding,0.0,0.0,False,0,1000000,151,0
+C-0790,RM-09,Emerging,Harsh,44,Tier 1,HNI,Business Owner,Moderate,English,18,234,65500000,22.1,31.2,30.3,13.9,0.0,0.0,2.5,Pharma,Long,No holding,0.0,0.0,True,145000,5100000,173,0
+C-0791,RM-09,Emerging,Vinod,38,Tier 2,HNI,Business Owner,Moderate,Hindi,11,308,12200000,13.8,46.6,32.9,0.0,0.0,0.0,6.7,Diversified,Short,No holding,0.0,10.6,True,25000,800000,276,0
+C-0792,RM-09,Emerging,Ramesh,59,Tier 2,HNI,Professional,Aggressive,Gujarati,11,153,25400000,22.2,53.4,21.8,0.0,0.0,0.0,2.6,IT,Medium,No holding,7.9,14.2,True,20000,1500000,244,100000
+C-0793,RM-09,Emerging,Jaya,44,Tier 2,HNI,Professional,Conservative,Gujarati,4,307,15600000,18.2,34.0,44.6,0.0,0.0,0.0,3.2,BFSI,Medium,No holding,0.0,0.0,True,30000,1100000,347,200000
+C-0794,RM-09,Emerging,Priya,45,Tier 1,HNI,Professional,Conservative,English,17,265,10000000,10.4,24.0,62.3,0.0,0.0,0.0,3.3,Infra,Short,No holding,0.0,19.1,False,0,600000,336,0
+C-0795,RM-09,Emerging,Vidya,57,Tier 2,HNI,Salaried CXO,Conservative,English,15,281,27200000,8.2,33.8,42.9,0.0,0.0,0.0,15.1,Infra,Short,No holding,4.5,0.0,True,15000,1900000,396,100000
+C-0796,RM-09,Emerging,Varun,66,Tier 1,HNI,Inherited,Moderate,English,2,390,14700000,16.5,41.5,39.6,0.0,0.0,0.0,2.4,Pharma,Medium,No holding,0.0,0.0,True,15000,1100000,386,0
+C-0797,RM-09,Emerging,Mohit,50,Tier 1,HNI,Salaried CXO,Moderate,English,5,151,23800000,24.3,27.2,14.0,22.8,0.0,0.0,11.7,Diversified,Short,No holding,0.0,0.0,True,50000,1400000,267,100000
+C-0798,RM-09,Emerging,Aditi,47,Tier 2,HNI,Salaried CXO,Conservative,English,16,27,34500000,8.5,16.9,44.5,19.0,0.0,0.0,11.1,FMCG,Medium,No holding,0.0,0.0,False,0,1900000,235,0
+C-0799,RM-09,Emerging,Ananya,48,Tier 1,HNI,Salaried CXO,Moderate,Hindi,13,215,22800000,20.2,37.6,30.1,0.0,0.0,0.0,12.1,Diversified,Short,No holding,0.0,0.0,True,35000,1400000,197,0
+C-0800,RM-09,Emerging,Uday,44,Tier 1,HNI,Salaried CXO,Moderate,Hindi,8,132,24000000,15.9,49.8,29.4,0.0,0.0,0.0,4.9,Diversified,Short,No holding,0.0,0.0,False,0,2000000,280,0
+C-0801,RM-09,Emerging,Ramesh,45,Tier 1,HNI,Salaried CXO,Aggressive,English,10,24,12400000,35.1,41.1,23.4,0.0,0.0,0.0,0.4,Auto,Medium,No holding,0.0,11.6,True,10000,700000,30,0
+C-0802,RM-09,Emerging,Sanjay,45,Tier 2,HNI,Salaried CXO,Moderate,English,3,63,29500000,19.6,51.3,23.6,0.0,0.0,0.0,5.5,BFSI,Short,No holding,0.0,0.0,True,30000,2400000,171,0
+C-0803,RM-09,Emerging,Sanjay,56,Tier 1,HNI,Inherited,Aggressive,Gujarati,16,213,18000000,27.4,45.7,25.4,0.0,0.0,0.0,1.5,IT,Short,No holding,0.0,0.0,True,25000,1200000,119,0
+C-0804,RM-09,Emerging,Siddharth,47,Tier 2,HNI,Business Owner,Moderate,Marathi,12,382,10000000,27.7,30.8,36.6,0.0,0.0,0.0,4.9,BFSI,Short,No holding,0.0,5.9,True,20000,300000,235,100000
+C-0805,RM-09,Emerging,Parth,60,Tier 1,HNI,Business Owner,Aggressive,Hindi,10,136,31500000,29.6,31.6,18.0,19.8,0.0,0.0,1.0,Diversified,Short,No holding,2.5,2.6,True,65000,1800000,388,100000
+C-0806,RM-09,Emerging,Meera,47,Tier 1,HNI,Salaried CXO,Moderate,Hindi,12,218,37300000,16.3,27.9,28.4,21.5,0.0,0.0,5.9,Diversified,Medium,No holding,0.0,0.0,True,30000,1600000,204,100000
+C-0807,RM-09,Emerging,Ishaan,45,Tier 1,HNI,Business Owner,Conservative,Hindi,11,71,45200000,12.0,21.5,47.8,15.5,0.0,0.0,3.2,Pharma,Long,No holding,0.0,0.0,True,30000,1800000,246,100000
+C-0808,RM-09,Emerging,Kavita,60,Tier 2,HNI,Promoter,Moderate,English,8,52,66000000,25.4,37.9,19.3,15.4,0.0,0.0,2.0,Diversified,Medium,No holding,0.0,0.0,True,65000,2900000,172,0
+C-0809,RM-09,Emerging,Shreya,48,Tier 1,HNI,Salaried CXO,Moderate,Marathi,4,313,30600000,22.5,28.3,22.7,25.4,0.0,0.0,1.1,FMCG,Short,No holding,1.6,4.5,True,65000,2200000,147,100000
+C-0810,RM-09,Emerging,Aarav,47,Tier 2,HNI,Salaried CXO,Conservative,English,9,245,26500000,13.3,31.4,44.6,0.0,0.0,0.0,10.7,Pharma,Short,No holding,0.0,3.2,False,0,1800000,287,0
+C-0811,RM-09,Emerging,Chirag,48,Tier 1,HNI,Professional,Moderate,Hindi,15,76,36500000,12.7,37.3,43.4,0.0,0.0,0.0,6.6,Auto,Long,No holding,0.0,0.0,True,75000,2300000,108,600000
+C-0812,RM-09,Emerging,Siddharth,61,Tier 2,HNI,Salaried CXO,Aggressive,English,1,200,12300000,37.4,27.8,33.7,0.0,0.0,0.0,1.1,Auto,Short,No holding,0.0,17.7,False,0,700000,369,100000
+C-0813,RM-09,Emerging,Ramesh,51,Tier 1,HNI,Business Owner,Moderate,Hindi,8,232,10000000,18.3,46.2,29.5,0.0,0.0,0.0,6.0,Infra,Short,No holding,0.0,0.0,True,15000,500000,52,0
+C-0814,RM-09,Emerging,Deepak,59,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,15,24,15400000,6.4,47.0,39.2,0.0,0.0,0.0,7.4,BFSI,Short,No holding,0.0,0.0,True,25000,1300000,97,0
+C-0815,RM-09,Emerging,Aditi,46,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,11,120,40400000,25.0,44.1,18.8,0.0,0.0,0.0,12.1,FMCG,Medium,No holding,5.9,0.0,True,70000,3500000,316,0
+C-0816,RM-09,Emerging,Harsh,58,Tier 1,HNI,Professional,Moderate,English,1,345,13900000,14.0,41.7,40.5,0.0,0.0,0.0,3.8,BFSI,Medium,No holding,0.0,0.0,False,0,1100000,39,100000
+C-0817,RM-09,Emerging,Bhavna,50,Tier 1,HNI,Professional,Conservative,Hindi,16,145,25800000,11.4,27.6,48.4,0.0,0.0,0.0,12.6,Diversified,Short,No holding,0.0,0.0,True,25000,1200000,176,0
+C-0818,RM-09,Emerging,Kabir,56,Tier 1,HNI,Salaried CXO,Conservative,Hindi,1,283,27400000,18.5,20.8,50.8,0.0,0.0,0.0,9.9,IT,Short,No holding,3.1,0.0,False,0,2300000,161,100000
+C-0819,RM-09,Emerging,Sunil,57,Tier 2,HNI,Professional,Conservative,Hindi,9,242,22900000,7.3,24.7,60.7,0.0,0.0,0.0,7.3,Diversified,Long,No holding,4.2,0.0,False,0,1800000,393,0
+C-0820,RM-09,Emerging,Tanvi,40,Tier 1,HNI,Professional,Moderate,English,3,3,10000000,19.6,44.5,25.6,0.0,0.0,2.9,7.4,Infra,Short,Unlisted Co. B,0.0,0.0,False,0,400000,70,0
+C-0821,RM-09,Emerging,Kabir,49,Tier 1,HNI,Salaried CXO,Conservative,English,5,379,24100000,2.7,24.3,52.5,0.0,0.0,0.0,20.5,FMCG,Medium,No holding,5.6,0.0,True,45000,1200000,193,0
+C-0822,RM-09,Emerging,Kabir,57,Tier 1,HNI,Salaried CXO,Conservative,Hindi,8,383,15900000,6.1,36.1,54.1,0.0,0.0,0.0,3.7,Infra,Long,No holding,0.0,13.8,True,40000,800000,195,0
+C-0823,RM-09,Emerging,Sunil,58,Tier 1,HNI,Salaried CXO,Moderate,English,5,267,51000000,14.3,46.9,31.5,0.0,0.0,0.0,7.3,Diversified,Short,No holding,0.0,0.0,True,85000,3800000,344,100000
+C-0824,RM-09,Emerging,Naveen,59,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,16,64,37400000,22.5,34.8,23.1,15.7,0.0,0.0,3.9,Diversified,Short,No holding,0.0,18.2,False,0,2300000,229,0
+C-0825,RM-09,Emerging,Harsh,49,Tier 2,HNI,Salaried CXO,Moderate,English,11,337,16200000,23.7,39.4,34.4,0.0,0.0,0.0,2.5,BFSI,Medium,No holding,0.0,0.0,False,0,700000,59,100000
+C-0826,RM-09,Emerging,Shalini,62,Tier 1,HNI,Salaried CXO,Moderate,Hindi,7,1,52800000,16.4,30.6,28.3,17.7,0.0,0.0,7.0,Diversified,Medium,No holding,3.3,0.0,True,105000,2300000,366,100000
+C-0827,RM-09,Emerging,Pallavi,42,Tier 1,HNI,Salaried CXO,Moderate,English,6,204,24200000,15.2,51.4,29.4,0.0,0.0,0.0,4.0,IT,Medium,No holding,0.0,0.0,True,55000,1400000,67,0
+C-0828,RM-09,Emerging,Uday,35,Tier 1,HNI,Professional,Conservative,Gujarati,9,171,10000000,13.4,33.6,42.2,0.0,0.0,0.0,10.8,Pharma,Medium,No holding,0.0,0.0,True,25000,700000,293,0
+C-0829,RM-09,Emerging,Uday,46,Tier 1,HNI,Salaried CXO,Aggressive,English,7,279,19200000,31.4,39.4,26.6,0.0,0.0,0.0,2.6,Infra,Short,No holding,7.4,0.0,False,0,1200000,118,0
+C-0830,RM-09,Emerging,Siddharth,59,Tier 1,HNI,Inherited,Conservative,English,15,57,49200000,13.2,20.8,42.9,13.2,0.0,0.0,9.9,IT,Medium,No holding,0.0,10.9,True,115000,2200000,55,200000
+C-0831,RM-09,Emerging,Vinod,38,Tier 2,HNI,Business Owner,Conservative,English,5,350,12700000,6.8,37.9,49.3,0.0,0.0,0.0,6.0,BFSI,Short,No holding,0.0,4.4,False,0,900000,84,0
+C-0832,RM-09,Emerging,Pooja,35,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,13,228,19300000,23.8,30.0,44.0,0.0,0.0,0.0,2.2,Diversified,Short,No holding,0.0,5.6,True,35000,1700000,396,300000
+C-0833,RM-09,Emerging,Prakash,33,Tier 1,HNI,Salaried CXO,Conservative,English,9,104,10000000,3.0,34.1,53.0,0.0,0.0,0.0,9.9,Infra,Short,No holding,0.0,0.0,False,0,400000,410,0
+C-0834,RM-09,Emerging,Aarav,55,Tier 1,HNI,Salaried CXO,Conservative,English,5,125,10300000,26.0,29.1,39.4,0.0,0.0,0.0,5.5,BFSI,Medium,No holding,0.0,9.3,True,10000,600000,254,100000
+C-0835,RM-09,Emerging,Devika,35,Tier 2,HNI,Inherited,Moderate,English,9,274,12600000,19.5,40.1,38.0,0.0,0.0,0.0,2.4,BFSI,Short,No holding,0.0,0.0,True,20000,700000,340,100000
+C-0836,RM-09,Emerging,Deepak,53,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,3,74,10200000,24.9,42.4,25.0,0.0,0.0,0.0,7.7,Infra,Medium,No holding,0.0,19.4,False,0,400000,379,0
+C-0837,RM-09,Emerging,Vidya,45,Tier 1,HNI,Salaried CXO,Conservative,English,10,119,14200000,9.5,28.5,53.3,0.0,0.0,0.0,8.7,BFSI,Medium,No holding,6.1,0.0,False,0,1200000,149,100000
+C-0838,RM-09,Emerging,Jaya,41,Tier 1,HNI,Salaried CXO,Moderate,Hindi,13,394,52000000,12.5,39.2,28.3,16.9,0.0,0.0,3.1,Diversified,Long,No holding,0.0,0.0,True,55000,4500000,319,0
+C-0839,RM-09,Emerging,Rajesh,39,Tier 1,HNI,Salaried CXO,Moderate,English,11,352,19600000,17.0,25.2,26.9,28.2,0.0,0.0,2.7,IT,Medium,No holding,0.0,0.0,False,0,1000000,220,100000
+C-0840,RM-09,Emerging,Mohit,50,Tier 1,HNI,Professional,Aggressive,English,1,133,30800000,29.8,31.3,9.8,18.0,0.0,5.9,5.2,Diversified,Medium,Unlisted Co. B,0.0,0.0,True,45000,1600000,76,300000
+C-0841,RM-09,Emerging,Shreya,41,Tier 1,HNI,Professional,Conservative,English,11,222,36500000,8.9,38.1,38.7,0.0,0.0,0.0,14.3,Pharma,Short,No holding,4.9,0.0,True,30000,1300000,226,300000
+C-0842,RM-09,Emerging,Manish,48,Tier 1,HNI,Business Owner,Aggressive,Hindi,1,166,10900000,35.1,43.3,21.4,0.0,0.0,0.0,0.2,Diversified,Medium,No holding,0.0,0.0,True,10000,700000,24,0
+C-0843,RM-09,Emerging,Vikram,52,Tier 1,HNI,Professional,Moderate,English,7,81,12700000,11.2,40.6,36.2,0.0,0.0,0.0,12.0,Auto,Medium,No holding,0.0,0.0,True,25000,400000,256,0
+C-0844,RM-09,Emerging,Parth,54,Tier 2,HNI,Professional,Moderate,Marathi,12,118,30500000,17.9,31.7,41.2,0.0,0.0,0.0,9.2,BFSI,Long,No holding,0.0,0.0,False,0,1800000,112,100000
+C-0845,RM-09,Emerging,Ishaan,56,Tier 1,HNI,Salaried CXO,Conservative,English,17,44,14100000,11.0,34.7,43.5,0.0,0.0,0.0,10.8,Diversified,Long,No holding,0.0,0.0,True,10000,600000,48,0
+C-0846,RM-09,Emerging,Mohit,49,Tier 1,HNI,Salaried CXO,Moderate,Hindi,18,334,29400000,37.5,35.9,24.9,0.0,0.0,0.0,1.7,Diversified,Short,No holding,0.0,17.1,True,40000,2100000,297,200000
+C-0847,RM-09,Emerging,Manish,39,Tier 1,HNI,Inherited,Conservative,English,10,99,50300000,11.1,18.1,46.4,12.3,0.0,0.0,12.1,FMCG,Long,No holding,0.0,0.0,False,0,4300000,149,0
+C-0848,RM-09,Emerging,Sanjay,52,Tier 1,HNI,Professional,Moderate,English,4,79,10000000,16.2,45.3,32.5,0.0,0.0,0.0,6.0,IT,Medium,No holding,0.0,0.0,True,15000,400000,190,100000
+C-0849,RM-09,Emerging,Kiran,54,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,15,255,16400000,26.7,40.9,28.1,0.0,0.0,0.0,4.3,Pharma,Medium,No holding,0.0,0.0,True,30000,1300000,40,0
+C-0850,RM-09,Emerging,Akash,46,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,7,51,17900000,4.0,40.3,51.0,0.0,0.0,0.0,4.7,Auto,Medium,No holding,0.0,0.0,True,40000,1400000,38,100000
+C-0851,RM-09,Emerging,Siddharth,45,Tier 1,HNI,Professional,Conservative,Hindi,11,382,15000000,12.5,33.2,46.4,0.0,0.0,0.0,7.9,BFSI,Short,No holding,0.0,0.0,False,0,600000,386,0
+C-0852,RM-09,Emerging,Yash,68,Tier 1,HNI,Inherited,Aggressive,Gujarati,4,352,14300000,33.9,37.4,27.1,0.0,0.0,0.0,1.6,IT,Long,No holding,0.0,0.0,True,10000,1200000,253,100000
+C-0853,RM-09,Emerging,Jaya,36,Tier 1,HNI,Salaried CXO,Moderate,English,7,165,15300000,31.6,28.5,36.2,0.0,0.0,0.0,3.7,Infra,Short,No holding,0.0,16.4,False,0,1000000,172,100000
+C-0854,RM-09,Emerging,Swati,52,Tier 1,HNI,Professional,Moderate,Marathi,9,74,19800000,17.5,52.7,26.3,0.0,0.0,0.0,3.5,Auto,Medium,No holding,0.0,0.0,False,0,1200000,281,100000
+C-0855,RM-09,Emerging,Aditi,57,Tier 1,HNI,Salaried CXO,Aggressive,English,14,56,21900000,33.3,45.9,20.4,0.0,0.0,0.0,0.4,BFSI,Short,No holding,0.0,0.0,False,0,1500000,306,200000
+C-0856,RM-09,Emerging,Lakshmi,45,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,17,343,33800000,9.1,32.2,47.4,0.0,0.0,0.0,11.3,FMCG,Short,No holding,0.0,4.8,False,0,1600000,52,100000
+C-0857,RM-09,Emerging,Aarav,46,Tier 1,HNI,Professional,Moderate,Hindi,4,176,19700000,15.2,59.7,22.2,0.0,0.0,0.0,2.9,IT,Medium,No holding,0.0,0.0,False,0,600000,387,0
+C-0858,RM-09,Emerging,Mohit,44,Tier 1,HNI,Business Owner,Moderate,English,11,231,37000000,22.2,30.8,29.4,15.8,0.0,0.0,1.8,Auto,Medium,No holding,0.0,15.2,False,0,2100000,277,100000
+C-0859,RM-09,Emerging,Rajesh,48,Tier 1,HNI,Business Owner,Conservative,Hindi,18,50,14400000,10.6,28.0,54.6,0.0,0.0,0.0,6.8,Diversified,Long,No holding,0.0,12.3,False,0,1100000,133,0
+C-0860,RM-09,Emerging,Vinod,56,Tier 2,HNI,Professional,Conservative,Marathi,1,329,10300000,13.6,26.5,52.2,0.0,0.0,0.0,7.7,BFSI,Medium,No holding,0.0,9.8,True,5000,900000,116,100000
+C-0861,RM-09,Emerging,Swati,46,Tier 1,HNI,Salaried CXO,Aggressive,English,11,207,16900000,39.7,38.0,22.1,0.0,0.0,0.0,0.2,Diversified,Medium,No holding,0.0,14.6,True,35000,900000,41,100000
+C-0862,RM-09,Emerging,Vidya,68,Tier 1,HNI,Business Owner,Conservative,English,14,28,25800000,7.3,22.8,62.4,0.0,0.0,0.0,7.5,FMCG,Long,No holding,0.0,0.0,False,0,1200000,111,100000
+C-0863,RM-09,Emerging,Ramesh,44,Tier 2,HNI,Business Owner,Conservative,Hindi,2,31,32100000,10.9,22.3,52.0,0.0,0.0,0.0,14.8,Diversified,Medium,No holding,0.0,0.0,True,35000,1200000,144,300000
+C-0864,RM-09,Emerging,Meera,60,Tier 1,HNI,Salaried CXO,Moderate,English,13,385,44700000,19.2,27.1,25.5,26.1,0.0,0.0,2.1,Infra,Medium,No holding,0.0,7.7,False,0,3800000,93,300000
+C-0865,RM-09,Emerging,Varun,53,Tier 1,HNI,Salaried CXO,Moderate,English,8,23,23500000,25.2,45.0,23.8,0.0,0.0,0.0,6.0,Diversified,Long,No holding,0.0,0.0,False,0,1000000,283,0
+C-0866,RM-09,Emerging,Akash,49,Tier 2,HNI,Salaried CXO,Moderate,Hindi,11,120,30300000,25.5,47.1,25.2,0.0,0.0,0.0,2.2,Diversified,Medium,No holding,0.0,0.0,True,55000,2600000,109,200000
+C-0867,RM-09,Emerging,Sunil,61,Tier 1,HNI,Inherited,Conservative,Marathi,13,6,42500000,17.0,24.0,39.8,13.0,0.0,0.0,6.2,BFSI,Medium,No holding,0.0,16.4,True,45000,1700000,212,100000
+C-0868,RM-09,Emerging,Yash,34,Tier 1,HNI,Professional,Moderate,English,3,24,13000000,19.6,51.8,24.2,0.0,0.0,0.0,4.4,Pharma,Medium,No holding,0.0,0.0,True,15000,400000,236,100000
+C-0869,RM-09,Emerging,Aditi,52,Tier 1,HNI,Professional,Moderate,Marathi,2,325,17800000,24.8,30.0,35.6,0.0,0.0,0.0,9.6,Diversified,Medium,No holding,0.0,10.9,True,20000,800000,36,0
+C-0870,RM-09,Emerging,Ramesh,42,Tier 1,HNI,Business Owner,Moderate,English,6,306,91800000,24.2,26.0,31.4,17.2,0.0,0.0,1.2,Pharma,Medium,No holding,0.0,0.0,False,0,5500000,75,100000
+C-0871,RM-09,Emerging,Uday,44,Tier 1,HNI,Business Owner,Aggressive,English,5,133,32000000,20.5,36.7,20.0,20.9,0.0,0.0,1.9,Pharma,Medium,No holding,0.0,0.0,True,45000,1600000,34,100000
+C-0872,RM-09,Emerging,Rupal,44,Tier 2,HNI,Professional,Conservative,English,6,72,26500000,10.8,36.7,46.1,0.0,0.0,0.0,6.4,FMCG,Medium,No holding,7.9,0.0,True,35000,2200000,291,100000
+C-0873,RM-09,Emerging,Vinod,39,Tier 1,HNI,Professional,Moderate,English,17,100,32700000,9.0,25.7,42.2,16.7,0.0,0.0,6.4,Infra,Short,No holding,0.0,12.8,True,45000,2100000,295,200000
+C-0874,RM-09,Emerging,Kabir,33,Tier 1,HNI,Professional,Moderate,Hindi,13,141,10000000,13.2,51.7,24.3,0.0,0.0,0.0,10.8,Infra,Short,No holding,0.0,16.3,True,20000,400000,58,0
+C-0875,RM-09,Emerging,Rakesh,51,Tier 2,HNI,Salaried CXO,Moderate,English,7,310,14000000,24.8,43.1,30.2,0.0,0.0,0.0,1.9,IT,Medium,No holding,0.0,0.0,True,30000,900000,310,100000
+C-0876,RM-09,Emerging,Sunil,47,Tier 2,HNI,Salaried CXO,Moderate,English,11,238,11500000,23.9,33.6,31.2,0.0,0.0,0.0,11.3,Diversified,Short,No holding,0.0,12.8,True,30000,600000,341,0
+C-0877,RM-09,Emerging,Ananya,45,Tier 1,HNI,Salaried CXO,Conservative,Hindi,3,178,25200000,10.4,30.7,44.1,0.0,0.0,0.0,14.8,IT,Medium,No holding,0.0,0.0,False,0,1800000,50,200000
+C-0878,RM-09,Emerging,Prakash,55,Tier 1,HNI,Business Owner,Moderate,Hindi,4,28,16300000,20.7,40.8,31.8,0.0,0.0,0.0,6.7,Auto,Short,No holding,4.7,0.0,True,25000,1300000,53,200000
+C-0879,RM-09,Emerging,Vinod,52,Tier 1,HNI,Professional,Moderate,Hindi,2,47,21100000,17.6,40.5,32.0,0.0,0.0,0.0,9.9,Diversified,Short,No holding,0.0,0.0,True,25000,1900000,334,0
+C-0880,RM-09,Emerging,Nikhil,46,Tier 2,HNI,Salaried CXO,Moderate,Hindi,8,81,16900000,19.8,49.3,27.9,0.0,0.0,0.0,3.0,Diversified,Long,No holding,0.0,13.0,True,35000,1100000,133,0
+C-0881,RM-09,Emerging,Sunil,68,Tier 2,HNI,Salaried CXO,Conservative,Marathi,12,85,10000000,3.7,28.2,60.5,0.0,0.0,0.0,7.6,IT,Medium,No holding,0.0,0.0,False,0,500000,148,200000
+C-0882,RM-09,Emerging,Shalini,57,Tier 2,HNI,Business Owner,Conservative,Hindi,10,196,32500000,8.4,33.8,46.5,0.0,0.0,0.0,11.3,Auto,Long,No holding,0.0,0.0,False,0,1800000,249,100000
+C-0883,RM-09,Emerging,Jaya,68,Tier 1,HNI,Professional,Conservative,Marathi,11,345,10000000,7.7,27.8,50.9,0.0,0.0,0.0,13.6,BFSI,Short,No holding,2.8,0.0,True,15000,500000,33,100000
+C-0884,RM-09,Emerging,Manish,44,Tier 1,HNI,Professional,Conservative,Marathi,3,169,13400000,12.3,37.1,44.9,0.0,0.0,0.0,5.7,Auto,Short,No holding,0.0,0.0,False,0,800000,186,0
+C-0885,RM-09,Emerging,Pallavi,50,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,12,132,10000000,8.7,39.4,41.0,0.0,0.0,0.0,10.9,BFSI,Short,No holding,0.0,0.0,False,0,300000,143,0
+C-0886,RM-09,Emerging,Naveen,37,Tier 1,HNI,Inherited,Conservative,English,10,223,12300000,14.3,36.6,40.8,0.0,0.0,0.0,8.3,BFSI,Short,No holding,0.0,11.4,False,0,600000,346,0
+C-0887,RM-09,Emerging,Rahul,45,Tier 1,HNI,Salaried CXO,Conservative,English,18,31,22300000,8.0,31.1,37.6,0.0,0.0,0.0,23.3,FMCG,Short,No holding,0.0,0.0,False,0,2000000,308,300000
+C-0888,RM-09,Emerging,Ramesh,43,Tier 1,HNI,Professional,Conservative,English,5,291,39400000,2.4,21.9,68.1,0.0,0.0,0.0,7.6,BFSI,Medium,No holding,6.0,0.0,False,0,3400000,123,300000
+C-0889,RM-09,Emerging,Mohit,68,Tier 1,HNI,Professional,Aggressive,English,2,23,10000000,28.4,41.8,27.6,0.0,0.0,0.0,2.2,IT,Short,No holding,0.0,0.0,True,10000,300000,277,100000
+C-0890,RM-09,Emerging,Rakesh,42,Tier 1,HNI,Inherited,Moderate,Hindi,9,141,14700000,28.2,42.8,27.1,0.0,0.0,0.0,1.9,FMCG,Long,No holding,0.0,0.0,True,15000,1300000,172,100000
+C-0891,RM-09,Emerging,Ramesh,46,Tier 2,HNI,Professional,Conservative,English,4,381,10000000,4.8,21.6,58.6,0.0,0.0,0.0,15.0,Diversified,Medium,No holding,0.0,0.0,False,0,800000,204,0
+C-0892,RM-09,Emerging,Vinod,35,Tier 1,HNI,Salaried CXO,Moderate,Hindi,4,162,14300000,17.8,38.9,35.2,0.0,0.0,0.0,8.1,Diversified,Short,No holding,0.0,0.0,True,25000,400000,310,100000
+C-0893,RM-09,Emerging,Sunil,53,Tier 2,HNI,Salaried CXO,Moderate,Gujarati,5,299,20800000,19.0,37.3,39.4,0.0,0.0,0.0,4.3,FMCG,Long,No holding,0.0,0.0,True,35000,1800000,121,100000
+C-0894,RM-09,Emerging,Priya,40,Tier 1,HNI,Professional,Conservative,English,13,109,30500000,9.1,34.1,44.2,0.0,0.0,0.0,12.6,IT,Medium,No holding,0.0,2.3,False,0,2700000,244,200000
+C-0895,RM-09,Emerging,Devika,56,Tier 1,HNI,Professional,Moderate,Marathi,8,341,10000000,14.8,37.6,40.8,0.0,0.0,0.0,6.8,FMCG,Short,No holding,0.0,0.0,False,0,700000,178,0
+C-0896,RM-09,Emerging,Kiran,32,Tier 1,HNI,Salaried CXO,Conservative,Gujarati,16,136,27100000,10.7,25.4,60.5,0.0,0.0,0.0,3.4,Auto,Medium,No holding,0.0,0.0,True,60000,2100000,274,0
+C-0897,RM-09,Emerging,Kiran,47,Tier 1,HNI,Professional,Moderate,Gujarati,3,91,11700000,18.1,45.8,29.0,0.0,0.0,0.0,7.1,IT,Medium,No holding,1.6,0.0,False,0,600000,163,0
+C-0898,RM-09,Emerging,Kabir,32,Tier 2,HNI,Salaried CXO,Conservative,English,17,21,10200000,10.1,29.8,50.7,0.0,0.0,4.3,5.1,BFSI,Medium,Unlisted Co. E,1.7,0.0,True,20000,700000,393,0
+C-0899,RM-09,Emerging,Vikram,44,Tier 1,HNI,Business Owner,Moderate,Marathi,8,123,20800000,22.2,41.9,24.3,0.0,0.0,3.7,7.9,IT,Long,Unlisted Co. A,0.0,0.0,False,0,1500000,166,0
+C-0900,RM-09,Emerging,Pooja,45,Tier 2,HNI,Business Owner,Conservative,English,10,232,28200000,8.5,30.8,52.5,0.0,0.0,0.0,8.2,Diversified,Short,No holding,0.0,11.0,False,0,1800000,50,0
+C-0901,RM-09,Emerging,Yash,43,Tier 2,HNI,Professional,Conservative,Gujarati,15,26,18900000,7.8,42.1,43.1,0.0,0.0,0.0,7.0,BFSI,Short,No holding,0.0,0.0,False,0,900000,208,0
+C-0902,RM-09,Emerging,Bhavna,43,Tier 1,HNI,Professional,Moderate,English,9,69,11000000,17.4,31.4,26.6,0.0,0.0,15.3,9.3,Auto,Long,Unlisted Co. A,0.0,0.0,False,0,800000,104,100000
+C-0903,RM-09,Emerging,Sanjay,57,Tier 1,HNI,Professional,Conservative,English,3,139,18900000,10.9,23.4,57.6,0.0,0.0,0.0,8.1,FMCG,Medium,No holding,0.0,18.7,False,0,1500000,193,100000
+C-0904,RM-09,Emerging,Rahul,68,Tier 1,HNI,Salaried CXO,Moderate,English,5,286,13400000,12.5,37.3,49.5,0.0,0.0,0.0,0.7,FMCG,Long,No holding,0.0,9.9,False,0,1100000,387,0
+C-0905,RM-09,Emerging,Shreya,51,Tier 1,HNI,Salaried CXO,Conservative,Hindi,17,239,27900000,9.4,25.9,54.3,0.0,0.0,4.9,5.5,FMCG,Long,Unlisted Co. B,0.0,4.5,True,50000,1100000,47,200000
+C-0906,RM-09,Emerging,Meera,40,Tier 1,HNI,Salaried CXO,Moderate,Marathi,2,17,36100000,21.5,30.9,13.4,20.8,0.0,0.0,13.4,Diversified,Medium,No holding,5.6,14.0,True,90000,2000000,22,100000
+C-0907,RM-09,Emerging,Parth,49,Tier 1,HNI,Business Owner,Moderate,Hindi,17,15,34900000,11.3,37.6,42.4,0.0,0.0,0.0,8.7,IT,Medium,No holding,0.0,0.0,True,25000,1100000,125,100000
+C-0908,RM-09,Emerging,Lakshmi,45,Tier 2,HNI,Business Owner,Moderate,Hindi,13,24,19800000,11.4,50.0,35.9,0.0,0.0,0.0,2.7,Diversified,Short,No holding,1.9,0.0,True,30000,1300000,185,100000
+C-0909,RM-09,Emerging,Rupal,56,Tier 1,HNI,Professional,Moderate,English,10,132,37100000,14.5,40.6,36.8,0.0,0.0,4.2,3.9,IT,Short,Unlisted Co. A,0.0,0.0,False,0,1700000,58,100000
+C-0910,RM-09,Emerging,Gaurav,51,Tier 2,HNI,Professional,Aggressive,Marathi,6,114,11400000,35.7,35.1,28.0,0.0,0.0,0.0,1.2,FMCG,Short,No holding,0.0,0.0,True,25000,1000000,293,0
+C-0911,RM-09,Emerging,Ramesh,34,Tier 1,HNI,Inherited,Conservative,English,16,47,53300000,13.4,33.4,44.5,0.0,0.0,0.0,8.7,Auto,Short,No holding,0.0,0.0,False,0,3600000,254,100000
+C-0912,RM-09,Emerging,Pallavi,58,Tier 1,HNI,Business Owner,Moderate,Marathi,1,175,11400000,23.3,34.8,35.4,0.0,0.0,0.0,6.5,Auto,Medium,No holding,0.0,0.0,True,10000,600000,296,0
+C-0913,RM-09,Emerging,Sneha,57,Tier 2,HNI,Professional,Moderate,Gujarati,13,236,10000000,21.6,35.3,36.6,0.0,0.0,0.0,6.5,BFSI,Medium,No holding,0.0,10.4,True,25000,700000,180,0
+C-0914,RM-09,Emerging,Aditi,61,Tier 1,HNI,Salaried CXO,Moderate,English,4,277,42400000,29.0,24.6,24.3,15.4,0.0,0.0,6.7,IT,Long,No holding,0.0,0.0,True,105000,1800000,391,100000
+C-0915,RM-09,Emerging,Devika,43,Tier 1,HNI,Salaried CXO,Moderate,English,7,398,13500000,9.8,38.2,34.9,0.0,0.0,0.0,17.1,Diversified,Short,No holding,0.0,0.0,True,35000,500000,283,0
+C-0916,RM-09,Emerging,Rajesh,51,Tier 2,HNI,Professional,Aggressive,Hindi,2,277,21300000,24.8,45.9,25.1,0.0,0.0,0.0,4.2,IT,Medium,No holding,0.0,0.0,True,35000,800000,387,100000
+C-0917,RM-09,Emerging,Manish,37,Tier 2,HNI,Promoter,Moderate,Marathi,11,394,11300000,30.1,35.2,31.9,0.0,0.0,0.0,2.8,BFSI,Short,No holding,0.0,0.0,False,0,700000,41,0
+C-0918,RM-09,Emerging,Kabir,48,Tier 1,HNI,Salaried CXO,Conservative,Hindi,3,389,73400000,7.7,27.4,56.4,0.0,0.0,0.0,8.5,Pharma,Medium,No holding,6.2,0.0,True,50000,6100000,281,100000
+C-0919,RM-09,Emerging,Vidya,52,Tier 2,HNI,Professional,Moderate,Gujarati,3,338,54500000,19.7,27.9,16.1,26.4,0.0,0.0,9.9,BFSI,Short,No holding,0.0,0.0,False,0,2400000,148,300000
+C-0920,RM-09,Emerging,Varun,42,Tier 1,HNI,Salaried CXO,Conservative,Marathi,6,141,46800000,9.4,21.2,61.9,0.0,0.0,0.0,7.5,Infra,Medium,No holding,0.0,0.0,True,30000,3500000,85,300000
+C-0921,RM-10,Wealth,Lakshmi,60,Tier 1,HNI,Salaried CXO,Conservative,English,1,206,29200000,7.0,25.4,58.0,0.0,0.0,0.0,9.6,FMCG,Medium,No holding,0.0,6.3,True,45000,1500000,335,100000
+C-0922,RM-10,Wealth,Meera,47,Tier 1,HNI,Professional,Conservative,English,12,300,27800000,11.2,30.2,50.4,0.0,0.0,0.0,8.2,FMCG,Medium,No holding,6.7,0.0,True,55000,2300000,234,0
+C-0923,RM-10,Wealth,Kavita,48,Tier 2,UHNI,Business Owner,Conservative,English,17,143,118400000,6.2,24.6,50.4,5.2,0.0,0.0,13.6,IT,Long,No holding,0.0,0.0,False,0,10100000,131,100000
+C-0924,RM-10,Wealth,Deepak,45,Tier 2,UHNI,Professional,Moderate,English,16,317,104500000,25.0,18.9,31.3,17.0,0.0,0.0,7.8,Infra,Long,No holding,0.0,0.0,False,0,4200000,39,800000
+C-0925,RM-10,Wealth,Sanjay,53,Tier 1,HNI,Salaried CXO,Aggressive,Hindi,16,209,28900000,37.4,42.1,19.7,0.0,0.0,0.0,0.8,Diversified,Short,No holding,0.0,0.0,False,0,2200000,55,0
+C-0926,RM-10,Wealth,Shreya,56,Tier 2,UHNI,Salaried CXO,Conservative,English,7,367,128100000,3.9,25.2,46.7,9.7,0.0,0.0,14.5,BFSI,Short,No holding,4.5,0.0,False,0,6500000,41,100000
+C-0927,RM-10,Wealth,Gaurav,51,Tier 1,UHNI,Salaried CXO,Conservative,English,17,358,101100000,11.2,21.0,41.4,15.3,0.0,0.0,11.1,Auto,Long,No holding,0.0,0.0,False,0,5500000,138,400000
+C-0928,RM-10,Wealth,Neha,46,Tier 2,HNI,Salaried CXO,Conservative,English,1,385,20400000,7.6,31.8,53.3,0.0,0.0,0.0,7.3,Diversified,Short,No holding,0.0,0.0,False,0,900000,142,0
+C-0929,RM-10,Wealth,Shreya,35,Tier 1,HNI,Professional,Moderate,Marathi,6,88,28400000,14.2,41.6,34.4,0.0,0.0,0.0,9.8,Diversified,Medium,No holding,0.0,0.0,False,0,1900000,25,100000
+C-0930,RM-10,Wealth,Rupal,48,Tier 1,HNI,Business Owner,Moderate,English,12,295,20100000,17.2,57.8,21.9,0.0,0.0,0.0,3.1,BFSI,Medium,No holding,0.0,0.0,True,20000,1000000,298,0
+C-0931,RM-10,Wealth,Ananya,46,Tier 1,HNI,Salaried CXO,Moderate,Marathi,6,300,47700000,28.5,29.0,32.3,0.0,0.0,0.0,10.2,Infra,Medium,No holding,7.4,0.0,False,0,3600000,224,0
+C-0932,RM-10,Wealth,Akash,50,Tier 1,HNI,Business Owner,Moderate,English,1,180,50500000,21.7,46.8,21.7,0.0,0.0,0.0,9.8,Infra,Short,No holding,0.0,0.0,True,95000,3900000,410,400000
+C-0933,RM-10,Wealth,Ananya,49,Tier 2,HNI,Business Owner,Conservative,Marathi,4,68,50400000,6.2,25.4,58.1,0.0,0.0,0.0,10.3,Diversified,Short,No holding,0.0,0.0,True,70000,2700000,373,0
+C-0934,RM-10,Wealth,Parth,62,Tier 1,HNI,Business Owner,Moderate,English,17,117,16400000,11.5,29.2,46.7,0.0,0.0,0.0,12.6,Diversified,Short,No holding,0.0,0.0,False,0,500000,9,0
+C-0935,RM-10,Wealth,Varun,42,Tier 2,HNI,Professional,Aggressive,English,8,206,22800000,38.8,37.7,22.2,0.0,0.0,0.0,1.3,Auto,Short,No holding,0.0,0.0,True,25000,800000,295,0
+C-0936,RM-10,Wealth,Ananya,34,Tier 1,HNI,Professional,Conservative,English,4,346,57700000,15.0,22.1,50.5,0.0,0.0,0.0,12.4,Diversified,Short,No holding,0.0,0.0,False,0,2700000,408,100000
+C-0937,RM-10,Wealth,Rupal,38,Tier 1,HNI,Inherited,Moderate,Marathi,12,366,70400000,23.4,25.1,34.6,15.1,0.0,0.0,1.8,Diversified,Medium,No holding,6.0,0.0,True,65000,6100000,337,500000
+C-0938,RM-10,Wealth,Shalini,42,Tier 1,HNI,Salaried CXO,Moderate,English,7,366,16500000,24.8,34.8,29.4,0.0,0.0,0.0,11.0,Diversified,Short,No holding,6.5,0.0,False,0,900000,289,0
+C-0939,RM-10,Wealth,Vinod,58,Tier 1,HNI,Professional,Conservative,Hindi,8,378,24700000,21.6,23.0,50.6,0.0,0.0,0.0,4.8,Pharma,Short,No holding,0.0,0.0,True,45000,1800000,62,0
+C-0940,RM-10,Wealth,Priya,36,Tier 1,HNI,Inherited,Moderate,English,18,39,87700000,26.2,33.1,18.6,19.0,0.0,0.0,3.1,Diversified,Short,No holding,4.5,14.2,False,0,7600000,378,1300000
+C-0941,RM-10,Wealth,Vikram,38,Tier 1,HNI,Business Owner,Conservative,Hindi,10,398,25500000,25.2,15.2,48.4,0.0,0.0,0.0,11.2,BFSI,Long,No holding,0.0,0.0,False,0,1300000,346,100000
+C-0942,RM-10,Wealth,Neha,52,Tier 2,HNI,Professional,Conservative,Hindi,2,222,49600000,8.6,24.0,38.4,20.8,0.0,0.0,8.2,IT,Short,No holding,0.0,0.0,False,0,3200000,227,200000
+C-0943,RM-10,Wealth,Jaya,56,Tier 1,HNI,Salaried CXO,Moderate,English,17,40,24200000,22.2,42.1,32.1,0.0,0.0,0.0,3.6,Diversified,Short,No holding,0.0,14.4,False,0,2000000,387,0
+C-0944,RM-10,Wealth,Vinod,34,Tier 1,HNI,Business Owner,Aggressive,Hindi,1,52,79000000,25.7,37.2,25.3,11.0,0.0,0.0,0.8,FMCG,Medium,No holding,0.0,15.5,True,135000,5300000,197,200000
+C-0945,RM-10,Wealth,Pooja,32,Tier 1,HNI,Promoter,Conservative,Gujarati,13,102,16500000,14.4,25.9,50.7,0.0,0.0,0.0,9.0,Auto,Short,No holding,0.0,0.0,False,0,600000,226,0
+C-0946,RM-10,Wealth,Kiran,41,Tier 1,HNI,Business Owner,Moderate,English,2,101,42300000,20.5,18.8,37.9,19.7,0.0,0.0,3.1,Infra,Short,No holding,0.0,0.0,True,30000,3200000,330,0
+C-0947,RM-10,Wealth,Rakesh,54,Tier 2,HNI,Inherited,Conservative,English,5,45,83900000,6.5,19.9,47.8,10.9,0.0,0.0,14.9,BFSI,Short,No holding,5.4,0.0,False,0,7100000,303,100000
+C-0948,RM-10,Wealth,Naveen,49,Tier 1,HNI,Inherited,Moderate,English,18,153,69900000,24.5,31.2,21.3,15.8,0.0,0.0,7.2,Diversified,Long,No holding,0.0,0.0,False,0,5300000,233,300000
+C-0949,RM-10,Wealth,Shalini,41,Tier 1,HNI,Inherited,Moderate,Hindi,4,219,38700000,16.6,25.7,30.1,24.4,0.0,0.0,3.2,IT,Medium,No holding,0.0,0.0,False,0,2900000,330,200000
+C-0950,RM-10,Wealth,Shalini,55,Tier 1,HNI,Professional,Moderate,English,18,125,34000000,15.6,40.3,41.8,0.0,0.0,0.0,2.3,Diversified,Medium,No holding,0.0,0.0,False,0,2600000,377,0
+C-0951,RM-10,Wealth,Aarav,49,Tier 1,HNI,Professional,Aggressive,Hindi,6,267,44000000,35.3,35.4,11.5,16.7,0.0,0.0,1.1,Infra,Long,No holding,0.0,12.3,True,45000,2900000,274,0
+C-0952,RM-10,Wealth,Pooja,47,Tier 1,HNI,Salaried CXO,Moderate,English,7,286,24600000,18.2,35.0,43.5,0.0,0.0,0.0,3.3,Diversified,Medium,No holding,0.0,0.0,False,0,1100000,375,0
+C-0953,RM-10,Wealth,Tanvi,33,Tier 1,HNI,Salaried CXO,Conservative,Marathi,17,160,47300000,8.0,31.1,36.5,11.9,0.0,0.0,12.5,Infra,Short,No holding,0.0,0.0,False,0,4000000,175,300000
+C-0954,RM-10,Wealth,Ramesh,41,Tier 2,HNI,Inherited,Aggressive,Hindi,14,32,47800000,32.6,27.0,19.3,19.9,0.0,0.0,1.2,BFSI,Medium,No holding,2.9,0.0,False,0,1800000,225,300000
+C-0955,RM-10,Wealth,Sanjay,66,Tier 1,HNI,Salaried CXO,Conservative,English,6,125,39700000,14.1,37.7,43.2,0.0,0.0,0.2,4.8,IT,Medium,Unlisted Co. B,0.0,0.0,False,0,3200000,274,100000
+C-0956,RM-10,Wealth,Vinod,45,Tier 1,HNI,Salaried CXO,Moderate,Gujarati,14,245,86700000,27.7,42.8,19.0,9.3,0.0,0.0,1.2,Diversified,Short,No holding,0.0,0.0,False,0,4500000,243,200000
+C-0957,RM-10,Wealth,Lakshmi,39,Tier 1,HNI,Promoter,Moderate,Gujarati,9,157,27800000,11.2,38.1,28.3,20.5,0.0,0.0,1.9,Diversified,Medium,No holding,0.0,0.0,True,25000,2000000,79,100000
+C-0958,RM-10,Wealth,Rupal,45,Tier 1,HNI,Salaried CXO,Aggressive,English,2,232,19600000,18.8,50.0,27.3,0.0,0.0,0.0,3.9,BFSI,Short,No holding,0.0,0.0,False,0,1500000,194,200000
+C-0959,RM-10,Wealth,Aditi,49,Tier 2,HNI,Inherited,Moderate,English,5,337,37500000,40.7,25.8,26.8,0.0,0.0,3.5,3.2,BFSI,Short,Unlisted Co. C,0.0,7.7,False,0,2900000,60,200000
+C-0960,RM-10,Wealth,Deepak,56,Tier 2,HNI,Business Owner,Moderate,English,5,315,53500000,25.3,26.6,20.7,18.3,0.0,0.0,9.1,FMCG,Short,No holding,0.0,0.0,False,0,2100000,291,100000
+C-0961,RM-10,Wealth,Rupal,54,Tier 1,HNI,Business Owner,Moderate,English,9,249,47100000,30.6,21.2,29.8,13.9,0.0,0.0,4.5,BFSI,Short,No holding,0.0,0.0,False,0,3100000,336,700000
+C-0962,RM-10,Wealth,Harsh,42,Tier 1,HNI,Professional,Moderate,English,17,39,46000000,20.8,34.6,40.3,0.0,0.0,0.0,4.3,Diversified,Long,No holding,0.0,18.6,False,0,2000000,288,0
+C-0963,RM-10,Wealth,Siddharth,59,Tier 2,HNI,Salaried CXO,Aggressive,English,11,298,26900000,24.3,38.3,18.1,18.8,0.0,0.0,0.5,IT,Medium,No holding,0.0,0.0,True,55000,1000000,363,0
+C-0964,RM-10,Wealth,Tanvi,55,Tier 1,HNI,Professional,Conservative,English,3,133,29100000,13.1,24.8,43.8,0.0,0.0,0.0,18.3,BFSI,Short,No holding,0.0,0.0,False,0,1800000,274,100000
+C-0965,RM-10,Wealth,Uday,44,Tier 1,HNI,Business Owner,Conservative,English,11,166,38200000,12.2,24.7,47.2,13.3,0.0,0.0,2.6,Auto,Medium,No holding,0.0,11.7,False,0,3400000,162,100000
+C-0966,RM-10,Wealth,Akash,47,Tier 1,HNI,Business Owner,Moderate,English,10,279,36600000,19.1,32.5,21.0,16.8,0.0,5.8,4.8,Diversified,Long,Unlisted Co. A,0.0,0.0,False,0,3300000,30,400000
+C-0967,RM-10,Wealth,Kiran,53,Tier 1,HNI,Inherited,Conservative,English,7,333,91500000,6.2,24.6,46.1,6.7,0.0,0.0,16.4,Auto,Short,No holding,0.0,16.3,False,0,5900000,18,200000
+C-0968,RM-10,Wealth,Parth,58,Tier 1,HNI,Salaried CXO,Aggressive,English,5,284,57800000,22.9,38.5,23.8,11.2,0.0,0.0,3.6,Infra,Medium,No holding,0.0,8.7,False,0,4400000,404,400000
+C-0969,RM-10,Wealth,Aarav,34,Tier 1,HNI,Salaried CXO,Moderate,English,13,121,37300000,17.9,48.9,32.4,0.0,0.0,0.0,0.8,Diversified,Medium,No holding,0.0,0.0,False,0,1700000,328,0
+C-0970,RM-10,Wealth,Varun,49,Tier 2,HNI,Business Owner,Moderate,English,11,180,91300000,22.8,27.0,26.4,8.8,13.7,0.0,1.3,BFSI,Short,No holding,4.5,10.7,True,80000,4000000,144,1900000
+C-0971,RM-10,Wealth,Vinod,48,Tier 1,HNI,Inherited,Moderate,Gujarati,8,145,63900000,15.2,45.9,24.0,9.7,0.0,3.5,1.7,IT,Medium,Unlisted Co. A,0.0,0.0,True,130000,4600000,401,0
+C-0972,RM-10,Wealth,Siddharth,43,Tier 1,HNI,Inherited,Aggressive,Hindi,4,185,23700000,37.6,32.0,23.1,0.0,0.0,6.7,0.6,IT,Medium,Unlisted Co. A,0.0,19.0,False,0,1800000,107,100000
+C-0973,RM-10,Wealth,Kabir,43,Tier 1,HNI,Salaried CXO,Moderate,Marathi,3,302,10000000,27.7,42.1,27.7,0.0,0.0,0.0,2.5,BFSI,Long,No holding,0.0,0.0,False,0,700000,325,0
+C-0974,RM-10,Wealth,Bhavna,57,Tier 1,HNI,Business Owner,Conservative,Marathi,4,386,24100000,9.4,27.1,55.2,0.0,0.0,0.9,7.4,IT,Long,Unlisted Co. A,0.0,0.0,True,45000,900000,92,0
+C-0975,RM-10,Wealth,Sunil,53,Tier 2,HNI,Promoter,Moderate,Hindi,12,156,69400000,6.7,43.6,29.4,14.5,0.0,0.0,5.8,Infra,Long,No holding,6.3,6.2,False,0,3600000,299,200000
+C-0976,RM-10,Wealth,Shalini,67,Tier 1,HNI,Inherited,Moderate,Gujarati,1,131,81600000,24.4,37.2,24.0,9.6,0.0,0.0,4.8,IT,Short,No holding,0.0,4.6,False,0,2700000,33,100000
+C-0977,RM-10,Wealth,Vikram,43,Tier 1,HNI,Salaried CXO,Aggressive,English,2,353,20100000,33.3,40.6,23.3,0.0,0.0,0.0,2.8,IT,Long,No holding,0.0,0.0,True,45000,1600000,288,0
+C-0978,RM-10,Wealth,Meera,49,Tier 2,HNI,Professional,Moderate,Hindi,18,60,71800000,9.7,41.3,22.7,11.7,0.0,9.5,5.1,Auto,Medium,Unlisted Co. C,0.0,11.4,True,130000,3500000,194,1000000
+C-0979,RM-10,Wealth,Devika,51,Tier 1,HNI,Salaried CXO,Moderate,English,5,156,70300000,26.5,25.0,21.7,23.0,0.0,0.0,3.8,IT,Short,No holding,0.0,0.0,False,0,3900000,246,300000
+C-0980,RM-10,Wealth,Varun,56,Tier 1,UHNI,Business Owner,Moderate,Hindi,3,381,107700000,24.8,37.7,12.0,18.4,0.0,0.0,7.1,BFSI,Long,No holding,3.2,0.0,False,0,7000000,22,400000
+C-0981,RM-10,Wealth,Bhavna,60,Tier 1,HNI,Professional,Moderate,English,18,352,84300000,32.2,27.8,24.0,14.2,0.0,0.0,1.8,Diversified,Long,No holding,0.0,0.0,False,0,2500000,158,600000
+C-0982,RM-10,Wealth,Priya,49,Tier 1,UHNI,Professional,Moderate,Marathi,8,324,105200000,26.0,26.5,22.1,25.1,0.0,0.0,0.3,Diversified,Medium,No holding,0.0,0.0,False,0,5400000,71,500000
+C-0983,RM-10,Wealth,Nikhil,38,Tier 1,HNI,Salaried CXO,Conservative,English,1,355,65400000,7.7,22.0,50.4,10.5,0.0,0.0,9.4,Diversified,Short,No holding,0.0,0.0,True,90000,4800000,260,100000
+C-0984,RM-10,Wealth,Prakash,42,Tier 1,HNI,Inherited,Conservative,Gujarati,8,95,64200000,4.4,25.2,48.8,8.4,0.0,3.2,10.0,BFSI,Short,Unlisted Co. A,0.0,0.0,False,0,3000000,7,200000
+C-0985,RM-10,Wealth,Mohit,49,Tier 1,HNI,Salaried CXO,Moderate,Marathi,1,24,41500000,34.6,30.2,29.5,0.0,0.0,0.0,5.7,Pharma,Long,No holding,0.0,0.0,True,90000,2700000,380,100000
+C-0986,RM-10,Wealth,Aarav,58,Tier 1,HNI,Inherited,Moderate,Gujarati,6,343,78500000,17.6,32.1,32.4,15.9,0.0,0.0,2.0,Diversified,Long,No holding,0.0,0.0,False,0,7000000,77,600000
+C-0987,RM-10,Wealth,Rajesh,35,Tier 2,HNI,Business Owner,Conservative,English,18,197,24000000,22.0,31.8,33.9,0.0,0.0,0.0,12.3,Infra,Short,No holding,0.0,0.0,False,0,900000,221,200000
+C-0988,RM-10,Wealth,Ishaan,37,Tier 1,HNI,Promoter,Aggressive,English,15,101,46300000,27.5,35.4,18.7,16.4,0.0,0.0,2.0,Diversified,Short,No holding,0.0,17.6,False,0,2100000,418,200000
+C-0989,RM-10,Wealth,Bhavna,55,Tier 1,HNI,Business Owner,Conservative,Hindi,8,191,67300000,11.7,19.2,45.1,11.6,0.0,0.0,12.4,Diversified,Medium,No holding,2.5,0.0,False,0,4800000,175,400000
+C-0990,RM-10,Wealth,Mohit,36,Tier 1,UHNI,Business Owner,Moderate,English,7,331,108500000,12.1,38.3,28.8,14.3,0.0,0.0,6.5,BFSI,Short,No holding,0.0,0.0,True,255000,7200000,229,300000
+C-0991,RM-10,Wealth,Kabir,38,Tier 1,HNI,Professional,Aggressive,English,11,197,38400000,17.5,22.5,21.3,31.3,0.0,5.2,2.2,BFSI,Medium,Unlisted Co. D,0.0,14.8,False,0,3400000,403,200000
+C-0992,RM-10,Wealth,Sanjay,58,Tier 1,HNI,Business Owner,Aggressive,Hindi,12,251,85100000,29.7,16.2,7.1,20.2,19.2,7.0,0.6,Diversified,Long,Unlisted Co. A,0.0,0.0,True,195000,2700000,32,200000
+C-0993,RM-10,Wealth,Manish,46,Tier 1,HNI,Business Owner,Aggressive,Marathi,14,205,44900000,21.0,31.3,27.9,17.7,0.0,0.0,2.1,Diversified,Short,No holding,0.0,0.0,True,55000,3700000,238,0
+C-0994,RM-10,Wealth,Parth,45,Tier 1,HNI,Professional,Aggressive,English,10,193,86000000,18.8,29.6,10.4,22.0,0.0,16.8,2.4,IT,Medium,Unlisted Co. B,0.0,0.0,False,0,5100000,239,300000
+C-0995,RM-10,Wealth,Pallavi,60,Tier 1,HNI,Salaried CXO,Moderate,English,2,381,32200000,18.4,31.4,44.6,0.0,0.0,0.0,5.6,BFSI,Medium,No holding,5.5,0.0,False,0,1400000,305,300000
+C-0996,RM-10,Wealth,Swati,38,Tier 1,HNI,Inherited,Moderate,Hindi,16,371,74500000,28.0,24.4,30.8,15.7,0.0,0.0,1.1,BFSI,Short,No holding,0.0,0.0,False,0,4500000,254,200000
+C-0997,RM-10,Wealth,Arjun,37,Tier 1,HNI,Business Owner,Aggressive,Hindi,7,170,47400000,18.9,46.3,16.8,17.0,0.0,0.0,1.0,BFSI,Short,No holding,0.0,0.0,True,30000,2600000,204,300000
+C-0998,RM-10,Wealth,Aditi,63,Tier 1,HNI,Salaried CXO,Moderate,Marathi,15,323,26100000,30.1,39.9,27.2,0.0,0.0,0.0,2.8,BFSI,Medium,No holding,0.0,17.1,False,0,1100000,232,0
+C-0999,RM-10,Wealth,Tanvi,50,Tier 2,HNI,Salaried CXO,Moderate,Hindi,15,289,46000000,22.2,28.7,30.1,15.2,0.0,1.9,1.9,Diversified,Medium,Unlisted Co. C,6.0,0.0,False,0,2000000,123,500000
+C-1000,RM-10,Wealth,Kiran,54,Tier 1,UHNI,Salaried CXO,Conservative,English,4,52,103400000,25.2,31.3,37.8,0.0,0.0,0.0,5.7,Diversified,Medium,No holding,0.0,5.1,False,0,4900000,144,500000
