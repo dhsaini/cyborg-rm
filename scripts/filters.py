@@ -133,6 +133,118 @@ def scenario_ipo_filing(df: pd.DataFrame, company_tag: str = "Unlisted Co. A") -
     return _finalize(df, score, reason, min_score=0.01)
 
 
+PRODUCT_PROFILES = {
+    "AI & Technology Thematic Fund — Fund A": {
+        "relevant_sector": "IT",
+        "suitable_risk_profiles": ("Moderate", "Aggressive"),
+        "min_ticket_inr": 0,
+    },
+    "Infrastructure & Capex Thematic Fund — Fund B": {
+        "relevant_sector": "Infra",
+        "suitable_risk_profiles": ("Moderate", "Aggressive"),
+        "min_ticket_inr": 0,
+    },
+    "Silver & Precious Metals Fund — Fund C": {
+        "relevant_sector": None,  # not sector-linked; a diversifier, so open to Conservative too
+        "suitable_risk_profiles": ("Conservative", "Moderate", "Aggressive"),
+        "min_ticket_inr": 0,
+    },
+}
+
+
+def score_product_fit(df: pd.DataFrame, product_category: str,
+                      min_ticket_inr: float = 0,
+                      suitable_risk_profiles: tuple = None,
+                      max_existing_thematic_pct: float = 15.0,
+                      quiet_period_days: int = 7) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """
+    Mode 2 — proactive product pitch. Splits one RM's book into a pitch list
+    and an exclusion list for a generic product category.
+
+    product_category must be a key in PRODUCT_PROFILES. This function never
+    sees or needs a real fund name, AMC, or NFO (PRD §9) — but it DOES need
+    product_category to actually change the outcome; a filter that returns
+    the same split for every product isn't filtering by product at all.
+
+    Exclusion rules (PRD §9.4 — the exclusion list is structural; these four
+    specific rules are configuration and may be revised):
+      1. Already meaningfully exposed to this theme — a pitch would just add
+         concentration risk, not diversification.
+      2. Risk profile does not fit this specific product's suitable range.
+      3. Ticket size would fall below the product's stated minimum.
+      4. Contacted very recently — avoid re-approaching a client mid-conversation.
+
+    A client can trigger more than one rule; only the first applicable reason
+    is shown, in the priority order above, so the list stays readable.
+
+    Returns (pitch_df, excluded_df). pitch_df is ranked by suitability;
+    excluded_df preserves book order since exclusion reasons, not ranking,
+    are the point.
+    """
+    profile = PRODUCT_PROFILES.get(product_category, {})
+    if suitable_risk_profiles is None:
+        suitable_risk_profiles = profile.get(
+            "suitable_risk_profiles", ("Moderate", "Aggressive")
+        )
+    min_ticket_inr = min_ticket_inr or profile.get("min_ticket_inr", 0)
+    relevant_sector = profile.get("relevant_sector")
+
+    exclusion_reason = pd.Series([""] * len(df), index=df.index, dtype="object")
+
+    over_exposed = df["existing_thematic_exposure_pct"] >= max_existing_thematic_pct
+    exclusion_reason = exclusion_reason.mask(
+        over_exposed & (exclusion_reason == ""),
+        "Already carries " + df["existing_thematic_exposure_pct"].round(1).astype(str)
+        + "% thematic exposure — pitching adds concentration, not diversification"
+    )
+
+    wrong_risk = ~df["risk_profile"].isin(suitable_risk_profiles)
+    exclusion_reason = exclusion_reason.mask(
+        wrong_risk & (exclusion_reason == ""),
+        df["risk_profile"] + " risk profile does not fit this product category"
+    )
+
+    if min_ticket_inr > 0:
+        # A plausible ticket is estimated from the client's own deployment
+        # behaviour, not invented — their typical lumpsum size.
+        too_small = df["avg_lumpsum_ticket_inr"] < min_ticket_inr
+        exclusion_reason = exclusion_reason.mask(
+            too_small & (exclusion_reason == ""),
+            "Typical ticket size below this product's stated minimum"
+        )
+
+    too_recent = df["days_since_last_contact"] < quiet_period_days
+    exclusion_reason = exclusion_reason.mask(
+        too_recent & (exclusion_reason == ""),
+        f"Contacted within the last {quiet_period_days} days — avoid overlap "
+        "with an active conversation"
+    )
+
+    is_excluded = exclusion_reason != ""
+
+    excluded = df[is_excluded].copy()
+    excluded["exclusion_reason"] = exclusion_reason[is_excluded]
+
+    # Suitability score for the remaining pitch pool: idle capital + how long
+    # since they last deployed anything, so the RM sees the clients most
+    # ready to act. Sector-linked products additionally boost clients whose
+    # existing book already tilts toward that sector — someone overweight IT
+    # is a more natural AI-fund conversation than someone with none.
+    pitch = df[~is_excluded].copy()
+    readiness = (
+        pitch["ledger_balance_inr"] / pitch["total_aum_inr"].clip(lower=1) * 100
+    ) + (pitch["days_since_last_lumpsum"] / 30)
+
+    if relevant_sector:
+        sector_match = pitch["top_sector_exposure"] == relevant_sector
+        readiness = readiness + sector_match.astype(float) * 10
+
+    pitch["suitability_score"] = readiness.round(1)
+    pitch = pitch.sort_values("suitability_score", ascending=False)
+
+    return pitch, excluded
+
+
 SCENARIOS = {
     "RBI rate move": scenario_rbi_rate_move,
     "IT sector selloff": scenario_it_sector_selloff,
