@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets — never commit
+.env
+.streamlit/secrets.toml
+
+# macOS
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
