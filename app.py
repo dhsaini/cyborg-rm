@@ -12,6 +12,7 @@ import pandas as pd
 import streamlit as st
 
 from scripts.filters import SCENARIOS, run_scenario, score_product_fit
+from scripts.drafting import draft_message
 
 PRODUCT_CATEGORIES = [
     "AI & Technology Thematic Fund — Fund A",
@@ -44,25 +45,59 @@ def render_disclaimer():
     st.caption(DISCLAIMER)
 
 
-def render_client_table(matches: pd.DataFrame):
-    """Client-facing table — no internal client_id, formatted for reading."""
+def render_client_table(matches: pd.DataFrame, key_prefix: str):
+    """
+    One row per client with a Draft button. Drafting is on-demand, not
+    automatic — calling Gemini for every row the moment a scenario loads
+    would spend quota on drafts nobody asked to see.
+
+    key_prefix must be unique per call site (e.g. distinguishes Mode 1's
+    table from Mode 2's) so Streamlit's widget keys don't collide when both
+    are on screen.
+
+    Drafts are stored in st.session_state, not a local variable — Streamlit
+    reruns this entire script on every click, so anything not in
+    session_state is lost the moment the RM clicks a second client's button.
+    """
     if matches.empty:
         st.info("No clients in this book match this scenario.")
         return
 
-    display = matches[[
-        "first_name", "segment", "risk_profile", "total_aum_inr",
-        "exposure_score", "reason",
-    ]].copy()
+    for _, row in matches.iterrows():
+        draft_key = f"{key_prefix}_{row['client_id']}"
 
-    display["total_aum_inr"] = display["total_aum_inr"].apply(
-        lambda v: f"₹{v / 1_00_00_000:.1f} Cr"
-    )
-    display["exposure_score"] = display["exposure_score"].round(1)
-    display.columns = ["Client", "Segment", "Risk Profile", "AUM",
-                       "Exposure Score", "Why this client"]
+        with st.container(border=True):
+            col1, col2, col3 = st.columns([2, 3, 1])
+            with col1:
+                st.markdown(f"**{row['first_name']}** · {row['segment']} · "
+                           f"₹{row['total_aum_inr'] / 1_00_00_000:.1f} Cr")
+            with col2:
+                st.caption(row.get("reason", ""))
+            with col3:
+                clicked = st.button("Draft", key=f"btn_{draft_key}")
 
-    st.dataframe(display, use_container_width=True, hide_index=True)
+            if clicked:
+                with st.spinner("Drafting…"):
+                    message, status = draft_message(
+                        first_name=row["first_name"],
+                        reason=row.get("reason", ""),
+                        language=row.get("preferred_language", "English"),
+                    )
+                st.session_state[draft_key] = (message, status)
+
+            if draft_key in st.session_state:
+                message, status = st.session_state[draft_key]
+                if status == "ok":
+                    st.text_area("Draft — copy to WhatsApp", value=message,
+                                 key=f"area_{draft_key}", height=100)
+                elif status == "blocked":
+                    st.warning("This draft was flagged by the compliance "
+                              "check and withheld. Try again, or draft "
+                              "this message yourself.")
+                else:
+                    st.error(f"Could not generate a draft ({status}). "
+                             "Check your Gemini API key in "
+                             ".streamlit/secrets.toml.")
 
 
 def main():
@@ -116,7 +151,7 @@ def main():
         matches = run_scenario(clients, selected_rm, scenario_name, top_n=top_n)
         st.write(f"**{len(matches)} clients** most exposed, out of "
                 f"{len(book)} in this book:")
-        render_client_table(matches)
+        render_client_table(matches, key_prefix="mode1")
 
     st.divider()
 
@@ -143,15 +178,18 @@ def main():
             if pitch.empty:
                 st.info("No clients in this book are suitable for this pitch.")
             else:
-                display = pitch[["first_name", "risk_profile",
-                                "suitability_score"]].head(10).copy()
-                display.columns = ["Client", "Risk Profile", "Readiness Score"]
-                st.dataframe(display, use_container_width=True, hide_index=True)
+                pitch_top = pitch.head(10).copy()
+                pitch_top["reason"] = (
+                    f"Suitable for {product} — readiness score "
+                    + pitch_top["suitability_score"].astype(str)
+                )
+                render_client_table(pitch_top, key_prefix="mode2")
 
         with col2:
             st.markdown(f"**Excluded — {len(excluded)} clients**")
             st.caption("Shown by design, not as an afterthought — every "
-                      "exclusion has a stated, auditable reason.")
+                      "exclusion has a stated, auditable reason. Excluded "
+                      "clients cannot be drafted for from this screen.")
             if excluded.empty:
                 st.info("No clients were excluded for this product.")
             else:
