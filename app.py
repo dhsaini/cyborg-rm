@@ -65,23 +65,44 @@ def render_client_table(matches: pd.DataFrame, key_prefix: str):
 
     for _, row in matches.iterrows():
         draft_key = f"{key_prefix}_{row['client_id']}"
+        stored_language = row.get("preferred_language", "English")
+
+        # Each client sees only English (universal fallback) plus their own
+        # stored preference — never every language in the dataset. A
+        # Gujarati-preference client should not be offered Bengali or
+        # Marathi as an override; those languages are not theirs to choose.
+        client_language_options = (
+            [stored_language] if stored_language == "English"
+            else ["English", stored_language]
+        )
 
         with st.container(border=True):
-            col1, col2, col3 = st.columns([2, 3, 1])
+            col1, col2, col3, col4 = st.columns([2, 3, 1.3, 1])
             with col1:
                 st.markdown(f"**{row['first_name']}** · {row['segment']} · "
                            f"₹{row['total_aum_inr'] / 1_00_00_000:.1f} Cr")
             with col2:
                 st.caption(row.get("reason", ""))
             with col3:
+                default_idx = client_language_options.index(stored_language)
+                draft_language = st.selectbox(
+                    "Language", options=client_language_options,
+                    index=default_idx,
+                    key=f"lang_{draft_key}", label_visibility="collapsed",
+                )
+            with col4:
                 clicked = st.button("Draft", key=f"btn_{draft_key}")
+
+            if draft_language != stored_language:
+                st.caption(f"Overriding stored preference ({stored_language})")
 
             if clicked:
                 with st.spinner("Drafting…"):
                     message, status = draft_message(
                         first_name=row["first_name"],
                         reason=row.get("reason", ""),
-                        language=row.get("preferred_language", "English"),
+                        headline=row.get("headline", ""),
+                        language=draft_language,
                     )
                 st.session_state[draft_key] = (message, status)
 
@@ -134,6 +155,24 @@ def main():
     book = clients[clients["rm_id"] == selected_rm]
     st.success(f"Loaded {len(book)} clients for {rm_labels[selected_rm]}.")
 
+    # --- Language filter: narrows the book itself, before either mode runs --
+    available_languages = sorted(book["preferred_language"].unique())
+    language_filter = st.multiselect(
+        "Filter by preferred language",
+        options=available_languages,
+        default=available_languages,
+        help="Narrows this RM's book to clients with the selected preferred "
+             "language(s). Both modes below only see the filtered set.",
+    )
+
+    if not language_filter:
+        st.warning("Select at least one language to see clients.")
+        return
+
+    book = book[book["preferred_language"].isin(language_filter)]
+    st.caption(f"{len(book)} of {(clients['rm_id'] == selected_rm).sum()} "
+              f"clients match the selected language(s).")
+
     st.divider()
 
     # --- Mode 1: reactive ----------------------------------------------------
@@ -148,7 +187,7 @@ def main():
 
     if scenario_name:
         top_n = st.slider("Show top", min_value=3, max_value=15, value=10)
-        matches = run_scenario(clients, selected_rm, scenario_name, top_n=top_n)
+        matches = run_scenario(book, selected_rm, scenario_name, top_n=top_n)
         st.write(f"**{len(matches)} clients** most exposed, out of "
                 f"{len(book)} in this book:")
         render_client_table(matches, key_prefix="mode1")

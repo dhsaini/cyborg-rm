@@ -246,10 +246,22 @@ def score_product_fit(df: pd.DataFrame, product_category: str,
 
 
 SCENARIOS = {
-    "RBI rate move": scenario_rbi_rate_move,
-    "IT sector selloff": scenario_it_sector_selloff,
-    "Rupee depreciation / gold rally": scenario_rupee_gold,
-    "IPO filing (unlisted holding)": scenario_ipo_filing,
+    "RBI rate move": {
+        "headline": "RBI cuts repo rate by 25bps, third consecutive cut this year",
+        "filter_fn": scenario_rbi_rate_move,
+    },
+    "IT sector selloff": {
+        "headline": "IT stocks slide 4% on weak US client spending guidance",
+        "filter_fn": scenario_it_sector_selloff,
+    },
+    "Rupee depreciation / gold rally": {
+        "headline": "Rupee slides past 89/USD as gold hits fresh record highs",
+        "filter_fn": scenario_rupee_gold,
+    },
+    "IPO filing (unlisted holding)": {
+        "headline": "Unlisted Co. A files draft IPO papers with SEBI",
+        "filter_fn": scenario_ipo_filing,
+    },
 }
 
 
@@ -257,7 +269,12 @@ def run_scenario(df: pd.DataFrame, rm_id: str, scenario_name: str,
                   top_n: int = DEFAULT_TOP_N, **kwargs) -> pd.DataFrame:
     """
     Main entry point. Filters to one RM's book, runs the named scenario,
-    returns at most top_n clients ranked by exposure.
+    returns at most top_n clients ranked by exposure, with the scenario's
+    real headline attached to every row as `headline`.
+
+    Carrying the headline on the output — not just the reason — is what lets
+    drafting.py write a message that names the actual news event, instead of
+    a generic sentence about an allocation percentage.
 
     This function is the enforcement point for the access boundary (PRD §3):
     every caller goes through rm_id, so it is structurally impossible to see
@@ -271,10 +288,13 @@ def run_scenario(df: pd.DataFrame, rm_id: str, scenario_name: str,
     if book.empty:
         raise ValueError(f"No clients found for rm_id={rm_id!r}.")
 
-    matched = SCENARIOS[scenario_name](book, **kwargs) if kwargs else \
-        SCENARIOS[scenario_name](book)
+    scenario = SCENARIOS[scenario_name]
+    matched = scenario["filter_fn"](book, **kwargs) if kwargs else \
+        scenario["filter_fn"](book)
 
-    return matched.head(top_n)
+    matched = matched.head(top_n).copy()
+    matched["headline"] = scenario["headline"]
+    return matched
 
 
 if __name__ == "__main__":
@@ -286,7 +306,7 @@ if __name__ == "__main__":
     for rm_id in sorted(df["rm_id"].unique()):
         for name in SCENARIOS:
             book = df[df["rm_id"] == rm_id]
-            full_match = SCENARIOS[name](book)
+            full_match = SCENARIOS[name]["filter_fn"](book)
             top = run_scenario(df, rm_id, name)
             top_score = f"{top['exposure_score'].iloc[0]:.1f}" if len(top) else "-"
             print(f"{rm_id:<8}{name:<34}{len(full_match):>8}{top_score:>12}")
@@ -294,5 +314,5 @@ if __name__ == "__main__":
     print("\nSample output — RM-06, IT sector selloff, top 5:")
     sample = run_scenario(df, "RM-06", "IT sector selloff", top_n=5)
     cols = ["client_id", "first_name", "top_sector_exposure",
-            "alloc_direct_equity_pct", "exposure_score", "reason"]
+            "alloc_direct_equity_pct", "exposure_score", "reason", "headline"]
     print(sample[cols].to_string(index=False))

@@ -23,9 +23,19 @@ MODEL_NAME = "gemini-3.6-flash"  # verify at build time — see PRD/TR-7
 
 SYSTEM_PROMPT = """You are drafting a short WhatsApp message for a wealth \
 relationship manager to send to one client. You are given the client's \
-first name and a plain factual reason why this message is relevant to \
-them right now. Write ONLY the message text — no preamble, no headers, no \
-signature.
+first name, the actual news headline driving this outreach, and a specific \
+fact about how their portfolio connects to it. Write ONLY the message text \
+— no preamble, no headers, no signature.
+
+The message must do three things, in this order:
+1. Reference what actually happened in the news — specifically enough that \
+the client would recognise the event, not a vague gesture at "market \
+conditions."
+2. Name the specific fact about their own portfolio that makes this \
+relevant to THEM — the exact holding, sector, or allocation given to you. \
+Do not generalise it into a category the client would not recognise as \
+their own.
+3. Invite a conversation — a call or a meeting — without concluding one.
 
 Hard rules, no exceptions:
 - 2 to 4 sentences. Plain conversational text, no bullet points, no bold.
@@ -37,8 +47,12 @@ specific.
 - Never guarantee or predict any market outcome.
 - The message must invite a conversation, not conclude one. End by \
 suggesting a call or a meeting, not a decision.
-- Do not fabricate any fact not given to you in the reason. If the reason \
-does not mention a number, do not introduce one.
+- Do not fabricate any fact not given to you. If a number is not given to \
+you, do not introduce one.
+
+A message that could apply to any client regardless of their actual \
+holdings has failed the task, even if every hard rule above is technically \
+satisfied. Specificity to this client's real exposure is the entire point.
 
 Write only the message. Nothing else."""
 
@@ -69,10 +83,15 @@ def check_compliance(draft: str) -> tuple[bool, str | None]:
     return True, None
 
 
-def draft_message(first_name: str, reason: str, language: str = "English",
+def draft_message(first_name: str, reason: str, headline: str = "",
+                  language: str = "English",
                   max_attempts: int = 2) -> tuple[str | None, str]:
     """
     Generates one draft message. Returns (message, status).
+
+    headline is the actual news event triggering this outreach (e.g. "RBI
+    cuts repo rate by 25bps"). Passing "" is valid for Mode 2 (product
+    pitches, which have no news event) — the prompt adapts accordingly.
 
     status is one of: "ok", "blocked", "error" — the caller decides how to
     surface each to the RM. On "blocked", message is None: a flagged draft
@@ -81,9 +100,21 @@ def draft_message(first_name: str, reason: str, language: str = "English",
     """
     client = genai.Client(api_key=st.secrets["GEMINI_API_KEY"])
 
+    if headline:
+        context_block = (
+            f"News headline driving this outreach: {headline}\n"
+            f"How this client's portfolio connects to it: {reason}\n"
+        )
+    else:
+        context_block = (
+            f"Reason this message is relevant (no specific news event — "
+            f"this is a proactive product pitch, not a market reaction): "
+            f"{reason}\n"
+        )
+
     user_prompt = (
         f"Client first name: {first_name}\n"
-        f"Reason this message is relevant: {reason}\n"
+        f"{context_block}"
         f"Preferred language for the message: {language}\n"
         "Write the message now."
     )
