@@ -1,0 +1,64 @@
+# Cyborg RM — Streamlit theme
+#
+# Values are pulled directly from Wealth_Operator_Master_Plan_v2.md, Phase 1G
+# (Design Tokens), not invented separately. This is deliberate: the site and
+# Cyborg RM cannot share a codebase (Next.js vs Streamlit — see Phase 1E1),
+# but they can share a palette, so clicking from the project page into the
+# live demo feels like one system rather than two unrelated tools.
+#
+# Source tokens, for reference when either file changes:
+#   --color-bg-primary      #0A0A0A
+#   --color-surface         #18181B
+#   --color-surface-hover   #1F1F23
+#   --color-border          #27272A
+#   --color-text-primary    #FAFAFA
+#   --color-text-secondary  #A1A1AA
+#   --color-brand-primary   #3B82F6
+#   --color-brand-hover     #2563EB
+#   --color-success / warning / error / info: #22C55E / #F59E0B / #EF4444 / #38BDF8
+#   --radius-xl (cards)     16px
+
+[theme]
+base = "dark"
+
+primaryColor = "#3B82F6"
+backgroundColor = "#0A0A0A"
+secondaryBackgroundColor = "#18181B"
+textColor = "#FAFAFA"
+linkColor = "#3B82F6"
+
+borderColor = "#27272A"
+dataframeBorderColor = "#27272A"
+dataframeHeaderBackgroundColor = "#1F1F23"
+showWidgetBorder = true
+
+baseRadius = "16px"
+buttonRadius = "12px"
+
+# Geist is the site's typeface (Phase 1G §2). Loaded via Google Fonts'
+# mirror, since Geist itself is not on Google Fonts — Inter is the closest
+# widely-available match to Geist's proportions and is what most
+# Geist-adjacent projects fall back to.
+font = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+
+baseFontSize = 15
+headingFontWeights = [700, 600, 600, 600, 500, 500]
+
+# Chart series colors — the four status tokens (success/warning/error/info)
+# plus the brand blue, so the allocation-mix and risk-profile bar charts on
+# the book dashboard read as distinct categories rather than shades of the
+# same default blue.
+chartCategoricalColors = [
+    "#3B82F6",  # brand
+    "#22C55E",  # success
+    "#F59E0B",  # warning
+    "#EF4444",  # error
+    "#38BDF8",  # info
+    "#A1A1AA",  # muted, for any 6th+ category
+]
+
+successColor = "#22C55E"
+warningColor = "#F59E0B"
+errorColor = "#EF4444"
+infoColor = "#38BDF8"

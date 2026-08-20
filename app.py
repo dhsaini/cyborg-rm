@@ -125,6 +125,20 @@ def render_client_table(matches: pd.DataFrame, key_prefix: str):
             if draft_language != stored_language:
                 st.caption(f"Overriding stored preference ({stored_language})")
 
+            # The drafted language is folded into the storage/widget key
+            # itself, not just passed as a value. Without this, drafting in
+            # Gujarati then re-drafting in English reused the exact same
+            # session_state key and the exact same st.text_area widget key —
+            # the new English text was correctly generated and correctly
+            # written to session_state, but Streamlit does not reliably
+            # re-sync an existing text_area's displayed content to a changed
+            # value= on rerun once that widget key has already rendered once.
+            # The visible box silently kept showing the first draft. Keying
+            # by language makes a language switch a genuinely different
+            # storage slot, so the old box's key never gets reused with
+            # different content — it's just a different box.
+            draft_state_key = f"{draft_key}_{draft_language}"
+
             if clicked:
                 with st.spinner("Drafting…"):
                     message, status = draft_message(
@@ -133,13 +147,13 @@ def render_client_table(matches: pd.DataFrame, key_prefix: str):
                         headline=row.get("headline", ""),
                         language=draft_language,
                     )
-                st.session_state[draft_key] = (message, status)
+                st.session_state[draft_state_key] = (message, status)
 
-            if draft_key in st.session_state:
-                message, status = st.session_state[draft_key]
+            if draft_state_key in st.session_state:
+                message, status = st.session_state[draft_state_key]
                 if status == "ok":
                     st.text_area("Draft — copy to WhatsApp", value=message,
-                                 key=f"area_{draft_key}", height=100)
+                                 key=f"area_{draft_state_key}", height=100)
                 elif status == "blocked":
                     st.warning("This draft was flagged by the compliance "
                               "check and withheld. Try again, or draft "
@@ -162,32 +176,92 @@ def render_book_dashboard(book: pd.DataFrame):
     """
     st.subheader("Book overview")
 
+    # Bordered cards, matching --radius-xl / --color-surface from the site's
+    # own design tokens (Phase 1G), rather than bare st.metric floating with
+    # no container — the same visual language Client 360 already uses via
+    # its segment badge and contact-status treatment.
     m1, m2, m3 = st.columns(3)
-    m1.metric("Clients", len(book))
-    m2.metric("Total AUM", f"₹{book['total_aum_inr'].sum() / CR:.1f} Cr")
-    m3.metric("Avg. relationship", f"{book['relationship_tenure_years'].mean():.1f} yrs")
+    with m1:
+        with st.container(border=True):
+            st.caption("Clients")
+            st.markdown(f"<span style='font-size:2rem; font-weight:700;'>"
+                       f"{len(book)}</span>", unsafe_allow_html=True)
+    with m2:
+        with st.container(border=True):
+            st.caption("Total AUM")
+            st.markdown(f"<span style='font-size:2rem; font-weight:700;'>"
+                       f"₹{book['total_aum_inr'].sum() / CR:.1f} Cr</span>",
+                       unsafe_allow_html=True)
+    with m3:
+        with st.container(border=True):
+            st.caption("Avg. relationship")
+            st.markdown(f"<span style='font-size:2rem; font-weight:700;'>"
+                       f"{book['relationship_tenure_years'].mean():.1f} yrs</span>",
+                       unsafe_allow_html=True)
 
     col_a, col_b = st.columns(2)
 
     with col_a:
-        st.caption("Average allocation mix across this book")
-        alloc_avg = book[ALLOC_COLUMNS].mean().rename(index=ALLOC_LABELS)
-        st.bar_chart(alloc_avg)
+        with st.container(border=True):
+            st.caption("Average allocation mix across this book")
+            alloc_avg = book[ALLOC_COLUMNS].mean().rename(index=ALLOC_LABELS)
+            st.bar_chart(alloc_avg)
 
     with col_b:
-        st.caption("Risk profile breakdown")
-        risk_counts = book["risk_profile"].value_counts()
-        st.bar_chart(risk_counts)
+        with st.container(border=True):
+            st.caption("Risk profile breakdown")
+            risk_counts = book["risk_profile"].value_counts()
+            st.bar_chart(risk_counts)
 
     st.divider()
     st.subheader("Clients")
-    st.caption("Select a row to open that client's full view.")
+    st.caption("👉 Use the checkbox on the left edge of a row to open that "
+              "client's full view.")
 
-    display = book[["first_name", "segment", "risk_profile", "total_aum_inr",
-                    "top_sector_exposure", "days_since_last_contact"]].copy()
+    search = st.text_input(
+        "Search by name", placeholder="Type a client's first name…",
+        label_visibility="collapsed",
+    )
+
+    listed = book
+    if search:
+        listed = book[book["first_name"].str.contains(search, case=False, na=False)]
+
+    if listed.empty:
+        st.info(f"No clients match '{search}'.")
+        return
+
+    # Two earlier attempts at a full-row click target both failed on
+    # verification, not assumption:
+    #   1. Packing every column into one st.button label — st.button centers
+    #      its label as a single block, so nothing lined up under the header.
+    #   2. st.column_config.ButtonColumn as a real "Open" cell — it renders,
+    #      but a click on it does not register in event.selection the way
+    #      the row's native checkbox does. Confirmed non-functional by
+    #      testing, so it was removed rather than left in place looking
+    #      clickable while doing nothing.
+    #
+    # This is the honest version: st.dataframe's real row-selection only
+    # ever fires from the small leftmost checkbox — there is no config
+    # option to widen that hit area, confirmed against Streamlit's own
+    # component. Rather than fake a bigger mechanism, the fix is to make
+    # that real checkbox impossible to miss: a pointer emoji directly in the
+    # caption above it, and a visible left border color drawing the eye to
+    # where the actual click needs to land.
+    st.markdown(
+        "<style>"
+        "div[data-testid='stDataFrame'] "
+        "{ border-left: 3px solid #3B82F6; border-radius: 4px; }"
+        "</style>",
+        unsafe_allow_html=True,
+    )
+
+    display = listed[["first_name", "segment", "risk_profile",
+                      "total_aum_inr", "top_sector_exposure",
+                      "days_since_last_contact"]].copy()
     display["total_aum_inr"] = (display["total_aum_inr"] / CR).round(1)
-    display.columns = ["Client", "Segment", "Risk Profile", "AUM (Cr)",
-                       "Top Sector", "Days Since Contact"]
+    display.columns = ["Client", "Segment", "Risk Profile",
+                       "AUM (Cr)", "Top Sector", "Days Since Contact"]
 
     event = st.dataframe(
         display, use_container_width=True, hide_index=True,
@@ -196,7 +270,7 @@ def render_book_dashboard(book: pd.DataFrame):
 
     if event.selection and event.selection.get("rows"):
         selected_idx = event.selection["rows"][0]
-        st.session_state["selected_client_id"] = book.iloc[selected_idx]["client_id"]
+        st.session_state["selected_client_id"] = listed.iloc[selected_idx]["client_id"]
         st.rerun()
 
 
@@ -222,27 +296,78 @@ def render_client_360(full_df: pd.DataFrame, client_id: str):
         st.session_state["selected_client_id"] = None
         st.rerun()
 
-    st.subheader(f"{client['first_name']} — {client['segment']}")
+    # Segment badge — real HTML, not a column_config workaround. st.dataframe
+    # (used in the book table) has no per-cell conditional styling API, so
+    # this kind of badge only exists where markdown gives direct control.
+    badge_color = "#3B82F6" if client["segment"] == "UHNI" else "#22C55E"
+    st.markdown(
+        f"""
+        <div style="display:flex; align-items:center; gap:10px; margin-bottom:4px;">
+            <span style="font-size:1.5rem; font-weight:700;">{client['first_name']}</span>
+            <span style="background:{badge_color}22; color:{badge_color};
+                        padding:3px 12px; border-radius:9999px;
+                        font-size:0.75rem; font-weight:600; white-space:nowrap;">
+                {client['segment']}
+            </span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    days_since_contact = int(client["days_since_last_contact"])
+    if days_since_contact <= 30:
+        contact_color, contact_note = "#22C55E", "Recently contacted"
+    elif days_since_contact <= 90:
+        contact_color, contact_note = "#F59E0B", "Due for outreach"
+    else:
+        contact_color, contact_note = "#EF4444", "Overdue"
 
     m1, m2, m3, m4 = st.columns(4)
-    m1.metric("AUM", f"₹{client['total_aum_inr'] / CR:.1f} Cr")
-    m2.metric("Risk Profile", client["risk_profile"])
-    m3.metric("Relationship", f"{client['relationship_tenure_years']} yrs")
-    m4.metric("Last Contact", f"{client['days_since_last_contact']}d ago")
+    with m1:
+        with st.container(border=True):
+            st.caption("AUM")
+            st.markdown(f"<span style='font-size:1.5rem; font-weight:600;'>"
+                       f"₹{client['total_aum_inr'] / CR:.1f} Cr</span>",
+                       unsafe_allow_html=True)
+    with m2:
+        with st.container(border=True):
+            st.caption("Risk Profile")
+            st.markdown(f"<span style='font-size:1.5rem; font-weight:600;'>"
+                       f"{client['risk_profile']}</span>", unsafe_allow_html=True)
+    with m3:
+        with st.container(border=True):
+            st.caption("Relationship")
+            st.markdown(f"<span style='font-size:1.5rem; font-weight:600;'>"
+                       f"{client['relationship_tenure_years']} yrs</span>",
+                       unsafe_allow_html=True)
+    with m4:
+        with st.container(border=True):
+            st.markdown(
+                f"""
+                <div style="font-size:0.875rem; color:#A1A1AA;">Last Contact</div>
+                <div style="font-size:1.5rem; font-weight:600; color:{contact_color};">
+                    {days_since_contact}d ago
+                </div>
+                <div style="font-size:0.75rem; color:{contact_color};">{contact_note}</div>
+                """,
+                unsafe_allow_html=True,
+            )
 
     col_a, col_b = st.columns([1, 1])
     with col_a:
-        st.caption("Portfolio allocation")
-        alloc = client[ALLOC_COLUMNS].rename(index=ALLOC_LABELS)
-        st.bar_chart(alloc)
+        with st.container(border=True):
+            st.caption("Portfolio allocation")
+            alloc = client[ALLOC_COLUMNS].rename(index=ALLOC_LABELS)
+            st.bar_chart(alloc)
     with col_b:
-        st.caption("Profile")
-        st.write(f"**Wealth source:** {client['wealth_source']}")
-        st.write(f"**Top sector exposure:** {client['top_sector_exposure']}")
-        st.write(f"**Debt duration:** {client['debt_duration_bucket']}")
-        if client["unlisted_holding_tag"] != "No holding":
-            st.write(f"**Unlisted holding:** {client['unlisted_holding_tag']}")
-        st.write(f"**Preferred language:** {client['preferred_language']}")
+        with st.container(border=True):
+            st.caption("Profile")
+            st.write(f"**Wealth source:** {client['wealth_source']}")
+            st.write(f"**Top sector exposure:** {client['top_sector_exposure']}")
+            st.write(f"**Debt duration:** {client['debt_duration_bucket']}")
+            if client["unlisted_holding_tag"] != "No holding":
+                st.write(f"**Unlisted holding:** {client['unlisted_holding_tag']}")
+            st.write(f"**Preferred language:** {client['preferred_language']}")
 
     st.divider()
 
