@@ -1,9 +1,14 @@
 """
 app.py — Cyborg RM, Streamlit shell.
 
-This version proves the access-boundary UX and the data pipeline end to end.
-It does not call Gemini yet — Mode 1 shows the ranked client table with
-reasons; message drafting is wired in the next step (drafting.py).
+Navigation model: one page, one piece of state — selected_client_id.
+    None  -> Book Dashboard (aggregate charts + selectable client list)
+    set   -> Client 360 (that client's profile + an "AI Suggestions" tab
+             containing Mode 1 and Mode 2, scoped to that one client)
+
+This replaces the earlier flat layout (RM picker -> Mode 1 section -> Mode 2
+section, both always visible) with something closer to how a real RM tool is
+navigated: book overview first, drill into one relationship, act from there.
 
 Run from the repo root:   streamlit run app.py
 """
@@ -11,14 +16,33 @@ Run from the repo root:   streamlit run app.py
 import pandas as pd
 import streamlit as st
 
-from scripts.filters import SCENARIOS, run_scenario, score_product_fit
+from scripts.filters import (
+    SCENARIOS, run_scenario, run_all_scenarios_for_client,
+    score_product_fit,
+)
 from scripts.drafting import draft_message
+
+CR = 1_00_00_000  # 1 crore, for AUM display conversions
 
 PRODUCT_CATEGORIES = [
     "AI & Technology Thematic Fund — Fund A",
     "Infrastructure & Capex Thematic Fund — Fund B",
     "Silver & Precious Metals Fund — Fund C",
 ]
+
+ALLOC_COLUMNS = [
+    "alloc_direct_equity_pct", "alloc_equity_mf_pct", "alloc_debt_mf_bonds_pct",
+    "alloc_pms_pct", "alloc_aif_pct", "alloc_unlisted_pct", "alloc_gold_pct",
+]
+ALLOC_LABELS = {
+    "alloc_direct_equity_pct": "Direct Equity",
+    "alloc_equity_mf_pct": "Equity MF",
+    "alloc_debt_mf_bonds_pct": "Debt MF / Bonds",
+    "alloc_pms_pct": "PMS",
+    "alloc_aif_pct": "AIF",
+    "alloc_unlisted_pct": "Unlisted",
+    "alloc_gold_pct": "Gold",
+}
 
 DISCLAIMER = (
     "Cyborg RM is a completely independent learning project by Dhirendra Saini. "
@@ -51,20 +75,25 @@ def render_client_table(matches: pd.DataFrame, key_prefix: str):
     automatic — calling Gemini for every row the moment a scenario loads
     would spend quota on drafts nobody asked to see.
 
-    key_prefix must be unique per call site (e.g. distinguishes Mode 1's
-    table from Mode 2's) so Streamlit's widget keys don't collide when both
-    are on screen.
+    key_prefix must be unique per call site (Mode 1's table, Mode 2's pitch
+    list, and the single-client suggestions view all reuse this function)
+    so Streamlit's widget keys don't collide when more than one is on screen.
 
     Drafts are stored in st.session_state, not a local variable — Streamlit
     reruns this entire script on every click, so anything not in
     session_state is lost the moment the RM clicks a second client's button.
     """
     if matches.empty:
-        st.info("No clients in this book match this scenario.")
+        st.info("No clients match this scenario.")
         return
 
-    for _, row in matches.iterrows():
-        draft_key = f"{key_prefix}_{row['client_id']}"
+    for position, (_, row) in enumerate(matches.iterrows()):
+        # position disambiguates when the same client appears more than
+        # once in matches — e.g. run_all_scenarios_for_client correctly
+        # returns one row per matched scenario, so a client exposed to both
+        # a rate move AND a gold rally appears twice, and client_id alone
+        # would produce duplicate widget keys.
+        draft_key = f"{key_prefix}_{row['client_id']}_{position}"
         stored_language = row.get("preferred_language", "English")
 
         # Each client sees only English (universal fallback) plus their own
@@ -80,7 +109,7 @@ def render_client_table(matches: pd.DataFrame, key_prefix: str):
             col1, col2, col3, col4 = st.columns([2, 3, 1.3, 1])
             with col1:
                 st.markdown(f"**{row['first_name']}** · {row['segment']} · "
-                           f"₹{row['total_aum_inr'] / 1_00_00_000:.1f} Cr")
+                           f"₹{row['total_aum_inr'] / CR:.1f} Cr")
             with col2:
                 st.caption(row.get("reason", ""))
             with col3:
@@ -121,6 +150,147 @@ def render_client_table(matches: pd.DataFrame, key_prefix: str):
                              ".streamlit/secrets.toml.")
 
 
+# ---------------------------------------------------------------------------
+# Book Dashboard — default view, no client selected
+# ---------------------------------------------------------------------------
+
+def render_book_dashboard(book: pd.DataFrame):
+    """
+    Landing view for a selected RM: aggregate charts, then a selectable
+    client list. Selecting a row hands off to the Client 360 view via
+    st.session_state — this function never calls Mode 1/Mode 2 itself.
+    """
+    st.subheader("Book overview")
+
+    m1, m2, m3 = st.columns(3)
+    m1.metric("Clients", len(book))
+    m2.metric("Total AUM", f"₹{book['total_aum_inr'].sum() / CR:.1f} Cr")
+    m3.metric("Avg. relationship", f"{book['relationship_tenure_years'].mean():.1f} yrs")
+
+    col_a, col_b = st.columns(2)
+
+    with col_a:
+        st.caption("Average allocation mix across this book")
+        alloc_avg = book[ALLOC_COLUMNS].mean().rename(index=ALLOC_LABELS)
+        st.bar_chart(alloc_avg)
+
+    with col_b:
+        st.caption("Risk profile breakdown")
+        risk_counts = book["risk_profile"].value_counts()
+        st.bar_chart(risk_counts)
+
+    st.divider()
+    st.subheader("Clients")
+    st.caption("Select a row to open that client's full view.")
+
+    display = book[["first_name", "segment", "risk_profile", "total_aum_inr",
+                    "top_sector_exposure", "days_since_last_contact"]].copy()
+    display["total_aum_inr"] = (display["total_aum_inr"] / CR).round(1)
+    display.columns = ["Client", "Segment", "Risk Profile", "AUM (Cr)",
+                       "Top Sector", "Days Since Contact"]
+
+    event = st.dataframe(
+        display, use_container_width=True, hide_index=True,
+        on_select="rerun", selection_mode="single-row",
+    )
+
+    if event.selection and event.selection.get("rows"):
+        selected_idx = event.selection["rows"][0]
+        st.session_state["selected_client_id"] = book.iloc[selected_idx]["client_id"]
+        st.rerun()
+
+
+# ---------------------------------------------------------------------------
+# Client 360 — one client selected
+# ---------------------------------------------------------------------------
+
+def render_client_360(full_df: pd.DataFrame, client_id: str):
+    """
+    Full-page view for one client: profile header, then a single "AI
+    Suggestions" tab holding Mode 1 (scenario matches) and Mode 2 (product
+    fit), both scoped to this client only — never the whole book.
+    """
+    client = full_df[full_df["client_id"] == client_id]
+    if client.empty:
+        st.error("Selected client not found. Returning to book view.")
+        st.session_state["selected_client_id"] = None
+        st.rerun()
+        return
+    client = client.iloc[0]
+
+    if st.button("← Back to book"):
+        st.session_state["selected_client_id"] = None
+        st.rerun()
+
+    st.subheader(f"{client['first_name']} — {client['segment']}")
+
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("AUM", f"₹{client['total_aum_inr'] / CR:.1f} Cr")
+    m2.metric("Risk Profile", client["risk_profile"])
+    m3.metric("Relationship", f"{client['relationship_tenure_years']} yrs")
+    m4.metric("Last Contact", f"{client['days_since_last_contact']}d ago")
+
+    col_a, col_b = st.columns([1, 1])
+    with col_a:
+        st.caption("Portfolio allocation")
+        alloc = client[ALLOC_COLUMNS].rename(index=ALLOC_LABELS)
+        st.bar_chart(alloc)
+    with col_b:
+        st.caption("Profile")
+        st.write(f"**Wealth source:** {client['wealth_source']}")
+        st.write(f"**Top sector exposure:** {client['top_sector_exposure']}")
+        st.write(f"**Debt duration:** {client['debt_duration_bucket']}")
+        if client["unlisted_holding_tag"] != "No holding":
+            st.write(f"**Unlisted holding:** {client['unlisted_holding_tag']}")
+        st.write(f"**Preferred language:** {client['preferred_language']}")
+
+    st.divider()
+
+    tab_suggestions, = st.tabs(["AI Suggestions"])
+
+    with tab_suggestions:
+        st.markdown("**Market events relevant to this client**")
+        st.caption("Only scenarios this client's own portfolio is actually "
+                  "exposed to are shown — not the full list of 4.")
+
+        matches = run_all_scenarios_for_client(full_df, client_id)
+        if matches.empty:
+            st.info("No current market scenario shows meaningful exposure "
+                   "for this client.")
+        else:
+            render_client_table(matches, key_prefix="c360_mode1")
+
+        st.divider()
+        st.markdown("**Product fit**")
+
+        product = st.selectbox(
+            "Check fit against a product category",
+            options=PRODUCT_CATEGORIES, index=None,
+            placeholder="Choose a product category…",
+            key="c360_product_select",
+        )
+
+        if product:
+            client_row = full_df[full_df["client_id"] == client_id]
+            pitch, excluded = score_product_fit(client_row, product)
+
+            if not pitch.empty:
+                st.success("This client fits the pitch criteria for this product.")
+                pitch_row = pitch.copy()
+                pitch_row["reason"] = (
+                    f"Suitable for {product} — readiness score "
+                    + pitch_row["suitability_score"].astype(str)
+                )
+                render_client_table(pitch_row, key_prefix="c360_mode2")
+            else:
+                reason = excluded.iloc[0]["exclusion_reason"]
+                st.warning(f"This client is excluded from this pitch: {reason}")
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
+
 def main():
     st.set_page_config(page_title="Cyborg RM", layout="wide")
 
@@ -130,6 +300,9 @@ def main():
     st.divider()
 
     clients = load_clients()
+
+    if "selected_client_id" not in st.session_state:
+        st.session_state["selected_client_id"] = None
 
     # --- Access gate: nothing below this renders until an RM is chosen ------
     rm_ids = sorted(clients["rm_id"].unique())
@@ -153,16 +326,15 @@ def main():
         return
 
     book = clients[clients["rm_id"] == selected_rm]
-    st.success(f"Loaded {len(book)} clients for {rm_labels[selected_rm]}.")
 
-    # --- Language filter: narrows the book itself, before either mode runs --
+    # --- Language filter: narrows the book itself, before either view runs --
     available_languages = sorted(book["preferred_language"].unique())
     language_filter = st.multiselect(
         "Filter by preferred language",
         options=available_languages,
         default=available_languages,
         help="Narrows this RM's book to clients with the selected preferred "
-             "language(s). Both modes below only see the filtered set.",
+             "language(s).",
     )
 
     if not language_filter:
@@ -175,72 +347,11 @@ def main():
 
     st.divider()
 
-    # --- Mode 1: reactive ----------------------------------------------------
-    st.subheader("Mode 1 — Market event")
-    st.caption("Select a scenario. Clients are ranked by actual portfolio "
-              "exposure, not just a keyword match.")
-
-    scenario_name = st.selectbox(
-        "Scenario", options=list(SCENARIOS.keys()), index=None,
-        placeholder="Choose a market event…",
-    )
-
-    if scenario_name:
-        top_n = st.slider("Show top", min_value=3, max_value=15, value=10)
-        matches = run_scenario(book, selected_rm, scenario_name, top_n=top_n)
-        st.write(f"**{len(matches)} clients** most exposed, out of "
-                f"{len(book)} in this book:")
-        render_client_table(matches, key_prefix="mode1")
-
-    st.divider()
-
-    # --- Mode 2: proactive ---------------------------------------------------
-    st.subheader("Mode 2 — New product pitch")
-    st.caption("Product categories are illustrative only — no real fund, AMC, "
-              "or NFO is represented. Every pitch list is shown alongside "
-              "who was excluded, and why.")
-
-    product = st.selectbox(
-        "Product category", options=PRODUCT_CATEGORIES, index=None,
-        placeholder="Choose a product category…",
-    )
-
-    if product:
-        pitch, excluded = score_product_fit(book, product)
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            st.markdown(f"**Pitch list — {len(pitch)} clients**")
-            st.caption("Ranked by deployment readiness: idle capital and "
-                      "time since last investment.")
-            if pitch.empty:
-                st.info("No clients in this book are suitable for this pitch.")
-            else:
-                pitch_top = pitch.head(10).copy()
-                pitch_top["reason"] = (
-                    f"Suitable for {product} — readiness score "
-                    + pitch_top["suitability_score"].astype(str)
-                )
-                render_client_table(pitch_top, key_prefix="mode2")
-
-        with col2:
-            st.markdown(f"**Excluded — {len(excluded)} clients**")
-            st.caption("Shown by design, not as an afterthought — every "
-                      "exclusion has a stated, auditable reason. Excluded "
-                      "clients cannot be drafted for from this screen.")
-            if excluded.empty:
-                st.info("No clients were excluded for this product.")
-            else:
-                display = excluded[["first_name", "exclusion_reason"]].copy()
-                display.columns = ["Client", "Reason excluded"]
-                st.dataframe(display, use_container_width=True, hide_index=True)
-
-        assert len(pitch) + len(excluded) == len(book), (
-            "Pitch and exclusion lists must always account for the entire "
-            "book — a client silently missing from both would defeat the "
-            "point of showing exclusions at all."
-        )
+    # --- State switch: book dashboard, or one client's 360 view -------------
+    if st.session_state["selected_client_id"] is None:
+        render_book_dashboard(book)
+    else:
+        render_client_360(clients, st.session_state["selected_client_id"])
 
     st.divider()
     render_disclaimer()

@@ -297,6 +297,42 @@ def run_scenario(df: pd.DataFrame, rm_id: str, scenario_name: str,
     return matched
 
 
+def run_all_scenarios_for_client(df: pd.DataFrame, client_id: str) -> pd.DataFrame:
+    """
+    Client-360 counterpart to run_scenario. Where run_scenario ranks many
+    clients against ONE scenario, this checks ONE client against EVERY
+    scenario and returns only the ones that actually apply to them.
+
+    "Ranked, top 10 of 120" has no meaning for a single person — the right
+    question for one client is "does this news touch them, yes or no." A
+    client with no long-duration debt and no IT exposure may correctly match
+    zero scenarios; an empty result here is a true answer, not a bug.
+
+    Reuses each scenario's own filter_fn rather than duplicating threshold
+    logic — a client "matches" a scenario if they clear its own min_score,
+    exactly the same bar a book-wide run would apply to them.
+    """
+    client_row = df[df["client_id"] == client_id]
+    if client_row.empty:
+        raise ValueError(f"No client found for client_id={client_id!r}.")
+
+    results = []
+    for name, scenario in SCENARIOS.items():
+        matched = scenario["filter_fn"](client_row)
+        if not matched.empty:
+            row = matched.iloc[[0]].copy()
+            row["headline"] = scenario["headline"]
+            row["scenario_name"] = name
+            results.append(row)
+
+    if not results:
+        return pd.DataFrame(columns=list(client_row.columns) +
+                            ["exposure_score", "reason", "headline",
+                             "scenario_name"])
+
+    return pd.concat(results, ignore_index=True)
+
+
 if __name__ == "__main__":
     # Manual smoke test — run directly to sanity-check every scenario
     # against every RM without needing Streamlit running.
